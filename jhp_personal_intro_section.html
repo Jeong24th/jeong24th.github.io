@@ -534,37 +534,3 @@
     <p id="bonus-question" class="bonus-footnote"><sup>1</sup><a href="https://drive.google.com/file/d/1I4MKH7nUg6UHHg4mN5VVYxVkyE83N7mP/view?usp=sharing" target="_blank" rel="noopener noreferrer">Bonus Question</a></p>
   </section>
 </section>
-<script>
-  (function () {
-    function hideHostPiTitle() {
-      var page = document.querySelector(".jhp-page");
-      if (!page) return;
-      var selectors = [
-        "h1",
-        "h2",
-        "h3",
-        ".page-title",
-        ".page_tit",
-        ".content-title",
-        ".content_tit",
-        ".sub-title",
-        ".sub_tit",
-        ".title_area h1",
-        ".title_area h2",
-        ".title_area h3",
-        ".cont_tit"
-      ];
-      document.querySelectorAll(selectors.join(",")).forEach(function (el) {
-        if (page.contains(el)) return;
-        if ((el.textContent || "").trim() !== "PI") return;
-        var wrapper = el.closest(".page-title,.page_tit,.content-title,.content_tit,.sub-title,.sub_tit,.title_area,.cont_tit");
-        (wrapper || el).style.display = "none";
-      });
-    }
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", hideHostPiTitle);
-    } else {
-      hideHostPiTitle();
-    }
-  }());
-</script>
