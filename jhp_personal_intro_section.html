@@ -373,6 +373,82 @@
       line-height: 1.2;
     }
 
+    .jhp-page .field-equation-card {
+      transition: background-color 180ms ease, border-color 180ms ease;
+    }
+
+    .jhp-page .field-equation-card.is-open {
+      border-color: #d8dee5;
+      background: #f6f7f8;
+    }
+
+    .jhp-page .details-toggle {
+      margin-top: 14px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #fbfcfd;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+
+    .jhp-page .details-toggle:hover,
+    .jhp-page .details-toggle:focus {
+      border-color: #b9c8d2;
+      background: #f1f6f8;
+    }
+
+    .jhp-page .field-details {
+      max-height: 0;
+      margin-top: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 260ms ease, margin-top 180ms ease, opacity 180ms ease;
+    }
+
+    .jhp-page .field-equation-card.is-open .field-details {
+      max-height: 1200px;
+      margin-top: 14px;
+      opacity: 1;
+    }
+
+    .jhp-page .field-details-inner {
+      padding: 14px;
+      border: 1px solid #dfe5ea;
+      border-radius: 6px;
+      background: #fafbfc;
+    }
+
+    .jhp-page .card .field-details p {
+      margin: 0 0 10px;
+      color: #33404c;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .jhp-page .card .field-details p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jhp-page .details-equation {
+      margin: 8px 0 12px;
+      padding: 4px 0;
+      overflow-x: auto;
+    }
+
+    .jhp-page .details-equation mjx-container {
+      font-size: 90%;
+    }
+
+    .jhp-page .details-note a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     .jhp-page .reading {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -511,6 +587,24 @@
       }
     }
   </style>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        packages: {"[+]": ["ams"]},
+        macros: {
+          trd: "\\nabla",
+          quarter: "\\tfrac{1}{4}",
+          half: "\\tfrac{1}{2}",
+          To: "T_{(0)}"
+        }
+      },
+      svg: {
+        fontCache: "global"
+      }
+    };
+  </script>
 
   <header class="hero">
     <div class="identity-row">
@@ -553,7 +647,7 @@
 
   <section class="content-section vision" aria-labelledby="research-vision">
     <h2 id="research-vision">Research Vision</h2>
-    <p>The question is not whether string theory contains gravity. It does. The question is how string theory organizes gravity. Closed strings contain the universal massless sector <math class="math" xmlns="http://www.w3.org/1998/Math/MathML" aria-label="{g, B, phi}"><mo>{</mo><mi>g</mi><mo>,</mo><mspace width="0.167em"></mspace><mi>B</mi><mo>,</mo><mspace width="0.167em"></mspace><mi>&phi;</mi><mo>}</mo></math>. General Relativity successfully geometrizes the metric. The central question is therefore: What geometry describes the full closed-string gravitational multiplet?</p>
+    <p>The question is not whether string theory contains gravity. It does. The question is how string theory organizes gravity. Closed strings contain the universal massless sector \(\{g,\,B,\,\phi\}\). General Relativity successfully geometrizes the metric. The central question is therefore: What geometry describes the full closed-string gravitational multiplet?</p>
 
     <div class="hypothesis">
       <strong>Working Hypothesis</strong>
@@ -570,16 +664,36 @@
         <p>Geometry of doubled-yet-gauged spacetime: connection, curvature, covariant derivatives, and non-Riemannian structures.</p>
       </article>
 
-      <article class="card">
+      <article class="card field-equation-card">
         <h3>Field Equation</h3>
         <p class="theme-year">2018&ndash;</p>
-        <p>Einstein Double Field Equation<br><math class="math" xmlns="http://www.w3.org/1998/Math/MathML" aria-label="G_AB equals T_AB"><msub><mi>G</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub></math><br>A unified field equation for the complete closed-string massless sector.</p>
+        <p>Einstein Double Field Equation<br>\(G_{AB}=T_{AB}\)<br>A unified field equation for the complete closed-string massless sector.</p>
+        <button class="details-toggle" type="button" aria-expanded="false" aria-controls="field-equation-details">▼ Details</button>
+        <div class="field-details" id="field-equation-details" aria-hidden="true">
+          <div class="field-details-inner">
+            <p><strong>The Einstein Double Field Equation</strong></p>
+            <div class="details-equation">\[
+G_{AB}=T_{AB}\,,
+\]</div>
+            <p><strong>unifies the field equations of the complete closed-string massless sector.</strong></p>
+            <p>Whenever the generalized metric admits a Riemannian parametrization, it reduces to the following coupled equations:</p>
+            <div class="details-equation">\[
+\begin{aligned}
+R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}
+&amp;\!=&amp;\! K_{(\mu\nu)}\,,\\
+\half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)&amp;\!=&amp;\! K_{[\mu\nu]}\,,\\
+R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}&amp;\!=&amp;\!\To\,.
+\end{aligned}
+\]</div>
+            <p class="details-note"><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">Read the Core Lecture Notes for further details.</a></p>
+          </div>
+        </div>
       </article>
 
       <article class="card">
         <h3>Propagation</h3>
         <p class="theme-year">2025&ndash;</p>
-        <p>Universal <math class="math" xmlns="http://www.w3.org/1998/Math/MathML" aria-label="O(D,D)"><mi mathvariant="normal">O</mi><mo stretchy="false">(</mo><mi>D</mi><mo>,</mo><mi>D</mi><mo stretchy="false">)</mo></math>-covariant propagation, including the box operator and gravitational waves.</p>
+        <p>Universal \(\mathrm{O}(D,D)\)-covariant propagation, including the box operator and gravitational waves.</p>
       </article>
 
       <article class="card">
@@ -616,5 +730,34 @@
     <p class="bonus-footnote lab-footnote"><a href="https://lab7616.sogang.ac.kr/" target="_blank" rel="noopener noreferrer">Lab7616</a></p>
   </section>
   <footer class="page-footer">Last updated: June 2026</footer>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-svg.js"></script>
+  <script>
+    (function () {
+      function initFieldEquationAccordion() {
+        var page = document.querySelector(".jhp-page");
+        var card = page ? page.querySelector(".field-equation-card") : document.querySelector(".field-equation-card");
+        if (!card) return;
+        var button = card.querySelector(".details-toggle");
+        var details = card.querySelector(".field-details");
+        if (!button || !details) return;
+
+        button.addEventListener("click", function () {
+          var isOpen = card.classList.toggle("is-open");
+          button.setAttribute("aria-expanded", String(isOpen));
+          details.setAttribute("aria-hidden", String(!isOpen));
+          button.textContent = isOpen ? "▲ Details" : "▼ Details";
+
+          if (isOpen && window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise([details]).catch(function () {});
+          }
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initFieldEquationAccordion);
+      } else {
+        initFieldEquationAccordion();
+      }
+    })();
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 </section>
