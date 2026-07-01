@@ -490,6 +490,29 @@
       background: var(--paper);
     }
 
+    .step-card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .step-card-link:hover,
+    .step-card-link:focus {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .step-card-link h3 {
+      color: var(--accent);
+    }
+
+    .step-card-link:hover h3,
+    .step-card-link:focus h3 {
+      color: var(--accent-dark);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     .step-label {
       margin: 0 0 8px;
       color: var(--muted);
@@ -745,11 +768,11 @@ R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\la
           <p>Overview of the question and direction.</p>
         </article>
 
-        <article class="step">
+        <a class="step step-card-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">
           <p class="step-label">Step 2 How?</p>
-          <h3><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">Core Lecture Notes</a></h3>
-          <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">Gravitational Core of Double Field Theory: Lecture Notes,<br>EPJC 2025.</a></p>
-        </article>
+          <h3>Core Lecture Notes</h3>
+          <p>Gravitational Core of Double Field Theory: Lecture Notes,<br>EPJC 2025.</p>
+        </a>
 
       </div>
     </section>
