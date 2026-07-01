@@ -436,12 +436,19 @@
     .jhp-page .details-equation {
       margin: 8px 0 12px;
       padding: 4px 0;
-      overflow-x: auto;
+      overflow: visible;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .jhp-page .details-equation::-webkit-scrollbar {
+      display: none;
     }
 
     .jhp-page .details-equation mjx-container {
       font-size: 90%;
       line-height: 1.8;
+      overflow: visible !important;
     }
 
     .jhp-page .details-note a {
