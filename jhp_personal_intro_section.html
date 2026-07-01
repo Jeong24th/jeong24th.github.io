@@ -148,6 +148,14 @@
       text-decoration: underline;
     }
 
+    .jhp-page .email-mark a[data-copied="true"]::after {
+      content: " copied";
+      margin-left: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+    }
+
     .jhp-page .theme {
       margin: 34px 0 18px;
       display: inline-block;
@@ -624,7 +632,7 @@
       <p class="role"><a href="http://physics.sogang.ac.kr/physics/physics01_5_1.html" target="_blank" rel="noopener noreferrer">Professor of Theoretical Physics</a>, <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">PhD</a>, <a href="http://www.damtp.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Cantab</a></p>
       <p class="department"><a href="http://physics.sogang.ac.kr/physics/index_new.html" target="_blank" rel="noopener noreferrer">Department of Physics</a>, <a href="http://www.sogang.ac.kr/" target="_blank" rel="noopener noreferrer">Sogang University</a></p>
       <p class="address"><a href="https://map.naver.com/p/search/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90" target="_blank" rel="noopener noreferrer">Seoul 04107</a>, <a href="https://www.google.com/maps/place/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90/@37.5509442,126.9388136,17z/data=!3m1!4b1!4m5!3m4!1s0x357c9914ca252349:0x715875d4af1d5974!8m2!3d37.5509442!4d126.9410023" target="_blank" rel="noopener noreferrer">Korea</a></p>
-      <p class="email-mark"><a href="mailto:park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
+      <p class="email-mark"><a class="email-link" href="mailto:park@sogang.ac.kr" data-email="park@sogang.ac.kr" title="Email park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
       </div>
 
       <figure class="portrait">
@@ -740,6 +748,45 @@ R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\la
   <footer class="page-footer">Last updated: June 2026</footer>
   <script>
     (function () {
+      function copyEmailAddress(email) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(email);
+        }
+
+        var textArea = document.createElement("textarea");
+        textArea.value = email;
+        textArea.setAttribute("readonly", "");
+        textArea.style.position = "fixed";
+        textArea.style.top = "-1000px";
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        try {
+          document.execCommand("copy");
+        } catch (error) {}
+
+        document.body.removeChild(textArea);
+        return Promise.resolve();
+      }
+
+      function initEmailCopyFallback() {
+        var page = document.querySelector(".jhp-page");
+        var links = page ? page.querySelectorAll(".email-link[data-email]") : document.querySelectorAll(".email-link[data-email]");
+        Array.prototype.forEach.call(links, function (link) {
+          link.addEventListener("click", function () {
+            var email = link.getAttribute("data-email");
+            if (!email) return;
+
+            copyEmailAddress(email).then(function () {
+              link.setAttribute("data-copied", "true");
+              window.setTimeout(function () {
+                link.removeAttribute("data-copied");
+              }, 1800);
+            });
+          });
+        });
+      }
+
       function initFieldEquationAccordion() {
         var page = document.querySelector(".jhp-page");
         var card = page ? page.querySelector(".field-equation-card") : document.querySelector(".field-equation-card");
@@ -760,10 +807,15 @@ R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\la
         });
       }
 
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initFieldEquationAccordion);
-      } else {
+      function initPageInteractions() {
         initFieldEquationAccordion();
+        initEmailCopyFallback();
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initPageInteractions);
+      } else {
+        initPageInteractions();
       }
     })();
   </script>
