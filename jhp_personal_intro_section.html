@@ -124,6 +124,33 @@
       text-align: left;
     }
 
+    .jhp-page .contact-row {
+      display: inline-grid;
+      grid-template-columns: auto auto;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    .jhp-page .contact-row .address {
+      margin: 0;
+    }
+
+    .jhp-page .contact-row .email-mark {
+      margin: 4px 0 0;
+    }
+
+    .jhp-page .orcid-contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .jhp-page .orcid-contact-link:hover,
+    .jhp-page .orcid-contact-link:focus {
+      text-decoration: none;
+    }
+
     .jhp-page .email-mark {
       margin: 4px 0 0;
       color: var(--muted);
@@ -277,19 +304,6 @@
     .jhp-page .button-link:focus {
       background: #eef6f9;
       text-decoration: none;
-    }
-
-    .jhp-page .orcid-button {
-      width: 38px;
-      min-width: 38px;
-      justify-content: center;
-      padding: 0;
-      border-color: #a6ce39;
-    }
-
-    .jhp-page .orcid-button:hover,
-    .jhp-page .orcid-button:focus {
-      background: #f6fbed;
     }
 
     .jhp-page .orcid-id-icon {
@@ -599,6 +613,10 @@
         padding-left: 17px;
       }
 
+      .jhp-page .contact-row {
+        column-gap: 8px;
+      }
+
       .jhp-page .theme {
         font-size: 26px;
         padding: 10px 13px;
@@ -655,9 +673,14 @@
       </div>
       <p class="role"><a href="http://physics.sogang.ac.kr/physics/physics01_5_1.html" target="_blank" rel="noopener noreferrer">Professor of Theoretical Physics</a>, <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">PhD</a>, <a href="http://www.damtp.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Cantab</a></p>
       <p class="department"><a href="http://physics.sogang.ac.kr/physics/index_new.html" target="_blank" rel="noopener noreferrer">Department of Physics</a>, <a href="http://www.sogang.ac.kr/" target="_blank" rel="noopener noreferrer">Sogang University</a></p>
-      <p class="address"><a href="https://map.naver.com/p/search/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90" target="_blank" rel="noopener noreferrer">Seoul 04107</a>, <a href="https://www.google.com/maps/place/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90/@37.5509442,126.9388136,17z/data=!3m1!4b1!4m5!3m4!1s0x357c9914ca252349:0x715875d4af1d5974!8m2!3d37.5509442!4d126.9410023" target="_blank" rel="noopener noreferrer">Korea</a></p>
-      <p class="email-mark"><a class="email-link" href="mailto:park@sogang.ac.kr" data-email="park@sogang.ac.kr" title="Email park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
+      <div class="contact-row">
+        <div>
+          <p class="address"><a href="https://map.naver.com/p/search/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90" target="_blank" rel="noopener noreferrer">Seoul 04107</a>, <a href="https://www.google.com/maps/place/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90/@37.5509442,126.9388136,17z/data=!3m1!4b1!4m5!3m4!1s0x357c9914ca252349:0x715875d4af1d5974!8m2!3d37.5509442!4d126.9410023" target="_blank" rel="noopener noreferrer">Korea</a></p>
+          <p class="email-mark"><a class="email-link" href="mailto:park@sogang.ac.kr" data-email="park@sogang.ac.kr" title="Email park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
+        </div>
+        <a class="orcid-contact-link" href="https://orcid.org/0000-0002-8309-7850" target="_blank" rel="noopener noreferrer" aria-label="ORCID iD" title="ORCID iD"><span class="orcid-id-icon" aria-hidden="true">iD</span></a>
       </div>
+    </div>
 
       <figure class="portrait">
         <a href="assets/DAD.pdf" target="_blank" rel="noopener noreferrer">
@@ -680,7 +703,6 @@
         <a class="button-link" href="https://arxiv.org/search/?searchtype=author&amp;query=Park%2C+Jeong-Hyuck&amp;abstracts=show&amp;size=200&amp;order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
         <a class="button-link" href="http://inspirehep.net/author/profile/Jeong.Hyuck.Park.1" target="_blank" rel="noopener noreferrer">iNSPIRE</a>
         <a class="button-link" href="https://www.researchgate.net/profile/Jeong_Hyuck_Park" target="_blank" rel="noopener noreferrer">ResearchGate</a>
-        <a class="button-link orcid-button" href="https://orcid.org/0000-0002-8309-7850" target="_blank" rel="noopener noreferrer" aria-label="ORCID iD" title="ORCID iD"><span class="orcid-id-icon" aria-hidden="true">iD</span></a>
       </nav>
     </div>
   </header>
