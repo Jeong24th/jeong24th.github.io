@@ -275,7 +275,7 @@
     }
 
     .question {
-      max-width: 760px;
+      max-width: var(--content-width);
       margin: 6px auto 20px;
       text-align: center;
       font-size: 26px;
@@ -284,7 +284,7 @@
     }
 
     .intro {
-      max-width: 760px;
+      max-width: var(--content-width);
       margin: 0;
       color: #26323d;
     }
@@ -409,12 +409,14 @@
     }
 
     .vision p {
-      max-width: 850px;
+      width: 100%;
+      max-width: 100%;
       margin: 0 0 18px;
     }
 
     .hypothesis {
-      max-width: 850px;
+      width: 100%;
+      max-width: 100%;
       margin-top: 22px;
       padding: 16px 18px;
       border-left: 4px solid var(--accent);
@@ -432,6 +434,7 @@
 
     .cards {
       display: grid;
+      width: 100%;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
@@ -554,6 +557,7 @@
 
     .reading {
       display: grid;
+      width: 100%;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
