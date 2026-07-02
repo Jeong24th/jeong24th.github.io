@@ -93,6 +93,11 @@
       text-align: center;
     }
 
+    .identity-info {
+      display: inline-block;
+      max-width: 100%;
+    }
+
     .hero h1 {
       margin: 0 0 8px;
       font-size: 35.2px;
@@ -137,10 +142,11 @@
     }
 
     .contact-row {
-      display: inline-grid;
-      grid-template-columns: auto auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       column-gap: 10px;
-      align-items: center;
+      align-items: end;
+      width: 100%;
     }
 
     .contact-row .address {
@@ -154,6 +160,7 @@
     .orcid-contact-link {
       display: inline-flex;
       align-items: center;
+      align-self: end;
       justify-content: center;
       text-decoration: none;
     }
@@ -707,14 +714,16 @@
           <h1>Jeong-Hyuck Park</h1>
           <p class="name-native">박정혁 / 朴廷爀</p>
         </div>
-        <p class="role"><a href="http://physics.sogang.ac.kr/physics/physics01_5_1.html" target="_blank" rel="noopener noreferrer">Professor of Theoretical Physics</a>, <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">PhD</a>, <a href="http://www.damtp.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Cantab</a></p>
-        <p class="department"><a href="http://physics.sogang.ac.kr/physics/index_new.html" target="_blank" rel="noopener noreferrer">Department of Physics</a>, <a href="http://www.sogang.ac.kr/" target="_blank" rel="noopener noreferrer">Sogang University</a></p>
-        <div class="contact-row">
-          <div>
-            <p class="address"><a href="https://map.naver.com/p/search/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90" target="_blank" rel="noopener noreferrer">Seoul 04107</a>, <a href="https://www.google.com/maps/place/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90/@37.5509442,126.9388136,17z/data=!3m1!4b1!4m5!3m4!1s0x357c9914ca252349:0x715875d4af1d5974!8m2!3d37.5509442!4d126.9410023" target="_blank" rel="noopener noreferrer">Korea</a></p>
-            <p class="email-mark"><a class="email-link" href="mailto:park@sogang.ac.kr" data-email="park@sogang.ac.kr" title="Email park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
+        <div class="identity-info">
+          <p class="role"><a href="http://physics.sogang.ac.kr/physics/physics01_5_1.html" target="_blank" rel="noopener noreferrer">Professor of Theoretical Physics</a>, <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">PhD</a>, <a href="http://www.damtp.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Cantab</a></p>
+          <p class="department"><a href="http://physics.sogang.ac.kr/physics/index_new.html" target="_blank" rel="noopener noreferrer">Department of Physics</a>, <a href="http://www.sogang.ac.kr/" target="_blank" rel="noopener noreferrer">Sogang University</a></p>
+          <div class="contact-row">
+            <div>
+              <p class="address"><a href="https://map.naver.com/p/search/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90" target="_blank" rel="noopener noreferrer">Seoul 04107</a>, <a href="https://www.google.com/maps/place/%EC%84%9C%EA%B0%95%EB%8C%80%ED%95%99%EA%B5%90/@37.5509442,126.9388136,17z/data=!3m1!4b1!4m5!3m4!1s0x357c9914ca252349:0x715875d4af1d5974!8m2!3d37.5509442!4d126.9410023" target="_blank" rel="noopener noreferrer">Korea</a></p>
+              <p class="email-mark"><a class="email-link" href="mailto:park@sogang.ac.kr" data-email="park@sogang.ac.kr" title="Email park@sogang.ac.kr">park<span class="at">AT</span>sogang.ac.kr</a></p>
+            </div>
+            <a class="orcid-contact-link" href="https://orcid.org/0000-0002-8309-7850" target="_blank" rel="noopener noreferrer" aria-label="ORCID iD" title="ORCID iD"><span class="orcid-id-icon" aria-hidden="true">iD</span></a>
           </div>
-          <a class="orcid-contact-link" href="https://orcid.org/0000-0002-8309-7850" target="_blank" rel="noopener noreferrer" aria-label="ORCID iD" title="ORCID iD"><span class="orcid-id-icon" aria-hidden="true">iD</span></a>
         </div>
         </div>
 
