@@ -737,6 +737,48 @@
         overflow-x: auto;
       }
     }
+
+    @media (max-width: 520px) {
+      .identity-row > div:first-child {
+        display: contents;
+      }
+
+      .name-block {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .identity-info {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        margin-top: 4px;
+      }
+
+      .institution-info {
+        display: block;
+        width: 100%;
+      }
+
+      .contact-row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        column-gap: 10px;
+        width: 100%;
+      }
+
+      .orcid-contact-link {
+        flex: 0 0 auto;
+        margin-bottom: 1px;
+      }
+
+      .portrait {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+      }
+    }
   </style>
   <script>
     window.MathJax = {
