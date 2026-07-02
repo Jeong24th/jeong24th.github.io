@@ -440,6 +440,8 @@
     }
 
     .card {
+      width: 100%;
+      min-width: 0;
       min-height: 152px;
       padding: 20px;
       border: 1px solid var(--line);
@@ -563,6 +565,8 @@
     }
 
     .step {
+      width: 100%;
+      min-width: 0;
       min-height: 152px;
       padding: 20px;
       border-top: 3px solid var(--accent);
@@ -746,6 +750,14 @@
       .cards,
       .reading {
         grid-template-columns: 1fr;
+      }
+
+      .cards > .card {
+        min-height: 250px;
+      }
+
+      .reading > .step {
+        min-height: 176px;
       }
 
       .extra-question {

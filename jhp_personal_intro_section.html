@@ -381,6 +381,8 @@
     }
 
     .jhp-page .card {
+      width: 100%;
+      min-width: 0;
       min-height: 152px;
       padding: 20px;
       border: 1px solid var(--line);
@@ -504,6 +506,8 @@
     }
 
     .jhp-page .step {
+      width: 100%;
+      min-width: 0;
       min-height: 152px;
       padding: 20px;
       border-top: 3px solid var(--accent);
@@ -687,6 +691,14 @@
       .jhp-page .cards,
       .jhp-page .reading {
         grid-template-columns: 1fr;
+      }
+
+      .jhp-page .cards > .card {
+        min-height: 250px;
+      }
+
+      .jhp-page .reading > .step {
+        min-height: 176px;
       }
 
       .jhp-page .extra-question {
