@@ -60,6 +60,7 @@
       --line: #d8e1e8;
       --paper: #ffffff;
       --soft: #f6f9fb;
+      --content-width: 900px;
     }
 
     * {
@@ -118,7 +119,7 @@
     }
 
     .jhp-page {
-      max-width: 1000px;
+      max-width: calc(var(--content-width) + 48px);
       margin: 0 auto;
       padding: 56px 24px 72px;
     }
@@ -685,6 +686,16 @@
       font-size: 12px;
       line-height: 1.4;
       text-align: center;
+    }
+
+    .hero,
+    .jhp-page > section,
+    .closing-question,
+    .closing-note,
+    .page-footer {
+      max-width: var(--content-width);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 760px) {
