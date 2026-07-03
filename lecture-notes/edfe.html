@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -101,7 +110,6 @@
 <p>By employing the fully covariant derivatives ([covD]), ([covdiv]), ([coco2]), ([covDirac]), and ([RRfs]), it is possible to couple the pure DFT action ([pureDFT]) to various forms of matter,</p>
 <div class="equation">\[
 S_{\DFT-\Matter}=\int_{\Sigma_{D}}~e^{-2d}\So\,+\,\cL_{\Matter}(\Psi,\cD\Psi;d,V,\brV)\,,
-\label{SDFTM}
 \]</div>
 <p>where \(\cL_{\Matter}(\Psi,\cD\Psi;d,V,\brV)\) represents a Lagrangian density of unit weight for generic matter fields \(\Psi\) which are minimally coupled to the gravitational sector \(\{d,V_{Ap},\brV_{A\brp}\}\).</p>
 <p>Generalising the case of  pure DFT ([deltaEH]), while ignoring any surface integral and assuming that \(\cL_{\Matter}\) is local Lorentz invariant ([deltaVVVV]), the infinitesimal variation of the full action ([SDFTM]) is given by [Angus:2018mep]:</p>
@@ -122,7 +130,6 @@ e^{-2d}\Big[4\brV_{A}{}^{\brq}\delta V^{Ap}\big(S_{p\brq}-K_{p\brq}\big)-2\delta
 \ba{ll}
 T_{AB}=4V_{[A}{}^{p}\brV_{B]}{}^{\brq}K_{p\brq}-\half\cJ_{AB}\To\,,\qquad&\quad\na_{A}T^{AB}=0\,,
 \ea
-\label{EMT}
 \]</div>
 <p>where the conservation condition requires the Euler-Lagrange equations for the matter field. Notably, when matter couples directly to the generalised metric rather than the vielbeins, we simply have</p>
 <div class="equation">\[
@@ -131,7 +138,6 @@ K_{p\brq}=-e^{2d}\frac{\delta \cL_{\Matter}}{\delta\cH_{AB}}V_{Ap}\brV_{B\brq}\,
 <p>The unified field equation of DFT is obtained by equating the Einstein curvature ([EinsteinC])  with  the energy-momentum tensor ([EMT]):</p>
 <div class="equation">\[
 G_{AB} = T_{AB}\,,
-\label{EDFE}
 \]</div>
 <p>which was dubbed the Einstein Double Field Equation (EDFE) [Angus:2018mep].</p>
 <p>On a \((0,0)\) Riemannian background,  the energy-momentum tensor can be parametrised as</p>
@@ -151,7 +157,6 @@ R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{
 \half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)&\!=&\! K_{[\mu\nu]}\,,\\
 R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}&\!=&\!\To\,.
 \ea
-\label{EDFE00}
 \]</div>
 <p>Each equation can be understood as the equation of motion  of the full action \(S_{\DFT-\Matter}\) for \(g_{\mu\nu}\), \(B_{\mu\nu}\), and \(d\),  respectively (rather than \(g,B,\phi\)).   In view of \(d=\phi-\frac{1}{2}\ln\sqrt{-g}\) ([00d]), the traditional energy-momentum tensor in GR is  given by  \(K_{(\mu\nu)}\) and \(\To\) [Lee:2023boi]:</p>
 <div class="equation">\[
@@ -163,20 +168,17 @@ T_{\mu\nu}^{\scriptscriptstyle{\mathbf{GR}}}=e^{-2\phi}\left[K_{(\mu\nu)}-\frac{
 \trd^{\mu}K_{(\mu\nu)}-2\partial^{\mu}\phi\,K_{(\mu\nu)}+\half H_{\nu}{}^{\lambda\mu}K_{[\lambda\mu]}-\half\partial_{\nu}\To=0\,,\quad&\qquad
 \trd_{\mu}\!\left(e^{-2\phi}K^{[\mu\nu]}\right)=0\,,
 \ea
-\label{con00}
 \]</div>
 <p>which are consistent with the geometric counterparts ([dBI00]).  In particular, the middle equation in ([EDFE00]) and the latter in ([con00]) represent the stringy two-form generalisations of Maxwell’s equations ([Maxwell2]) and the corresponding conservation laws: \(\trd_{\lambda}F^{\lambda\mu}=J^{\mu}\) and \(\trd_{\mu}J^{\mu}=0\).  Strings, unlike point particles, couple to the two-form \(B\)-field rather than the one-form Maxwell vector potential.</p>
 <p>It is worth noting that, after subtracting the third equation from the trace of the first in ([EDFE00]), we can derive a Klein–Gordon-type equation [Choi:2022srv]:</p>
 <div class="equation">\[
 \Box\big(e^{-2\phi}\big)=\big(K_{\mu}{}^{\mu}-\To+\textstyle{\frac{1}{6}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}\big)e^{-2\phi}\,,
-\label{Chameleon}
 \]</div>
 <p>where the quantity inside the parentheses on the right-hand side of the equality can be interpreted as the effective or "Chameleon mass&#x27;&#x27; [Khoury:2003aq,  Brax:2004qh] of the dilaton scalar field, \(e^{-2\phi}\). This interpretation links the dilaton dynamics to a scalar field with an effective mass that varies based on other fields and their interactions, similar to scalar-tensor theories where the scalar field&#x27;s mass adjusts to its environment.</p>
 <h3 id="tells-matter-how-to-couple-to-dft-equivalence-principle-holds-in-string-frame">\(\ODD\) Tells Matter How to Couple to DFT: Equivalence Principle Holds in String Frame</h3>
 <p>The EDFE ([EDFE])  provides an \(\ODD\)-symmetric extension of Wheeler&#x27;s famous insight into  gravity: “<em>Matter tells spacetime how to curve</em>.” The complementary notion, “<em>Spacetime tells matter how to move</em>,” is realised through the \(\ODD\)-symmetric minimal coupling of the gravitational fields \(\{V_{Ap}, \brV_{B\brq}, d\}\) to matter, as demonstrated in ([particleaction]), ([stringaction]), ([YMaction]), ([cDT]),  ([cDrho]), and ([SDFTM]). Consequently, the coupling of the Riemannian trio \(\{g_{\mu\nu}, B_{\mu\nu}, \phi\}\) to the Standard Model of particle physics is is fully dictated by the \(\ODD\) symmetry principle, ensuring the emergence of a fixed structure that would not otherwise arise [Choi:2015bga]. Schematically, from ([YMaction]) and ([cDrho]), the action for a scalar field \(\Phi\), electromagnetic fields \(A_{\lambda}, F_{\mu\nu}\), and a spinorial fermion \(\psi\) with diffeomorphic weight \(\omega = \frac{1}{2}\) is given by:</p>
 <div class="equation">\[
 \dis{\int_{\Sigma_D}\sqrt{-g}e^{-2\phi}\left(-g^{\mu\nu}\partial_{\mu}\Phi\partial_{\nu}\Phi-{\frac{1}{4\alpha}}F_{\mu\nu}F^{\mu\nu}\right)+\bar{\psi}\gamma^{\lambda}\left( \trd_{\lambda}\psi-iA_{\lambda}\psi + {\frac{1}{24}} H_{\lambda\mu\nu} \gamma^{\mu\nu}\psi \right)}\,.
-\label{PhiFpsi}
 \]</div>
 <p>This indicates that bosons couple to the string dilaton, while fermions couple to the \(H\)-flux. As a result, they contribute distinct components to the energy-momentum tensor: bosons generate \(\To\),  and  fermions generate  \(K_{[\mu\nu]}\),  alongside the shared components \(K_{(\mu\nu)}\).  With additional components, the gravitational physics in DFT is inherently richer than in General Relativity:  \(D^2+1\) <em> vs. </em> \(\frac{1}{2}D(D+1)\) (off-shell) degrees of freedom.</p>
 <p>However,  after integrating out the auxiliary potential \(\fa^{A}\), the \(\ODD\)-symmetric doubled particle action ([particleaction]) reduces,  on a Riemannian background ([00H]),    to the standard (undoubled) relativistic point-particle action  minimally coupled solely to the string frame metric \(g_{\mu\nu}\). Since the \(\ODD\) singlet dilaton \(d\), or \(e^{-2d}\), carries a nontrivial diffeomorphism weight, it cannot couple to the diffeomorphism-invariant doubled particle action ([particleaction]). Consequently, the free-falling motion of particles along geodesics - free from any fifth force - preserves the equivalence principle, not in  Einstein frame but in string frame [Ko:2016dxa]. This result aligns with string theory&#x27;s foundational premise that matter consists of vibrating tiny strings, which naturally couple to the string frame metric.</p>

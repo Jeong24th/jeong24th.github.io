@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -106,7 +115,6 @@
 <p>The DFT counterpart to the Schwarzschild geometry in GR is a three-parameter family of vacuum solutions to the \({D=4}\) EDFE, <em>i.e.</em> \(G_{AB}=0\) or ([3beta]). These solutions can be traced back to the work of Burgess, Myers, and Quevedo in 1994 [Burgess:1994kq], who obtained them by performing \(\mathbf{SL}(2,\mathbb{R})\) S-duality rotations on a dilaton–metric solution. The solutions were later re-derived [Ko:2016dxa] as the most general, spherically symmetric, static, asymptotically flat, vacuum geometry of \({D=4}\) DFT. We present the solutions with three constants \(\{h,a,b\}\) in an isotropic coordinate system [Choi:2022srv], where the metric takes the form, with \(r=\sqrt{\vec{x}{\cdot\vec{x} }}\),</p>
 <div class="equation">\[
 \rd s^{2}= g_{tt}(r)\,\rd t^{2}+g_{rr}(r)\,\rd \vec{x}\cdot\rd \vec{x}\,.
-\label{vacuum}
 \]</div>
 <p>The two significant  components of the metric  are</p>
 <div class="equation">\[
@@ -127,7 +135,6 @@ e^{2\phi}=\gamma_{+}\left(\frac{4r-\sqrt{a^{2}+b^{2}}}{4r+\sqrt{a^{2}+b^{2}}}\ri
 \ba{l}
 H_{(3)}= h\sin\vartheta\,\rd t\wedge\rd\vartheta\wedge\rd\varphi=h\,\rd t\wedge\left(\dis{\frac{\epsilon_{ijk}x^{i\,}{\rd x^{j}\wedge\rd x^{k}}}{2r^3}}\right)\,.
 \ea
-\label{eH}
 \]</div>
 <p>Several observations can be made about these solutions.</p>
 <p class="item"><strong><em>i)</em></strong> If \(b=h=0\), with \(h/b\rightarrow 0\),  the solution reduces to the Schwarzschild geometry.</p>
@@ -162,7 +169,6 @@ Bg^{-1}=\big({-g^{-1}B}\big)^{T}=\!\left(\!\ba{clcc}
 0&0&0&0\\
 h\cos\vartheta\cF&0&0&0\ea\!\right)\,,
 \ea
-\label{gB}
 \]</div>
 <p>and</p>
 <div class="equation">\[
@@ -175,13 +181,11 @@ g-Bg^{-1}B=\left(\ba{cccc}
 \ea\right)\,,
 \quad\quad e^{-2d}=\cR^2\sin\vartheta\,.
 \ea
-\label{gBgBd}
 \]</div>
 <p>Only positive powers of \(\cF(y)\) appear in ([gB]) and ([gBgBd]) after cancellation of the  negative powers.  This {sufficiently}  implies that, as the \(B\)-field gauge transformation is a part of doubled-yet-gauged diffeomorphisms, the curvature singularity as characterised within Riemannian geometry is to be identified as a coordinate singularity within  DFT [Morand:2021xeq]. When  \(\cF(y)\) vanishes at \({y=b_{\pm}}\),  the upper-left block of the generalised metric, corresponding to \(g^{-1}\), becomes degenerate,  no invertible Riemannian metric is defined, and thus the geometry is non-Riemannian. From the perspective of DFT, the geometry is regular everywhere [Morand:2021xeq]: it is  non-Riemannian at \(y=b_{\pm}\) and  Riemannian elsewhere.     In fact,    it is  the same type of non-Riemannian  geometry, \((n,\brn)=(1,1)\), as    non-relativistic string theory [Gomis:2000bd], as can be seen from ([gB]) and ([gBgBd]) [Ko:2015rha, Morand:2017fnv].</p>
 <p class="item"><strong><em>iii)</em></strong> Matching with  the  parametrised Post-Newtonian (PPN) formalism [Will:1972zz, Will:2014kxa],</p>
 <div class="equation">\[
 \rd s^{2}=-\left(1-\frac{2MG}{r}+\frac{2\betappn (MG)^2}{r^{2}}+\cdots\right)\!\rd t^{2}+\left(1+\frac{2\gammappn MG}{r}+\cdots\right)\rd x^{i}\rd x^{j}\delta_{ij}\,,
-\label{PPN}
 \]</div>
 <p>we can identify the Newtonian mass and the  Eddington-Robertson-Schiff parameters [Choi:2022srv],</p>
 <div class="equation">\[
@@ -190,13 +194,11 @@ g-Bg^{-1}B=\left(\ba{cccc}
 \betappn=1+\left(\frac{h}{a+b\sqrt{1-h^{2}/b^{2}}}\right)^2\,,\quad&~
 \gammappn=1-\frac{2b\sqrt{1-h^{2}/b^{2}}}{a+b\sqrt{1-h^{2}/b^{2}}}\,.
 \ea
-\label{Mbg}
 \]</div>
 <p class="item"><strong><em>iv)</em></strong> The vacuum solution ([vacuum]) represents the external geometry of a compact spherical object, such as a star. The full EDFE ([EDFE00]) then gives an integral formula for the Newtonian mass [Choi:2022srv],</p>
 <div class="equation">\[
 MG
 =\frac{1}{4\pi}\int\rd^{3}x~e^{-2d}\left( -K_{t}{}^{t}-\frac{1}{2}H_{t\vartheta\varphi}H^{t\vartheta\varphi}\right)\,,
-\label{MGint}
 \]</div>
 <p>where the integration occurs within the star&#x27;s interior. Assuming the star&#x27;s geometry is regular, the integral of the squared electric \(H\)-flux term in ([MGint]) diverges unless \({h = 0}\). To ensure physical consistency, we impose a weak energy condition, \(-K_{t}{}^{t} \geq 0\), and assume a finite Newtonian mass, <em>i.e. </em>\(MG \ll \infty\). Under these conditions, we deduce that the electric \(H\)-flux must be trivial: \({h = 0}\). Consequently, from ([Mbg]), this leads to \({\betappn = 1}\), which aligns with the result in GR, or correspondingly, the  Schwarzschild geometry.  The constants \(a\) and \(b\) are then determined as follows:</p>
 <div class="equation">\[
@@ -206,7 +208,6 @@ a&=&\dis{\frac{1}{4\pi}\int\rd^3 x~e^{-2d}
 b&=&\dis{\frac{1}{4\pi}\int\rd^3 x~e^{-2d}
 \left(-K_{\mu}{}^{\mu}+\To-H_{r\vartheta\varphi}H^{r\vartheta\varphi}\right)\,,}
 \ea
-\label{ab}
 \]</div>
 <p>with their square sum satisfying a nontrivial  relation:  given the star&#x27;s radius \(r_\star\),</p>
 <div class="equation">\[
@@ -218,7 +219,6 @@ b&=&\dis{\frac{1}{4\pi}\int\rd^3 x~e^{-2d}
 <p>From ([Mbg]), \(\gammappn\) is thereby determined as:</p>
 <div class="equation">\[
 \gammappn=1+\frac{\dis{\int}\rd^{3}x~e^{-2d}\big(K_{\mu}{}^{\mu}-\To+H_{r\vartheta\varphi}H^{r\vartheta\varphi}\big)}{\dis{\int}\rd^{3}x~e^{-2d}\big(-K_{t}{}^{t}\big)}\,,
-\label{gammappn}
 \]</div>
 <p>where the numerator corresponds to the Chameleon mass of the string dilaton ([Chameleon]) and the denominator to the Newtonian mass of the star ([MGint]).</p>
 <p class="item"><strong><em>v)</em></strong> The current stringent observational bounds on gravity in the solar system  are given by \(\gammappn=1+(2.1\pm 2.3)\times 10^{-5}\),  as determined from the Shapiro time-delay measurements by the Cassini spacecraft [Will:2014kxa,  Bertotti:2003rm]. Consequently, DFT can successfully pass solar system tests, provided the dilatonic Chameleon mass is at least \(10^{-5}\) times smaller than the Sun&#x27;s Newtonian mass.</p>
@@ -234,22 +234,18 @@ e^{2\phi(\eta)-2\phi_{0}}=\frac{1}{2}\!
 \frac{\tanh\left(\frac{\eta-\eta_{0}}{l}+\frac{\zeta}{2}\right)}{\tanh\frac{\zeta}{2}}\right]^{\sqrt{3}}+\frac{1}{2}\!
 \left[1-\sigma\sqrt{1-\frac{(\hh l\sinh\zeta)^2}{12a_{0}^4}}\right]\!\left[
 \frac{\tanh\left(\frac{\eta-\eta_{0}}{l}+\frac{\zeta}{2}\right)}{\tanh\frac{\zeta}{2}}\right]^{\!-\sqrt{3}\,}\,,
-\label{analyticphi}
 \]</div>
 <p>the (homogeneous &amp; isotropic)   magnetic \(H\)-flux,</p>
 <div class="equation">\[
 H_{(3)}=\frac{\hh\, r^2 \sin\vartheta\,\rd r\wedge\rd\vartheta\wedge\rd\varphi}{\sqrt{1+r^2/l^2}}\,,
-\label{mHflux}
 \]</div>
 <p>and the Friedmann-Lema\^{i}tre-Robertson-Walker metric with \(k=-1/l^{2}&lt;0 \),</p>
 <div class="equation">\[
 \rd s^2=a^2(\eta)\left[-\rd\eta^2+\frac{\rd r^2}{1+ r^2/l^2}+r^2\rd\vartheta^2+r^2{\sin^2\!\vartheta\,}\rd\varphi^2\right]\,,
-\label{FRWconformal}
 \]</div>
 <p>of which the scale factor  is given by the following expression:</p>
 <div class="equation">\[
 a^{2}(\eta)=a_{0}^2\,e^{2\phi(\eta)-2\phi_{0}}\,\frac{\sinh\left({2(\eta-\eta_{0})}/{l}+\zeta\right)}{\sinh\zeta}\,.
-\label{SF}
 \]</div>
 <p>Here, \(\zeta\) is a constant and \(\sigma\) is a sign factor (\({\sigma^2=1}\)), both determined by the parameters \(\{H_{0}, l, \hh\}\). The Hubble parameter and two density parameters are  defined at arbitrary conformal time \(\eta\) as</p>
 <div class="equation">\[
@@ -259,7 +255,6 @@ H=\frac{1}{a^2}\frac{\rd a}{\rd\eta}\,,}\qquad&\qquad
 \dis{\Omega_{k}=\frac{1}{l^2a^2H^2}\,,}\qquad&\qquad
 \dis{\Omega_{\hh}=\frac{\hh^2}{12a^6H^2}\,.}
 \ea
-\label{HOO}
 \]</div>
 <p>At the specific conformal time \(\eta = \eta_0\), the analytic solution for the scale factor ([SF]) yields the Hubble constant, \(H_0 = H(\eta_0)\),  as:</p>
 <div class="equation">\[
@@ -274,7 +269,6 @@ H_{0}=\frac{1}{2a_{0}l\sinh\zeta}\left[2\cosh\zeta+
 \sqrt{\frac{2\Omega_{0,k}}{2+\Omega_{0,k}+3\Omega_{0,\hh}-\sqrt{3+6\Omega_{0,k}+6\Omega_{0,\hh}}}}}\,,\quad&\qquad
 \dis{\sigma=\frac{\,\sqrt{3}-\sqrt{1+2\Omega_{0,k}+2\Omega_{0,\hh}}\,}{\,\left|\sqrt{3}-\sqrt{1+2\Omega_{0,k}+2\Omega_{0,\hh}}\right|\,}}\,.
 \ea
-\label{szs}
 \]</div>
 <p>In other words, \({\sigma = -1} \) if \( \Omega_{0,k} + \Omega_{0,\hh} &gt; 1\); otherwise, \({\sigma = +1}\).</p>
 <p>Some comments are in order, as discussed in [Lee:2023boi].</p>
@@ -282,13 +276,11 @@ H_{0}=\frac{1}{2a_{0}l\sinh\zeta}\left[2\cosh\zeta+
 <div class="equation">\[
 q=-\frac{1}{H^2a}\Big(\frac{\rd~}{a\rd \eta}\Big)^{2}a
 =1-\left[\frac{2\left(\frac{\,\rd\phi}{a\rd \eta}\right)^2}{3H^2}+\Omega_{k}+5\Omega_{\hh}\,\right]=-\Big[1+2\Omega_{k}+6\Omega_{\hh}-\sqrt{3(1+2\Omega_{k}+2\Omega_{\hh})}\,\Big]\,,
-\label{decq}
 \]</div>
 <p>which can be readily shown to assume negative values, particularly when \({\Omega_k + \Omega_\hh &gt; 1}\). Such acceleration is only achievable in  string frame, where the string frame metric minimally couples to point particles ([particleaction]), thereby ensuring that the equivalence principle remains valid and simultaneously exhibiting a negative sign in the dilaton&#x27;s kinetic term ([DFT00]). The dilaton drives the acceleration in string frame, without any need for dark energy, but not in Einstein frame.</p>
 <p class="item"><strong><em>ii)</em></strong> As dictated by the \(\ODD\) symmetry principle, the string dilaton is expected to couple to gauge bosons, as demonstrated in ([PhiFpsi]), implying that the  fine-structure constant is  effectively proportional to the  exponential of the string  dilaton:</p>
 <div class="equation">\[
 \alpha_{\rm{eff.}}\!(\eta)=\alpha\, e^{2\phi(\eta)}\,.
-\label{alphaeff}
 \]</div>
 <p>However, observational constraints from the absorption spectra of quasars impose stringent limits on the temporal variation of the fine-structure constant [King:2012id, Wilczynska:2015una, Martins:2017qxd, Wilczynska:2020rxx], and consequently on the evolution of the string dilaton \(\phi\). The analytic formula ([analyticphi]) shows that the string dilaton converges at future infinity, \(\eta \rightarrow \infty\). Replacing \(l\) and \(\zeta\) with imaginary numbers, \(-il\) and \(i\zeta\), yields the exact geometry of a closed Universe (\(k &gt; 0\)) (see [Copeland:1994vi] for the explicit expression). However, this substitution transforms the converging hyperbolic tangent functions in ([analyticphi]) into diverging tangent functions, preventing the dilaton \(\phi\) from stabilising during cosmic evolution, which conflicts with the observational constraints from  quasars. Similarly, when \(k = 0\), the hyperbolic tangent functions reduce to linear behaviour in time, which is equally inconsistent with the observational requirements. These results underscore the necessity of an open Universe (\(k &lt; 0\)) to ensure that the dilaton \(\phi\) evolves slowly and remains convergent throughout the cosmic evolution.</p>
 <p class="item"><strong><em>iii)</em></strong> The vacuum geometry of the open Universe given in  ([analyticphi]) and ([SF]), in particular the case with trivial \(H\)-flux (\({\hh=0}\) in ([mHflux])), demonstrates remarkable agreement with late-time cosmological observations, including type Ia supernovae data [Scolnic:2021amr, Riess:2021jrx] and quasar absorption spectra [King:2012id, Wilczynska:2015una, Martins:2017qxd, Wilczynska:2020rxx], as depicted in Figure [FIGcosmo], reproduced from [Lee:2023boi]. Such observations probe the evolution of the Hubble parameter and the potentially varying fine-structure constant up to redshift \(z=a^{-1}-1\approx 7\). Through an analysis of  Bayesian inference, the Hubble constant and the curvature density parameter are  estimated  to be</p>
@@ -307,7 +299,6 @@ H_0 \simeq 71.29    \pm   0.12\,\mathrm{km/s/Mpc}\,,\quad&\qquad
 \dis{\lim_{\eta\rightarrow\infty}\Omega_{k}=1\,,}\quad&\qquad
 \dis{\lim_{\eta\rightarrow\infty}\Omega_{\hh}=0\,.}
 \ea
-\label{HOO}
 \]</div>
 <p>In other words, there is no coincidence problem.</p>
 <p class="item"><strong><em>iv)</em></strong> Extending to higher redshifts, a bounce is expected to have occurred approximately 13.7 gigayears ago. Coincidently, this is comparable to the "age&#x27;&#x27; of the flat Universe in \(\Lambda\)CDM.</p>

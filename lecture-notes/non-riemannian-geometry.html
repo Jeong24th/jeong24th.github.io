@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -104,7 +113,6 @@
 \ba{ll}
 \cH_{AB}=\cH_{BA}\,,\qquad&\qquad\cH_{A}{}^{C}\cH_{B}{}^{D}\cJ_{CD}=\cJ_{AB}\,,
 \ea
-\label{cHdef}
 \]</div>
 <p>and the  exponentiated form of the dilaton, \(e^{-2d}\), serves as the integral measure in DFT: it is a scalar density of unit weight.  In words, the generalised metric  squares  to the identity: \(\cH_{A}{}^{B}\cH_{B}{}^{C}=\delta_{A}{}^{C}\). Their generalised Lie derivatives ([hcL]) are explicitly given by</p>
 <div class="equation">\[
@@ -118,7 +126,6 @@
 P_{AB}=P_{BA}=\half(\cJ_{AB}+\cH_{AB})\,,\quad&\quad P_{A}{}^{B}P_{B}{}^{C}=P_{A}{}^{C}\,,\\
 \brP_{AB}=\brP_{BA}=\half(\cJ_{AB}-\cH_{AB})\,,\quad&\quad \brP_{A}{}^{B}\brP_{B}{}^{C}=\brP_{A}{}^{C}\,,
 \ea
-\label{P1}
 \]</div>
 <p>which are orthogonal and complete:</p>
 <div class="equation">\[
@@ -126,7 +133,6 @@ P_{AB}=P_{BA}=\half(\cJ_{AB}+\cH_{AB})\,,\quad&\quad P_{A}{}^{B}P_{B}{}^{C}=P_{A
  P_{A}{}^{B}\brP_{B}{}^{C}=0\,,\qquad&\qquad
 P_{A}{}^{B}+\brP_{A}{}^{B}=\delta_{A}{}^{B}\,.
 \ea
-\label{P2}
 \]</div>
 <p>Taking the "square roots&quot; of the  projection matrices, we introduce a pair of vielbeins, \(V_{Ap}\) and \(\brV_{B\brq }\):</p>
 <div class="equation">\[
@@ -134,12 +140,10 @@ P_{A}{}^{B}+\brP_{A}{}^{B}=\delta_{A}{}^{B}\,.
 P_{AB}=V_{A}{}^{p}V_{B}{}^{q}\eta_{pq}\,,\qquad&\qquad
 \brP_{AB}=\brV_{A}{}^{\brp}\brV_{B}{}^{\brq}\breta_{\brp\brq}\,.
 \ea
-\label{PPVV}
 \]</div>
 <p>The vielbeins satisfy the following defining property:</p>
 <div class="equation">\[
 V_{A}{}^{p}V_{B}{}^{q}\eta_{pq}+\brV_{A}{}^{\brp}\brV_{B}{}^{\brq}\breta_{\brp\brq}=\cJ_{AB}\,.
-\label{VVdef1}
 \]</div>
 <p>Essentially,  viewed as a \(({D+D}) \times ({D+D})\) matrix, the pair \(\big(V_{A}{}^{p}, \brV_{A}{}^{\brp}\big)\) simultaneously diagonalises \(\cJ_{AB}\) and \(\cH_{AB}\) into \(\diag(\eta, +\breta)\) and \(\diag(\eta, -\breta)\), respectively. Furthermore, since the left inverse coincides with the right inverse, this property [VVdef1] is equivalent to:</p>
 <div class="equation">\[
@@ -148,7 +152,6 @@ V_{Ap}V^{A}{}_{q}=\eta_{pq}\,,\qquad&\qquad
 \brV_{A\brp}\brV^{A}{}_{\brq}=\breta_{\brp\brq}\,,\qquad&\qquad
 V_{Ap}\brV^{A}{}_{\brq}=0\,.
 \ea
-\label{VVdef2}
 \]</div>
 <p>It follows that</p>
 <div class="equation">\[
@@ -162,7 +165,6 @@ P_{A}{}^{B}\brV_{B\brp}=0=\brP_{A}{}^{B}V_{Bp}\,.
 <p>The generalised metric and  the vielbeins are constrained by the properties ([cHdef]), ([VVdef1]), and ([VVdef2]). Consequently, their infinitesimal variations satisfy the following relations: (Footnote: Observe the implicit index contractions in \((P\delta\cH\brP)_{AB}\), where the expression expands as \(P_{A}{}^{C}\delta\cH_{CD}\brP^{D}{}_{B}\).)</p>
 <div class="equation">\[
 \delta\cH_{AB}=(P\delta\cH\brP)_{AB}+(\brP\delta\cH P)_{AB}\,,
-\label{deltacH}
 \]</div>
 <p>and</p>
 <div class="equation">\[
@@ -170,7 +172,6 @@ P_{A}{}^{B}\brV_{B\brp}=0=\brP_{A}{}^{B}V_{Bp}\,.
 \delta V_{Ap}=\brV_{A\brq}\brV^{B\brq}\delta V_{Bp}+V_{A}{}^{q}V_{B[q}\delta V^{B}{}_{p]}\,,\quad&\quad
 \delta \brV_{A\brp}=V_{Aq}V^{Bq}\delta \brV_{B\brp}+\brV_{A}{}^{\brq}\brV_{B[\brq}\delta \brV^{B}{}_{\brp]}\,,
 \ea
-\label{deltaVVVV}
 \]</div>
 <p>where  the second terms on the right-hand sides correspond to local Lorentz rotations.</p>
 <h3 id="parametrisations-riemannian-vs-non-riemannian">Parametrisations: Riemannian  <em> vs.</em>  non-Riemannian</h3>
@@ -187,7 +188,6 @@ B_{\kappa\rho}\cH^{\rho\nu}+X^{i}_{\kappa}Y_{i}^{\nu}
 +2X^{i}_{(\kappa}B_{\lambda)\rho}Y_{i}^{\rho}
 -2\brX^{\bri}_{(\kappa}B_{\lambda)\rho}\brY_{\bri}^{\rho}
 \ea\right)\,.
-\label{cHFINAL}
 \]</div>
 <p>Here, \(\cH\) and \(\cK\) are symmetric,    \(B\) is skew-symmetric,</p>
 <div class="equation">\[
@@ -202,14 +202,12 @@ B_{\mu\nu}=-B_{\nu\mu}\,;
 \cH^{\mu\nu}X^{i}_{\nu}=0=\cH^{\mu\nu}\brX^{\bri}_{\nu}\,,\quad&\qquad
 \cK_{\mu\nu}Y_{j}^{\nu}=0=\cK_{\mu\nu}\brY_{\brj}^{\nu}\,;
 \ea
-\label{HXX}
 \]</div>
 <p>and  a completeness relation must hold,</p>
 <div class="equation">\[
 \cH^{\mu\rho}\cK_{\rho\nu}
 +Y_{i}^{\mu}X^{i}_{\nu}+\brY_{\bri}^{\mu}\brX^{\bri}_{\nu}
 =\delta^{\mu}{}_{\nu}\,.
-\label{COMPL}
 \]</div>
 <p>The linear independence of the kernel’s zero-eigenvectors implies that</p>
 <div class="equation">\[
@@ -229,7 +227,6 @@ Y^{\mu}_{i}\brX_{\mu}^{\brj}=0=
 \left(X^{i}_{\mu}\,,\,Y_{i}^{\mu}\,,\,\brX^{\bri}_{\mu}\,,\,\brY_{\bri}^{\nu}\right)\quad&\longmapsto&\quad
 \left(X^{j}_{\mu}\,R_{j}{}^{i}\,,\,R^{-1}{}_{i}{}^{j}\,Y_{j}^{\nu}\,,\,\brX^{\brj}_{\mu}\,\brR_{\brj}{}^{\bri}\,,\,\brR^{-1}{}_{\bri}{}^{\brj}\,\brY_{\brj}^{\nu}\right)\,,
 \ea
-\label{GL2}
 \]</div>
 <p>and, with  arbitrary local parameters, \(V_{\mu i},\brV_{\mu\bri}\), under the following transformations,</p>
 <div class="equation">\[
@@ -242,7 +239,6 @@ B_{\mu\nu}~~&\longmapsto&~~ B_{\mu\nu}
 +2X^{i}_{[\mu}\brX^{\bri}_{\nu]}\left(Y_{i}^{\rho}\brV_{\rho\bri}
 +\brY_{\bri}^{\rho}V_{\rho i}+V_{\rho i}\cH^{\rho\sigma}\brV_{\sigma\bri}\right)\,.
 \ea
-\label{Milne2}
 \]</div>
 <p>In fact, these two symmetries ([GL2]), ([Milne2]) are  identifiable   as the twofold local Lorentz symmetries.</p>
 <p>On the one hand,  in the case \((n,\brn)=(0,0)\),     \(\cK_{\mu\nu}\) and  \(\cH^{\mu\nu}\)  coincide with the usual (invertible) Riemannian metric and its inverse. In this Riemannian limit, the \((0,0)\)      DFT metric  takes the familiar  form [Giveon:1988tt],</p>
@@ -252,7 +248,6 @@ B_{\mu\nu}~~&\longmapsto&~~ B_{\mu\nu}
 \quad B_{\sigma\kappa}g^{\kappa\nu}\quad&\quad
 g_{\sigma\tau}-B_{\sigma\kappa}g^{\kappa\lambda}B_{\lambda\tau}\quad
 \ea\right)\,.
-\label{00H}
 \]</div>
 <p>The \(\ODD\)-symmetric proper length ([PL]), as well as the doubled particle and string actions ([particleaction]), ([stringaction]), all reduce to their conventional (undoubled) forms after integrating out the auxiliary variables \(\fa^{A}\).</p>
 <p>On the other  hand, cases with \((n,\brn) \neq (0,0)\) are inherently non-Riemannian,  as they lack an invertible Riemannian metric. Specifically, in the cases \((n,\brn) = (D,0)\) or \((0,D)\), \(\cK_{\mu\nu}\) and \(\cH^{\mu\nu}\) vanish, the relations  \(Y_{i}^{\mu}X^{i}_{\nu}=\delta^{\mu}{}_{\nu}\) or \(\brY_{\bri}^{\mu}\brX^{\bri}_{\nu}=\delta^{\mu}{}_{\nu}\) hold respectively, and the \(B\)-field becomes irrelevant.  In these  extremely non-Riemannian limits, the DFT metric coincides with the \(\ODD\)-invariant metric up to  sign,</p>
@@ -261,7 +256,6 @@ g_{\sigma\tau}-B_{\sigma\kappa}g^{\kappa\lambda}B_{\lambda\tau}\quad
 ~ 0\quad&\quad\pm 1~\\
 ~ \pm 1\quad&\quad0~
 \ea\right)\,.
-\label{D0H}
 \]</div>
 <p>These cases represent two perfectly \(\ODD\)-symmetric vacua in bosonic DFT that are maximally non-Riemannian, characterized by the saturation, \({n+\brn=D}\). Remarkably, these vacua exhibit infinitely many isometries [Blair:2020gng], as any local parameter \(\xi^{A}\) automatically satisfies the Killing equation, defined by the condition \({\hcL_{\xi}\cH_{AB}=0}\).</p>
 <p>In this scenario,  the ordinary Riemannian spacetime ([00H]) emerges after spontaneous symmetry breaking of the fully \(\ODD\)-symmetric vacua ([D0H]), while the Riemannian metric and the \(B\)-field are identified as  Nambu–Goldstone bosons [Berman:2019izh, Park:2020ixf].</p>
@@ -271,7 +265,6 @@ g_{\sigma\tau}-B_{\sigma\kappa}g^{\kappa\lambda}B_{\lambda\tau}\quad
 \dis{X^{i}_{\mu}\frac{\rd x^{\mu}}{\rd\tau}=0}\,,\qquad&\qquad
 \dis{\brX^{\bri}_{\mu}\frac{\rd x^{\mu}}{\rd\tau}=0}\,,
 \ea
-\label{FROZEN}
 \]</div>
 <p>while the string in ([stringaction]) becomes chiral and anti-chiral in the \(n\) and \(\brn\) untilde  directions, respectively:</p>
 <div class="equation">\[
@@ -291,18 +284,15 @@ e_{\nu}{}^{q}\eta_{qp}+B_{\nu\sigma}e_{p}{}^{\sigma}\ea\right)\,,\quad&\quad
 \brV_{A\brp}=\frac{1}{\sqrt{2}}\left(\ba{c}\bre_{\brp}{}^{\mu}\\
 \bre_{\nu}{}^{\brq}\breta_{\brq\brp}+B_{\nu\sigma}\bre_{\brp}{}^{\sigma}\ea\right)\,.
 \ea
-\label{00V}
 \]</div>
 <p>Here \(e_{\mu}{}^{p}\) and \(\bre_{\mu}{}^{\brp}\) are a pair of (Riemannian) vielbeins which square to  the same  metric,</p>
 <div class="equation">\[
 e_{\mu}{}^{p}e_{\nu p}=-\bre_{\mu}{}^{\brp}\bre_{\nu\brp}=g_{\mu\nu}\,.
-\label{eeg}
 \]</div>
 <p>Their dual presence allows  \(\ODD\)  to safely rotate the capital-letter indices of the vielbeins exclusively [Jeon:2011cn].</p>
 <p>Lastly, the DFT dilaton is  parametrised    by the Riemannian metric and the (weightless) string dilaton:</p>
 <div class="equation">\[
 e^{-2d}=\sqrt{-g}\,e^{-2\phi}\,.
-\label{00d}
 \]</div>
 <aside class="note"><p><strong>Summary.</strong> DFT geometries are classified into Riemannian and non-Riemannian cases, unifying stringy spacetime structures. Ordinary spacetime appears as the \((0,0)\) case, while maximally \(\ODD\)-symmetric vacua are  non-Riemannian and  chiral.</p></aside>
     </section>

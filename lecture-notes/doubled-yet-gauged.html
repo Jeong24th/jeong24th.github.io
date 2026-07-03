@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -101,7 +110,6 @@
 <p>The \(\ODD\)-invariant metric \(\cJ_{AB}\)  presented  in Table [TABindices]  plays a crucial role in splitting the doubled coordinates into two parts, \(x^{A} = (\tx_{\mu}, x^{\nu})\), where \(\mu, \nu = 0, 1, 2, \cdots, D{-1}\) denote \(D\)-dimensional spacetime indices. A fundamental  requirement in DFT is that all functions in the theory, collectively denoted as \(\{\Phi, \hat{\Phi}, \tilde{\Phi}, \cdots\}\) - including physical fields and local gauge parameters - must satisfy the  <em>section condition</em> [Berman:2010is]. This condition  restricts their dependence on the doubled coordinates via the constraint:</p>
 <div class="equation">\[
 \partial_{A}\partial^{A}=\partial_{\mu}\tpartial^{\mu}+\tpartial^{\mu}\partial_{\mu}=0\,,
-\label{SC}
 \]</div>
 <p>which ensures that any pairwise contraction of  (doubled) partial derivatives  vanishes:</p>
 <div class="equation">\[
@@ -118,36 +126,30 @@
 \Phi(x)=\Phi(x+\Delta)\,&\quad\mbox{where}\quad&
 \Delta^{A}=\hat{\Phi}\partial^{A}\tilde{\Phi}\,,\quad&\quad\Delta^{A}\partial_{A}=0\,.
 \ea
-\label{trinv}
 \]</div>
 <p>The geometric meaning of the section condition, as suggested in [Park:2013mpa], is that the doubled coordinates are <em>gauged</em> by the derivative-index-valued vectors:</p>
 <div class="equation">\[
 \ba{ll}
 x^{A}~\sim~x^{A}+\Delta^{A}\,,\qquad&\qquad\Delta^{A}\partial_{A}=0\,.
 \ea
-\label{xgauge}
 \]</div>
 <p>In this framework, each gauge orbit corresponds to a single spacetime point. The concept of &quot;derivative-index-valued&quot; vectors is made possible by the \(\ODD\)-invariant metric \(\cJ_{AB}\), which raises the vector index of the partial derivative: \(\partial^{A}=\cJ^{AB}\partial_{B}\).</p>
 <p>In DFT, diffeomorphisms are governed by a generalised Lie derivative, denoted as \(\hcL_{\xi}\) [Siegel:1993th, Hull:2009zb]:</p>
 <div class="equation">\[
 \hcL_{\xi}T_{A_{1}\cdots A_{n}}:=\xi^{B}\partial_{B}T_{A_{1}\cdots A_{n}}+\omega\partial_{B}\xi^{B}T_{A_{1}\cdots A_{n}}+\sum_{i=1}^{n}(\partial_{A_{i}}\xi_{B}-\partial_{B}\xi_{A_{i}})T_{A_{1}\cdots A_{i-1}}{}^{B}{}_{A_{i+1}\cdots  A_{n}}\,,
-\label{hcL}
 \]</div>
 <p>where \(\omega\) is the weight of the tensor or tensor density, and each tensor index \(A_{i}\) is rotated by an  infinitesimal \(\mathbf{so}(D,D)\) element, \(\partial_{A_{i}}\xi_{B}-\partial_{B}\xi_{A_{i}}\).    For consistency,  generalised Lie derivatives are closed under commutation, provided the section condition holds:</p>
 <div class="equation">\[
 \left[\hcL_{\zeta},\hcL_{\xi}\right]=\hcL_{\left[\zeta,\xi\right]_{\rm{C}}}\,,
-\label{closeda}
 \]</div>
 <p>where the commutator is given by the C-bracket:</p>
 <div class="equation">\[
 \left[\zeta,\xi\right]^{A}_{\rm{C}}=\half\!\left(\hcL_{\zeta}\xi^{A}-\hcL_{\xi}\zeta^{A}\right)= \zeta^{B}\partial_{B}\xi^{A}-\xi^{B}\partial_{B}\zeta^{A}+\half \xi^{B}\partial^{A}\zeta_{B}-\half \zeta^{B}\partial^{A}\xi_{B}\,.
-\label{Cbracket}
 \]</div>
 <p>It is noteworthy that the \(\ODD\)-metric is invariant under generalised diffeomorphisms, \({\hcL_{\xi}\cJ_{AB}=0}\), and the generalised Lie derivative itself is covariant [Angus:2018mep]:</p>
 <div class="equation">\[
 \delta_{\xi}(\hcL_{\zeta}T_{A_{1}\cdots A_{n}})=
 \hcL_{\zeta}(\delta_{\xi}T_{A_{1}\cdots A_{n}})+\hcL_{\delta_{\xi}\zeta}T_{A_{1}\cdots A_{n}}=\hcL_{\xi}(\hcL_{\zeta}T_{A_{1}\cdots A_{n}})\,.
-\label{covhcL}
 \]</div>
 <h3 id="explicit-gauging-of-the-doubled-coordinates">Explicit Gauging of the Doubled  Coordinates</h3>
 <p>The section condition encapsulates the concept of <em>doubled-yet-gauged coordinates</em> [Park:2013mpa] in DFT, where coordinates serve only as labels for the dynamical fields. This contrasts with the particle worldline or string worldsheet actions, where the target spacetime coordinates themselves become dynamical fields and must be explicitly gauged [Lee:2013hma,  Park:2016sbw,  Ko:2016dxa, Basile:2019pic].</p>
@@ -160,7 +162,6 @@ x^{A}~\sim~x^{A}+\Delta^{A}\,,\qquad&\qquad\Delta^{A}\partial_{A}=0\,.
 \ba{ll}
 \rD x^{A}:=\rd x^{A}-\fa^{A}\,,\qquad&\quad \fa^{A}\partial_{A}=0\,.
 \ea
-\label{rDx}
 \]</div>
 <p>The  passive transformations for the coordinates \(x^{A}\) and the gauge potential \(\fa^{A}\) are given by:</p>
 <div class="equation">\[
@@ -175,7 +176,6 @@ x^{A}~\sim~x^{A}+\Delta^{A}\,,\qquad&\qquad\Delta^{A}\partial_{A}=0\,.
 <p>To measure the distance between gauge orbits, a proper length can be defined through a path integral [Morand:2017fnv]:</p>
 <div class="equation">\[
 L=-\ln\left[\int\mathfrak{D}\fa~\exp\left(-\int\sqrt{\rD x^{A}\rD x^{B}\cH_{AB}}~\right)\right]\,,
-\label{PL}
 \]</div>
 <p>where \(\rD x^{A}\) is the gauged coordinate differential defined in [rDx], \(\fa\) is the auxiliary gauge potential to be integrated out, and \(\cH_{AB}\) is the  DFT-metric, or the generalised metric, which will be detailed later.</p>
 <p>This definition of proper length naturally leads to a doubled  worldline action for a particle [Ko:2016dxa]:</p>
@@ -183,13 +183,11 @@ L=-\ln\left[\int\mathfrak{D}\fa~\exp\left(-\int\sqrt{\rD x^{A}\rD x^{B}\cH_{AB}}
 \dis{
 S=\frac{1}{\,\ls}
 \int\rd\tau~\frac{1}{2} e^{-1\,}\rD_{\tau}x^{A}\rD_{\tau}x^{B}\cH_{AB}(x)-\frac{1}{2} (m\,\ls)^{2}e\,,}
-\label{particleaction}
 \]</div>
 <p>which further generalises to a completely covariant, doubled  worldsheet action for a string [Hull:2006va, Lee:2013hma],</p>
 <div class="equation">\[
 S=\frac{1}{4\pi\alphap}\displaystyle{\int}\rmd^{2}\sigma~-\half\sqrt{-h}h^{\alpha\beta}\rD_{\alpha}x^{M}\rD_{\beta}x^{N}\cH_{MN}
 -\epsilon^{\alpha\beta}\rD_{\alpha}x^{M}\fa_{\beta M}\,.
-\label{stringaction}
 \]</div>
 <p>This framework can be extended to a \(\kappa\)-symmetric Green–Schwarz superstring, as discussed in [Park:2016sbw].</p>
 <aside class="note"><p><strong>Summary.</strong> The doubled-yet-gauged construction preserves \(\ODD\) symmetry while constraining  dynamics to consistent \(D\)-dimensional sections. The  gauging  procedure leads to \(\ODD\)-symmetric particle and string actions, extendable to supersymmetric cases.</p></aside>

@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -102,17 +111,14 @@
 <p>Now we turn to curvatures. The semi-covariant four-index Riemann curvature is defined as [Jeon:2011cn]:</p>
 <div class="equation">\[
 S_{ABCD}:=\half\left(\fR_{ABCD}+\fR_{CDAB}-\Gamma^{E}{}_{AB}\Gamma_{ECD}\right)\,.
-\label{RiemannS}
 \]</div>
 <p>Here \(\Gamma_{ABC}\) is the DFT  Christoffel connection ([Gamma]) and  \(\fR_{ABCD}\) represents  its  `field strength&#x27;: (Footnote: In accordance with the decomposition of an \(\ODD\) index into  \(D\)-dimensional upper and (dual) lower  indices, the field strength \(\fR_{ABCD}\) includes \(\fR^{\kappa}{}_{\lambda\mu\nu}\) which should not be confused with the ordinary (undoubled) Riemann curvature  \(R^{\kappa}{}_{\lambda\mu\nu}\).  Notably,  \(S\) follows \(R\) alphabetically, signifying its intended connection within the semi-covariant formalism. )</p>
 <div class="equation">\[
 \fR_{CDAB}=\partial_{A}\Gamma_{BCD}-\partial_{B}\Gamma_{ACD}+\Gamma_{AC}{}^{E}\Gamma_{BED}-\Gamma_{BC}{}^{E}\Gamma_{AED}\,,
-\label{FSR}
 \]</div>
 <p>which arises in the commutator of the semi-covariant derivatives,</p>
 <div class="equation">\[
 \left[\na_{A\,},\na_{B}\right]T_{C_1C_2\cdots C_n}=-\Gamma^{D}{}_{AB}\na_{D}T_{C_1C_2\cdots C_{n}}+\sum_{i=1}^{n}~\fR_{C_{i}}{}^{D}{}_{AB}T_{C_1\cdots C_{i-1}DC_{i+1}\cdots C_{n}}\,,
-\label{commna}
 \]</div>
 <p>satisfies  symmetric and projective properties,</p>
 <div class="equation">\[
@@ -121,7 +127,6 @@ S_{ABCD}:=\half\left(\fR_{ABCD}+\fR_{CDAB}-\Gamma^{E}{}_{AB}\Gamma_{ECD}\right)\
 <p>and, under arbitrary variation of the Christoffel symbols ([deltaG]), transforms infinitesimally as</p>
 <div class="equation">\[
 \delta \fR_{ABCD}=\na_{C}\delta\Gamma_{DAB}-\na_{D}\delta\Gamma_{CAB}+\Gamma^{E}{}_{CD}\delta\Gamma_{EAB}\,.
-\label{deltafR}
 \]</div>
 <p>In particular, under  doubled-yet-gauged diffeomorphisms,  it varies as</p>
 <div class="equation">\[
@@ -131,7 +136,6 @@ S_{ABCD}:=\half\left(\fR_{ABCD}+\fR_{CDAB}-\Gamma^{E}{}_{AB}\Gamma_{ECD}\right)\
 +2\Gamma^{E}{}_{CD}(\cP{+\brcP})_{EAB}{}^{FGH}\partial_{F}\partial_{[G}\xi_{H]}\\
 {}&{}&+4\na_{[C}\Big((\cP{+\brcP})_{D]AB}{}^{FGH}\partial_{F}\partial_{[G}\xi_{H]}\Big)\,.
 \ea
-\label{dfRhcL}
 \]</div>
 <p>Further, the Jacobi identity of the commutators ([commna]) implies the following two sets of  identities [Jeon:2010rw]:</p>
 <div class="equation">\[
@@ -143,7 +147,6 @@ S_{ABCD}:=\half\left(\fR_{ABCD}+\fR_{CDAB}-\Gamma^{E}{}_{AB}\Gamma_{ECD}\right)\
 <p>Consequently,  the semi-covariant Riemann curvature ([RiemannS])  appears through a projected commutator,</p>
 <div class="equation">\[
 \left[\cD_{p\,},\cD_{\brq\,}\right]T_{C_1C_2\cdots C_n}=\sum_{i=1}^{n}~2S_{p\brq C_{i}}{}^{D}T_{C_1\cdots C_{i-1}DC_{i+1}\cdots C_{n}}\,,
-\label{cDcDS}
 \]</div>
 <p>satisfies symmetric properties, including an algebraic Bianchi  identity,</p>
 <div class="equation">\[
@@ -151,19 +154,16 @@ S_{ABCD}:=\half\left(\fR_{ABCD}+\fR_{CDAB}-\Gamma^{E}{}_{AB}\Gamma_{ECD}\right)\
 S_{ABCD}=S_{CDAB}=S_{[AB][CD]}\,,\qquad&\quad
 S_{A[BCD]}=0\,,
 \ea
-\label{aB}
 \]</div>
 <p>and transforms as 	total (covariant) derivatives under  the arbitrary variation of the   Christoffel symbols,</p>
 <div class="equation">\[
 \delta S_{ABCD}=\na_{[A}\delta\Gamma_{B]CD}+\na_{[C}\delta\Gamma_{D]AB}\,.
-\label{deltaS}
 \]</div>
 <p>In particular, it is semi-covariant under  doubled-yet-gauged diffeomorphisms:</p>
 <div class="equation">\[
 \delta_{\xi}S_{ABCD}=\hcL_{\xi}S_{ABCD}+
 2\na_{[A}\Big(\!(\cP{+\brcP})_{B][CD]}{}^{EFG}\partial_{E}\partial_{F}\xi_{G}\Big)
 +2\na_{[C}\Big(\!(\cP{+\brcP})_{D][AB]}{}^{EFG}\partial_{E}\partial_{F}\xi_{G}\Big)\,.
-\label{anomalyS}
 \]</div>
 <p>Obvious methods of eliminating the anomalous terms  via projection  end up producing only identically vanishing trivial quantities,</p>
 <div class="equation">\[
@@ -171,17 +171,14 @@ S_{A[BCD]}=0\,,
 S_{pq\brp\brq}=0\,,\qquad&\qquad S_{\brp\brq pq}=0\,,\qquad&\qquad
 S_{p\brp q\brq}=0\,,
 \ea
-\label{RSp}
 \]</div>
 <p>and there appears to be no fully covariant four-index curvature in DFT [Jeon:2011cn, Hohm:2011si].   Fully  covariant  curvature tensors are  then  obtained by contracting the indices:  with \(S_{AB}=S_{BA}=S^{C}{}_{ACB}\), we have  the fully covariant two-index or  Ricci curvature in DFT,</p>
 <div class="equation">\[
 S_{p\brq}=V^{A}{}_{p}\brV^{B}{}_{\brq}S_{AB}\,,
-\label{Ricci}
 \]</div>
 <p>and  further the scalar curvature, (Footnote: The subscript \(\scriptstyle{(0)}\)  indicates the scalar nature of \(\So\) and serves to distinguish \(\So\) from  the notation used for an action, <em>e.g. </em>([pureDFT]). )</p>
 <div class="equation">\[
 \So:=\left(P^{AC}P^{BD}-\brP^{AC}\brP^{BD}\right)S_{ABCD}=S_{pq}{}^{pq}-S_{\brp\brq}{}^{\brp\brq}\,.
-\label{Sc}
 \]</div>
 <p>These  contain  both \(\cH_{AB}\) and \(d\) through the Christoffel symbols ([Gamma]): the generalised  metric alone cannot generate the  covariant curvature [Jeon:2010rw].      Explicitly, we recover the original expression in [Hohm:2010pp],</p>
 <div class="equation">\[
@@ -190,7 +187,6 @@ S_{p\brq}=V^{A}{}_{p}\brV^{B}{}_{\brq}S_{AB}\,,
 <p>Like ([RSp]), the Ricci curvature satisfies the identities [Jeon:2011cn, Cho:2015lha]:</p>
 <div class="equation">\[
 S_{pr\brq}{}^{r}=S_{p\brr\brq}{}^{\brr}=\half S_{p\brq}\,,
-\label{SSS}
 \]</div>
 <p>and it arises through the commutators of the covariant differential operators [Coimbra:2011nw, Cho:2015lha]: using ([cDcDS]) and ([SSS]),</p>
 <div class="equation">\[
@@ -200,7 +196,6 @@ S_{pr\brq}{}^{r}=S_{p\brr\brq}{}^{\brr}=\half S_{p\brq}\,,
 {}\big[\gamma^{p}\cD_{p},\cD_{\brq}\big]\varepsilon=\half S_{p\brq}\gamma^{p}\varepsilon\,,~&\,
 {}\big[\brgamma^{\brq}\cD_{\brq},\cD_{p}\big]\varepsilon^{\prime}=\half S_{p\brq}\gamma^{\brq}\varepsilonp\,.
 \ea
-\label{usefulS}
 \]</div>
 <p>Lastly, the scalar curvature satisfies</p>
 <div class="equation">\[
@@ -225,12 +220,10 @@ S_{p\brq}=\half e_{p}{}^{\mu}\bre_{\brq}{}^{\nu}\Big[
 R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}
 +\half e^{2\phi}\trd^{\rho}\big(e^{-2\phi}H_{\rho\mu\nu}\big)
 \Big]\,,
-\label{RiemannSpbrq}
 \]</div>
 <p>and</p>
 <div class="equation">\[
 \So=R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}\,.
-\label{RiemannSo}
 \]</div>
 <p>For  non-Riemannian parametrisations, we refer to  [Cho:2019ofr] (section 4.3 therein).</p>
 <aside class="note"><p><strong>Summary.</strong> While a fully covariant four-index curvature is absent, Ricci and scalar curvatures exist and underpin the DFT action.</p></aside>
@@ -239,23 +232,19 @@ R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{
 <p>The `pure&#x27; DFT action, or the doubled Einstein-Hilbert action,  is naturally given by the scalar curvature \(\So\)  multiplied by the \(\ODD\)-symmetric integral measure \(e^{-2d}\), integrated over a section \(\Sigma_{D}\):</p>
 <div class="equation">\[
 S_{\DFT}=\int_{\Sigma_{D}}~e^{-2d}\So\,.
-\label{pureDFT}
 \]</div>
 <p>From the compatibility  condition of the semi-covariant derivative ([Gcomp]) and the nice properties of the semi-covariant four-index curvature ([aB]), ([deltaS]),  it is straightforward to vary the pure DFT Lagrangian:</p>
 <div class="equation">\[
 \delta \big(e^{-2d}\So\big)=4e^{-2d}\big(\brV_{A}{}^{\brq}\delta V^{Ap}S_{p\brq}-\half\delta d\,\So\big)+\partial_{A}\big(e^{-2d}\Theta^{A}\big)\,,
-\label{deltaEH}
 \]</div>
 <p>where in the total derivative we have set [Park:2015bza, Blair:2015eba]</p>
 <div class="equation">\[
 \Theta^{A}=2\big(P^{AC}P^{BD}-\brP^{AC}\brP^{BD}\big)\delta \Gamma_{BCD}
 =4\cH^{AB}\partial_{B}\delta d-\na_{B}\delta\cH^{AB}\,.
-\label{Theta}
 \]</div>
 <p>It is worthwhile to note  different ways of rewriting  the variation of the vielbeins  in ([deltaEH]):</p>
 <div class="equation">\[
 \brV_{A}{}^{\brq}\delta V^{Ap}=- V^{Ap}\delta\brV_{A}{}^{\brq} =\half\big(\brV_{A}{}^{\brq}\delta V^{Ap}- V^{Ap}\delta\brV_{A}{}^{\brq}\big)=\half V^{Ap}\brV^{B\brq}\delta \cH_{AB}\,.
-\label{deltaVcH}
 \]</div>
 <p>In particular, when the variation is generated  by the Kosmann derivative ([Kosmann]), <em>i.e. </em>\(\delta_{\xi}=\fcL_{\xi}\), we have</p>
 <div class="equation">\[
@@ -266,14 +255,12 @@ S_{\DFT}=\int_{\Sigma_{D}}~e^{-2d}\So\,.
 \delta_{\xi}\cH_{AB}=\fcL_{\xi}\cH_{AB}=\hcL_{\xi}\cH_{AB}=
 8\brP_{(A}{}^{C}P_{B)}{}^{D}\na_{[C}\xi_{D]}=8\brV_{(A}{}^{\brq}V_{B)}{}^{p}\cD_{[\brq}\xi_{p]}\,.}
 \ea
-\label{deltaxi2}
 \]</div>
 <p>Applying these to ([deltaEH]), <em>i.e.</em> the action principle, we can identify the off-shell conserved Einstein curvature in DFT, which satisfies a differential Bianchi identity [Park:2015bza]:</p>
 <div class="equation">\[
 \ba{ll}
 G_{AB}=4(PS\brP)_{[AB]}-\half\cJ_{AB}\So=4V_{[A}{}^{p}\brV_{B]}{}^{\brq}S_{p\brq}-\half\cJ_{AB}\So\,,\quad&\quad\na_{A}G^{AB}=0\,.
 \ea
-\label{EinsteinC}
 \]</div>
 <p>The complete equations of motion of the pure DFT action—derived from the action principle ([deltaEH])—are, <em>a priori</em>, expressed by the independent vanishing of the Ricci curvature and the scalar curvature [Siegel:1993xq,  Hohm:2010pp]. However, by utilising the relations, \(G_{A}{}^{A}=-D\So\) and \((PG\brP)_{AB}=2(PS\brP)_{AB}\), the equations of motion can be seen, in a unified manner, as equivalent to the vanishing of the Einstein curvature [Park:2015bza],</p>
 <div class="equation">\[
@@ -281,7 +268,6 @@ G_{AB}=4(PS\brP)_{[AB]}-\half\cJ_{AB}\So=4V_{[A}{}^{p}\brV_{B]}{}^{\brq}S_{p\brq
 {S_{p\brq}=0}\quad&\quad{\So=0}\quad&\Longleftrightarrow&\quad
 G_{AB}=0\,.
 \ea
-\label{vacuumEDFE}
 \]</div>
 <p>Although the Einstein curvature is not symmetric,   \(G_{AB}\neq G_{BA}\),  and does not satisfy \(\na_{B}G^{AB}\neq 0 \),  it is possible to symmetrise the  curvature  by multiplying the generalised metric from the right. Specifically,</p>
 <div class="equation">\[
@@ -290,19 +276,16 @@ G_{AB}=0\,.
 \quad&\quad
 \na_{A}(G\cH)^{AB}=0\,.
 \ea
-\label{GH}
 \]</div>
 <p>Under the \((0,0)\) Riemannian parametrisation, from ([RiemannSo]), the pure DFT action ([pureDFT]) coincides with the NSNS gravity action up to a total derivative (denoted by \(\simeq\)):</p>
 <div class="equation">\[
 S_{\DFT}=\int_{\Sigma_{D}}~e^{-2d}\So~\simeq\,\int\rd^D x~\sqrt{-g}e^{-2\phi}\Big(R+4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}\Big)\,,
-\label{DFT00}
 \]</div>
 <p>and  the upper left \(D{\times D}\)  block of \((G\cH)_{AB}\)  contains the undoubled  Einstein curvature:</p>
 <div class="equation">\[
 (G\cH)^{\mu\nu}=R^{\mu\nu}-\half g^{\mu\nu}R+2\trd^{\mu}(\partial^{\nu}\phi)
 -2g^{\mu\nu}(\Box\phi-\partial_{\sigma}\phi\partial^{\sigma}\phi)-\quarter H^{\mu\rho\sigma}H^{\nu}{}_{\rho\sigma}
 +\textstyle{\frac{1}{24}} g^{\mu\nu}H_{\rho\sigma\tau}H^{\rho\sigma\tau}\,.
-\label{GcHuu}
 \]</div>
 <p>Moreover,  the differential Bianchi identity ([EinsteinC]) decomposes into  two separate identities:</p>
 <div class="equation">\[
@@ -310,7 +293,6 @@ S_{\DFT}=\int_{\Sigma_{D}}~e^{-2d}\So~\simeq\,\int\rd^D x~\sqrt{-g}e^{-2\phi}\Bi
 \trd_{\mu}\big(R^{\mu\nu}-\half g^{\mu\nu}R\big)=0\,,\qquad&\quad
 \trd_{\mu}\trd_{\nu}\big(e^{-2\phi}H^{\lambda\mu\nu}\big)=0\,.
 \ea
-\label{dBI00}
 \]</div>
 <h3 id="gamma-squared-action-noether-currents">Gamma Squared  Action  & Noether Currents</h3>
 <p class="aim"><strong>Aim.</strong> To rewrite the action in \(\Gamma^2\) form and identify associated symmetries.</p>
@@ -321,14 +303,12 @@ S_{\DFT}=\int_{\Sigma_{D}}~e^{-2d}\So~\simeq\,\int\rd^D x~\sqrt{-g}e^{-2\phi}\Bi
 B^{A}=2(P^{AC}P^{BD}-\brP^{AC}\brP^{BD})
 \Gamma_{BCD}  =4\cH^{AB}\partial_{B}d -\partial_{B}\cH^{AB}\,,
 \ea
-\label{defB}
 \]</div>
 <p>we acquire a doubled \(\Gamma^{2}\)-action, free of any two-derivative terms (<em>c.f. </em>[Dyer:2008hb], [Berman:2011kg]),</p>
 <div class="equation">\[
 S_{\Gamma^{2}}=\int_{\Sigma_{D}}~\cL_{\Gamma^{2}}=\int_{\Sigma_{D}}~e^{-2d}
 \big(P^{AC}P^{BD}-\brP^{AC}\brP^{BD}\big)
 \big(\Gamma_{AC}{}^{E}\Gamma_{BDE}-\Gamma_{AB}{}^{E}\Gamma_{DCE}+\half\Gamma^{E}{}_{AB}\Gamma_{ECD}\big)\,,
-\label{GammaDFT}
 \]</div>
 <p>which still admits  diffeomorphisms as a Noether symmetry. We note generically from ([deltaEH]) and ([defB]),</p>
 <div class="equation">\[
@@ -349,7 +329,6 @@ J_{{\rm{on-shell}}}^{A}=e^{-2d}\big(4\cH^{AB}\partial_{B}\delta_{\xi}d-\na_{B}\d
 K^{AB}=4\brV^{[A}{}_{\brp}V^{B]}{}_{q}\big(\cD^{\brp}\xi^{q}+\cD^{q}\xi^{\brp}\big)\,,\quad&\qquad
 J_{{\rm{off-shell}}}^{A}=\partial_{B}\big(e^{-2d}{K}^{[AB]}\big)\,,
 \ea
-\label{Kpotential}
 \]</div>
 <p>and \(\mathfrak{j}^{A}\) denotes a harmless derivative-index-valued vector,</p>
 <div class="equation">\[
@@ -374,7 +353,6 @@ P_{A_{i}}{}^{D}P_{B}{}^{E}\fR_{A_{j}CDE}\\
 +P_{A_{j}}{}^{D}P_{C}{}^{E}\fR_{A_{i}BDE}\\
 -2P_{A_{i}}{}^{D}P_{B}{}^{E}P_{A_{j}}{}^{F}P_{C}{}^{G}S_{DEFG}\ea\right)T_{A_{1}\cdots A_{i-1}}{}^{B}{}_{A_{i+1}\cdots A_{j-1}}{}^{C}{}_{A_{j+1}\cdots A_{n}}}\,,
 \ea
-\label{DELTA}
 \]</div>
 <p>and with the replacement of every explicit occurrence of the projector \(P_{A}{}^{B}\) with the opposite projector \(\brP_{A}{}^{B}\),</p>
 <div class="equation">\[
@@ -388,17 +366,14 @@ P_{A_{i}}{}^{D}P_{B}{}^{E}\fR_{A_{j}CDE}\\
 +\brP_{A_{j}}{}^{D}\brP_{C}{}^{E}\fR_{A_{i}BDE}\\
 -2\brP_{A_{i}}{}^{D}\brP_{B}{}^{E}\brP_{A_{j}}{}^{F}\brP_{C}{}^{G}S_{DEFG}\ea\right)T_{A_{1}\cdots A_{i-1}}{}^{B}{}_{A_{i+1}\cdots A_{j-1}}{}^{C}{}_{A_{j+1}\cdots A_{n}}}\,.
 \ea
-\label{brDELTA}
 \]</div>
 <p>While these two mirroring operators annihilate each other identically due to the section condition:</p>
 <div class="equation">\[
 \left(\Deltab+\brDeltab\right)T_{A_{1}A_{2}\cdots A_{n}}=0\,,
-\label{covseccon}
 \]</div>
 <p>their difference defines the fully covariant <em>box operator</em>:</p>
 <div class="equation">\[
 \bBox T_{A_{1}A_{2}\cdots A_{n}}:=\left(\Deltab-\brDeltab\right)T_{A_{1}A_{2}\cdots A_{n}}=\cH^{BC}\na_{B}\na_{C}T_{A_{1}A_{2}\cdots A_{n}}+\sum_{i}~\cdots~+\sum_{i<j}~\cdots\,.
-\label{bBox}
 \]</div>
 <p>In particular, acting on projected tensors such as \({\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}T_{D_{1}\cdots D_{n}}\), \(P_{C_{1}}{}^{D_{1}}\cdots P_{C_{n}}{}^{D_{n}}T_{D_{1}\cdots D_{n}}\), and  \((PT\brP)_{AB}=P_{A}{}^{C}\brP_{B}{}^{D}T_{CD}\), the pair of d&#x27;Alembertians and the box operator produce the two expressions in ([coco1]) and the following result:</p>
 <div class="equation">\[
@@ -409,7 +384,6 @@ P_{A_{i}}{}^{D}P_{B}{}^{E}\fR_{A_{j}CDE}\\
 {}&{}&
 -2\brP_{B}{}^{C}(\fR_{[CD]}-\frac{1}{2}\Gamma^{EF}{}_{C}\Gamma_{EFD}-\Gamma^{E}{}_{CD}\na_{E})(PT\brP)_{A}{}{}^{D}\,.
 \ea
-\label{BXMAIN}
 \]</div>
 <p>Equivalent yet   more compact expressions are available through  contraction with the vielbeins, \(V_{Ap},\brV_{B\brq}\):</p>
 <div class="equation">\[
@@ -435,7 +409,6 @@ V^{A}{}_{p}\brV^{B}{}_{\brq}T_{AB}=\fT^{\mu\nu}e_{\mu p\,}\bre_{\nu\brq}\quad&~\
 \hBox\fT_{\mu\nu}=-e_{\mu}{}^{p}\bre_{\nu}{}^{\brq}\bBox T_{p\brq}= e^{2\phi}\trd^{\rho}\big(e^{-2\phi}\trd_{\rho}\fT_{\mu\nu}\big)-
  H_{\rho\sigma\mu} \trd^{\rho}\fT^{\sigma}{}_{\nu}+
 H_{\rho\sigma\nu}\trd^{\rho}\fT_{\mu}{}^{\sigma}+2\hR_{\mu}{}^{\rho}{}_{\nu}{}^{\sigma}\fT_{\rho\sigma}\,,
-\label{hBox}
 \]</div>
 <p>where \(\hR_{\mu}{}^{\rho}{}_{\nu}{}^{\sigma}\) contains the Riemann curvature  tensor and the \(H\)-flux,</p>
 <div class="equation">\[
@@ -448,19 +421,16 @@ H_{\rho\sigma\nu}\trd^{\rho}\fT_{\mu}{}^{\sigma}+2\hR_{\mu}{}^{\rho}{}_{\nu}{}^{
 -\frac{1}{4}\Big[e^{2\phi}\trd_{\kappa}\big(e^{-2\phi}H^{\kappa\rho}{}_{\mu}\big)+\frac{1}{2}H_{\mu\kappa\lambda}H^{\rho\kappa\lambda}\Big]\delta_{\nu}{}^{\sigma}
 \,.
 \ea
-\label{hR4}
 \]</div>
 <p>In the context of applications, the imposition of an \(\ODD\)-symmetric harmonic gauge,</p>
 <div class="equation">\[
 e^{2d}\na_{A}\delta\big(e^{-2d}\cH^{AB}\big)=\na_{A}\delta\cH^{AB}-2\cH^{AB}\na_{A}\delta d=0\,,
-\label{harmonic}
 \]</div>
 <p>leads to a simplification of the linearised equations of motion in pure DFT [Ko:2015rha] (see also  [Hohm:2015ugy,  Cho:2019npq]). The resulting \(\ODD\)-symmetric gravitational wave equations are, with the box operator ([BXMAIN]) [Lee:2025fme]:</p>
 <div class="equation">\[
 \ba{ll}
 \bBox(P\delta\cH\brP)_{AB}=0\,,~\qquad&\quad\cH^{AB}\na_{A}\partial_{B}\delta d=0\,.
 \ea
-\label{WAVEEQ}
 \]</div>
 <p>When applied to a Riemannian background, the \(\ODD\)-symmetric harmonic gauge  condition ([harmonic]) decomposes into the following components:</p>
 <div class="equation">\[

@@ -57,16 +57,25 @@
           brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
           brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
           brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
-          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          breta: "\\bar{\\eta}", bromega: "\\bar{\\omega}", brR: "\\bar{R}",
+          brDeltab: "\\mathbf{\\bar{\\Delta}}", brcP: "\\bar{\\cal P}",
           So: "S_{(0)}", To: "T_{(0)}",
           DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
           Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
           fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
           DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          fcL: "\\widetilde{\\cal L}", hcL: "\\widehat{\\cal L}",
+          hcF: "\\widehat{\\cal F}", hcD: "\\widehat{\\cal D}", hR: "\\hat{R}",
+          rD: "{\\rm D}", rmd: "{\\rm d}", rma: "{\\rm a}", rmb: "{\\rm b}",
+          rmc: "{\\rm c}", rme: "{\\rm e}", rmf: "{\\rm f}",
+          ls: "l_s", alphap: "\\alpha^{\\prime}",
+          bfA: "\\mathbf{A}", bfF: "\\mathbf{F}", bfV: "\\mathbf{V}",
+          rhop: "\\rho^{\\prime}", psip: "\\psi^{\\prime}",
+          varepsilonp: "\\varepsilon^{\\prime}", Tr: "{\\rm Tr}",
           Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
           tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
           betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
-          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}"
         }
       },
       svg: { fontCache: "global" }
@@ -102,7 +111,6 @@
 \dis{\na\cdot\mathbf{E}=\rho\,,}\quad&\quad\dis{\na\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}\,,}\quad&\quad\dis{
 \na\cdot\mathbf{B}=0\,,}\quad&\quad\dis{ \na\times\mathbf{B}=\mathbf{J}+\frac{\partial\mathbf{E}}{\partial t}\,.}
 \ea
-\label{Maxwell1}
 \]</div>
 <p>Minkowski, or the \(\SO(1,3)\) Lorentz symmetry, then introduced further simplifications in 1908, unifying space and time into a four-dimensional spacetime framework and recasting Maxwell&#x27;s equations in a more compact and elegant form:</p>
 <div class="equation">\[
@@ -110,7 +118,6 @@
 \partial_{\lambda}F^{\lambda\mu}=J^{\mu}\,,\qquad&\qquad
 \partial_{\lambda}F_{\mu\nu}+\partial_{\mu}F_{\nu\lambda}+\partial_{\nu}F_{\lambda\mu}=0\,.
 \ea
-\label{Maxwell2}
 \]</div>
 <p>In string theory, a similar unification has been accomplished through the \(\ODD\) symmetry principle. The vanishing of the three beta-functions on a closed string worldsheet,</p>
 <div class="equation">\[
@@ -120,17 +127,14 @@ R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{
 \half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)=0\,,\\
 R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}=0\,,
 \ea
-\label{3beta}
 \]</div>
 <p>is  unified into a single formula characterized by the vanishing of the \(\ODD\)-symmetric augmentation of the Einstein curvature tensor [Park:2015bza],</p>
 <div class="equation">\[
 {G}_{AB}=0\,,
-\label{G0}
 \]</div>
 <p>which corresponds to the vacuum case of the more general unified field equation in Double Field Theory (DFT), dubbed the <em>Einstein Double Field Equation</em> (EDFE) [Angus:2018mep]:</p>
 <div class="equation">\[
 G_{AB}=T_{AB}\,.
-\label{iEDFE}
 \]</div>
 <p>Hereafter, the capital letters \(A, B, \cdots\) denote \(\ODD\) vector indices, which span the doubled spacetime dimensions, \(D+D\). As reviewed below, the DFT Einstein curvature, \(G_{AB}\), on the left-hand side of the equation,  can be - but not necessarily - constructed from the trio \(\{g_{\mu\nu},B_{\mu\nu},\phi\}\). This trio represents the traditional closed string massless sector, known as the Neveu–Schwarz Neveu–Schwarz (NSNS) sector, and constitutes the stringy gravitational degrees of freedom. On the right-hand side, the DFT energy-momentum tensor, \(T_{AB}\), accounts for other sectors (or "matter&#x27;&#x27;), including the Ramond-Ramond (RR) sector and NSR fermions. Like General Relativity,   these quantities are governed by conservation laws derived from the action principle:</p>
 <div class="equation">\[
@@ -138,7 +142,6 @@ G_{AB}=T_{AB}\,.
 \nabla_{A}G^{A}{}_{B}=0~~~:~~~\mbox{off-shell}\,,\qquad&\qquad
 \nabla_{A}T^{A}{}_{B}=0~~~:~~~\mbox{on-shell}\,.
 \ea
-\label{CONSERV}
 \]</div>
 <p>This conservation principle highlights the fundamental symmetries and consistency of the theory, mirroring  General Relativity (GR). With a greater number of components in the energy-momentum tensor, the gravitational physics in DFT becomes inherently richer compared to GR.</p>
 <aside class="note"><p><strong>Summary.</strong> In analogy with Lorentz symmetry unifying Maxwell’s equations, \(\ODD\) symmetry unifies the closed string beta-function equations. The EDFE ([iEDFE]) is a generalised and testable extension of Einstein’s field equation, providing a richer framework for gravity.</p></aside>
