@@ -110,39 +110,39 @@
 <p>The fundamental fields of DFT  are the generalised metric, \(\cH_{AB}\), and the dilaton, \(d\), which together define the geometric and gravitational structure of the theory. These fields encapsulate the stringy nature of spacetime geometry and play a central role in the formulation of DFT.</p>
 <p>By definition, the generalised metric \(\cH_{AB}\) is a symmetric \(\ODD\) element:</p>
 <div class="equation" id="ref-cHdef">\[
-\ba{ll}
-\cH_{AB}=\cH_{BA}\,,\qquad&\qquad\cH_{A}{}^{C}\cH_{B}{}^{D}\cJ_{CD}=\cJ_{AB}\,,
-\ea
+\begin{array}{ll}
+\cH_{AB}=\cH_{BA}\,,\qquad&amp;\qquad\cH_{A}{}^{C}\cH_{B}{}^{D}\cJ_{CD}=\cJ_{AB}\,,
+\end{array}
 
 \]<span class="equation-number">(22)</span></div>
 <p>and the  exponentiated form of the dilaton, \(e^{-2d}\), serves as the integral measure in DFT: it is a scalar density of unit weight.  In words, the generalised metric  squares  to the identity: \(\cH_{A}{}^{B}\cH_{B}{}^{C}=\delta_{A}{}^{C}\). Their generalised Lie derivatives (<a class="equation-ref" href="doubled-yet-gauged.html#ref-hcL" title="Equation reference: hcL">11</a>) are explicitly given by</p>
 <div class="equation">\[
-\ba{ll}
-\hcL_{\xi}\cH_{AB}=\xi^{C}\partial_{C}\cH_{AB}+2\partial_{[A}\xi_{C]}\cH^{C}{}_{B}+2\partial_{[B}\xi_{C]}\cH_{A}{}^{C}\,,~~~\,&~~~\hcL_{\xi}d=-\frac{1}{2}e^{2d}\hcL_{\xi}\left(e^{-2d}\right)=\xi^{A}\partial_{A}d-\frac{1}{2}\partial_{A}\xi^{A}\,.
-\ea
+\begin{array}{ll}
+\hcL_{\xi}\cH_{AB}=\xi^{C}\partial_{C}\cH_{AB}+2\partial_{[A}\xi_{C]}\cH^{C}{}_{B}+2\partial_{[B}\xi_{C]}\cH_{A}{}^{C}\,,~~~\,&amp;~~~\hcL_{\xi}d=-\frac{1}{2}e^{2d}\hcL_{\xi}\left(e^{-2d}\right)=\xi^{A}\partial_{A}d-\frac{1}{2}\partial_{A}\xi^{A}\,.
+\end{array}
 \]</div>
 <p>Combining the invariant metric \(\cJ_{AB}\) and the generalised metric \(\cH_{AB}\), we define symmetric projection matrices [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2010rw" target="_blank" rel="noopener noreferrer">Jeon:2010rw</a>]:</p>
 <div class="equation" id="ref-P1">\[
-\ba{ll}
-P_{AB}=P_{BA}=\half(\cJ_{AB}+\cH_{AB})\,,\quad&\quad P_{A}{}^{B}P_{B}{}^{C}=P_{A}{}^{C}\,,\\
-\brP_{AB}=\brP_{BA}=\half(\cJ_{AB}-\cH_{AB})\,,\quad&\quad \brP_{A}{}^{B}\brP_{B}{}^{C}=\brP_{A}{}^{C}\,,
-\ea
+\begin{array}{ll}
+P_{AB}=P_{BA}=\half(\cJ_{AB}+\cH_{AB})\,,\quad&amp;\quad P_{A}{}^{B}P_{B}{}^{C}=P_{A}{}^{C}\,,\\
+\brP_{AB}=\brP_{BA}=\half(\cJ_{AB}-\cH_{AB})\,,\quad&amp;\quad \brP_{A}{}^{B}\brP_{B}{}^{C}=\brP_{A}{}^{C}\,,
+\end{array}
 
 \]<span class="equation-number">(24)</span></div>
 <p>which are orthogonal and complete:</p>
 <div class="equation" id="ref-P2">\[
-\ba{ll}
- P_{A}{}^{B}\brP_{B}{}^{C}=0\,,\qquad&\qquad
+\begin{array}{ll}
+ P_{A}{}^{B}\brP_{B}{}^{C}=0\,,\qquad&amp;\qquad
 P_{A}{}^{B}+\brP_{A}{}^{B}=\delta_{A}{}^{B}\,.
-\ea
+\end{array}
 
 \]<span class="equation-number">(25)</span></div>
 <p>Taking the "square roots&quot; of the  projection matrices, we introduce a pair of vielbeins, \(V_{Ap}\) and \(\brV_{B\brq }\):</p>
 <div class="equation" id="ref-PPVV">\[
-\ba{ll}
-P_{AB}=V_{A}{}^{p}V_{B}{}^{q}\eta_{pq}\,,\qquad&\qquad
+\begin{array}{ll}
+P_{AB}=V_{A}{}^{p}V_{B}{}^{q}\eta_{pq}\,,\qquad&amp;\qquad
 \brP_{AB}=\brV_{A}{}^{\brp}\brV_{B}{}^{\brq}\breta_{\brp\brq}\,.
-\ea
+\end{array}
 
 \]<span class="equation-number">(26)</span></div>
 <p>The vielbeins satisfy the following defining property:</p>
@@ -152,20 +152,20 @@ V_{A}{}^{p}V_{B}{}^{q}\eta_{pq}+\brV_{A}{}^{\brp}\brV_{B}{}^{\brq}\breta_{\brp\b
 \]<span class="equation-number">(27)</span></div>
 <p>Essentially,  viewed as a \(({D+D}) \times ({D+D})\) matrix, the pair \(\big(V_{A}{}^{p}, \brV_{A}{}^{\brp}\big)\) simultaneously diagonalises \(\cJ_{AB}\) and \(\cH_{AB}\) into \(\diag(\eta, +\breta)\) and \(\diag(\eta, -\breta)\), respectively. Furthermore, since the left inverse coincides with the right inverse, this property <a class="equation-ref" href="non-riemannian-geometry.html#ref-VVdef1" title="Equation reference: VVdef1">(27)</a> is equivalent to:</p>
 <div class="equation" id="ref-VVdef2">\[
-\ba{lll}
-V_{Ap}V^{A}{}_{q}=\eta_{pq}\,,\qquad&\qquad
-\brV_{A\brp}\brV^{A}{}_{\brq}=\breta_{\brp\brq}\,,\qquad&\qquad
+\begin{array}{lll}
+V_{Ap}V^{A}{}_{q}=\eta_{pq}\,,\qquad&amp;\qquad
+\brV_{A\brp}\brV^{A}{}_{\brq}=\breta_{\brp\brq}\,,\qquad&amp;\qquad
 V_{Ap}\brV^{A}{}_{\brq}=0\,.
-\ea
+\end{array}
 
 \]<span class="equation-number">(28)</span></div>
 <p>It follows that</p>
 <div class="equation">\[
-\ba{llll}
-P_{A}{}^{B}V_{Bp}=V_{Ap}\,,\qquad&\quad
-\brP_{A}{}^{B}\brV_{B\brp}=\brV_{A\brp}\,,\qquad&\quad
+\begin{array}{llll}
+P_{A}{}^{B}V_{Bp}=V_{Ap}\,,\qquad&amp;\quad
+\brP_{A}{}^{B}\brV_{B\brp}=\brV_{A\brp}\,,\qquad&amp;\quad
 P_{A}{}^{B}\brV_{B\brp}=0=\brP_{A}{}^{B}V_{Bp}\,.
-\ea
+\end{array}
 \]</div>
 <p>The presence of twofold vielbeins, \(V_{A}{}^{p}\) and \(\brV_{A}{}^{\brp}\), and spin groups, \(\SpinD \times \oSpinD\), is a distinctly string-theoretic feature. This reflects the existence of two separate locally inertial frames: one associated with the left-moving sector, and the other associated with the right-moving sector of closed strings [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ADuff%3A1986ne" target="_blank" rel="noopener noreferrer">Duff:1986ne</a>].  Naturally, there are also two types of spinorial fermions,  as seen in supersymmetric DFTs [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011sq" target="_blank" rel="noopener noreferrer">Jeon:2011sq</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>] and as conjectured  in the Standard Model of particle physics coupled to DFT [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AChoi%3A2015bga" target="_blank" rel="noopener noreferrer">Choi:2015bga</a>].  This dual structure could offer testable predictions for DFT and string theory.  Moreover, it facilitates the unification of type IIA and IIB supergravities in the \({D=10}\) maximally supersymmetric DFT [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>] that has been explicitly constructed to the complete, quartic order in fermions.</p>
 <p>The generalised metric and  the vielbeins are constrained by the properties (<a class="equation-ref" href="non-riemannian-geometry.html#ref-cHdef" title="Equation reference: cHdef">22</a>), (<a class="equation-ref" href="non-riemannian-geometry.html#ref-VVdef1" title="Equation reference: VVdef1">27</a>), and (<a class="equation-ref" href="non-riemannian-geometry.html#ref-VVdef2" title="Equation reference: VVdef2">28</a>). Consequently, their infinitesimal variations satisfy the following relations: (Footnote: Observe the implicit index contractions in \((P\delta\cH\brP)_{AB}\), where the expression expands as \(P_{A}{}^{C}\delta\cH_{CD}\brP^{D}{}_{B}\).)</p>
@@ -175,10 +175,10 @@ P_{A}{}^{B}\brV_{B\brp}=0=\brP_{A}{}^{B}V_{Bp}\,.
 \]<span class="equation-number">(30)</span></div>
 <p>and</p>
 <div class="equation" id="ref-deltaVVVV">\[
-\ba{ll}
-\delta V_{Ap}=\brV_{A\brq}\brV^{B\brq}\delta V_{Bp}+V_{A}{}^{q}V_{B[q}\delta V^{B}{}_{p]}\,,\quad&\quad
+\begin{array}{ll}
+\delta V_{Ap}=\brV_{A\brq}\brV^{B\brq}\delta V_{Bp}+V_{A}{}^{q}V_{B[q}\delta V^{B}{}_{p]}\,,\quad&amp;\quad
 \delta \brV_{A\brp}=V_{Aq}V^{Bq}\delta \brV_{B\brp}+\brV_{A}{}^{\brq}\brV_{B[\brq}\delta \brV^{B}{}_{\brp]}\,,
-\ea
+\end{array}
 
 \]<span class="equation-number">(31)</span></div>
 <p>where  the second terms on the right-hand sides correspond to local Lorentz rotations.</p>
@@ -187,30 +187,30 @@ P_{A}{}^{B}\brV_{B\brp}=0=\brP_{A}{}^{B}V_{Bp}\,.
 <p>DFT and its supersymmetric extensions offer a unified framework to describe stringy spacetime dynamics via the fundamental fields, \(\{\cH_{AB},d\}\) and \(\{V_{Ap},\brV_{B\brq},d\}\). These fields satisfy key defining relations, such as <a class="equation-ref" href="non-riemannian-geometry.html#ref-cHdef" title="Equation reference: cHdef">(22)</a> and <a class="equation-ref" href="non-riemannian-geometry.html#ref-VVdef1" title="Equation reference: VVdef1">(27)</a>, and allow for the classification of DFT geometries through the introduction of two non-negative integers, \((n,\brn)\), whose sum is bounded: \(0\leq n+\brn\leq D\).</p>
 <p>With  \(1\leq i,j\leq n\) and \(1\leq \bri,\brj\leq\brn\),    the DFT metric satisfying (<a class="equation-ref" href="non-riemannian-geometry.html#ref-cHdef" title="Equation reference: cHdef">22</a>)  takes the most general form [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AMorand%3A2017fnv" target="_blank" rel="noopener noreferrer">Morand:2017fnv</a>],</p>
 <div class="equation" id="ref-cHFINAL">\[
-\cH_{AB}=\left(\ba{cc}\cH^{\mu\nu}&
+\cH_{AB}=\left(\begin{array}{cc}\cH^{\mu\nu}&amp;
 -\cH^{\mu\sigma}B_{\sigma\lambda}+Y_{i}^{\mu}X^{i}_{\lambda}-
 \brY_{\bri}^{\mu}\brX^{\bri}_{\lambda}\\
 B_{\kappa\rho}\cH^{\rho\nu}+X^{i}_{\kappa}Y_{i}^{\nu}
--\brX^{\bri}_{\kappa}\brY_{\bri}^{\nu}\quad&~~
+-\brX^{\bri}_{\kappa}\brY_{\bri}^{\nu}\quad&amp;~~
 ~~\cK_{\kappa\lambda}-B_{\kappa\rho}\cH^{\rho\sigma}B_{\sigma\lambda}
 +2X^{i}_{(\kappa}B_{\lambda)\rho}Y_{i}^{\rho}
 -2\brX^{\bri}_{(\kappa}B_{\lambda)\rho}\brY_{\bri}^{\rho}
-\ea\right)\,.
+\end{array}\right)\,.
 
 \]<span class="equation-number">(32)</span></div>
 <p>Here, \(\cH\) and \(\cK\) are symmetric,    \(B\) is skew-symmetric,</p>
 <div class="equation">\[
-\ba{lll}
-\cH^{\mu\nu}=\cH^{\nu\mu}\,,\quad&\qquad \cK_{\mu\nu}=\cK_{\nu\mu}\,,\quad&\qquad
+\begin{array}{lll}
+\cH^{\mu\nu}=\cH^{\nu\mu}\,,\quad&amp;\qquad \cK_{\mu\nu}=\cK_{\nu\mu}\,,\quad&amp;\qquad
 B_{\mu\nu}=-B_{\nu\mu}\,;
-\ea
+\end{array}
 \]</div>
 <p>\(\cH\) and \(\cK\) admit kernels,</p>
 <div class="equation" id="ref-HXX">\[
-\ba{ll}
-\cH^{\mu\nu}X^{i}_{\nu}=0=\cH^{\mu\nu}\brX^{\bri}_{\nu}\,,\quad&\qquad
+\begin{array}{ll}
+\cH^{\mu\nu}X^{i}_{\nu}=0=\cH^{\mu\nu}\brX^{\bri}_{\nu}\,,\quad&amp;\qquad
 \cK_{\mu\nu}Y_{j}^{\nu}=0=\cK_{\mu\nu}\brY_{\brj}^{\nu}\,;
-\ea
+\end{array}
 
 \]<span class="equation-number">(34)</span></div>
 <p>and  a completeness relation must hold,</p>
@@ -222,84 +222,84 @@ B_{\mu\nu}=-B_{\nu\mu}\,;
 \]<span class="equation-number">(35)</span></div>
 <p>The linear independence of the kernel’s zero-eigenvectors implies that</p>
 <div class="equation">\[
-\ba{lllll}
-Y^{\mu}_{i}X_{\mu}^{j}=\delta_{i}{}^{j}\,,&\,\,
-\brY^{\mu}_{\bri}\brX_{\mu}^{\brj}=\delta_{\bri}{}^{\brj}\,,&\,\,
+\begin{array}{lllll}
+Y^{\mu}_{i}X_{\mu}^{j}=\delta_{i}{}^{j}\,,&amp;\,\,
+\brY^{\mu}_{\bri}\brX_{\mu}^{\brj}=\delta_{\bri}{}^{\brj}\,,&amp;\,\,
 Y^{\mu}_{i}\brX_{\mu}^{\brj}=0=
-\brY^{\mu}_{\bri}X_{\mu}^{j}\,,&\,\,
-\cH^{\rho\mu}\cK_{\mu\nu}\cH^{\nu\sigma}=\cH^{\rho\sigma}\,,&\,\,
+\brY^{\mu}_{\bri}X_{\mu}^{j}\,,&amp;\,\,
+\cH^{\rho\mu}\cK_{\mu\nu}\cH^{\nu\sigma}=\cH^{\rho\sigma}\,,&amp;\,\,
 \cK_{\rho\mu}\cH^{\mu\nu}\cK_{\nu\sigma}=\cK_{\rho\sigma}\,,
-\ea
+\end{array}
 \]</div>
 <p>and  hence the \(\ODD\)-invariant trace of the DFT metric amounts to \(\cH_{A}{}^{A}=2(n-\brn)\).</p>
 <p>The precise  expression  of the \((n,\brn)\) DFT  metric (<a class="equation-ref" href="non-riemannian-geometry.html#ref-cHFINAL" title="Equation reference: cHFINAL">32</a>) and  the  fundamental algebraic relations (<a class="equation-ref" href="non-riemannian-geometry.html#ref-HXX" title="Equation reference: HXX">34</a>), (<a class="equation-ref" href="non-riemannian-geometry.html#ref-COMPL" title="Equation reference: COMPL">35</a>) are all   invariant under  \(\mathbf{GL}(n)\times\mathbf{GL}(\brn)\) local rotations,</p>
 <div class="equation" id="ref-GL2">\[
-\ba{ccc}
-\left(X^{i}_{\mu}\,,\,Y_{i}^{\mu}\,,\,\brX^{\bri}_{\mu}\,,\,\brY_{\bri}^{\nu}\right)\quad&\longmapsto&\quad
+\begin{array}{ccc}
+\left(X^{i}_{\mu}\,,\,Y_{i}^{\mu}\,,\,\brX^{\bri}_{\mu}\,,\,\brY_{\bri}^{\nu}\right)\quad&amp;\longmapsto&amp;\quad
 \left(X^{j}_{\mu}\,R_{j}{}^{i}\,,\,R^{-1}{}_{i}{}^{j}\,Y_{j}^{\nu}\,,\,\brX^{\brj}_{\mu}\,\brR_{\brj}{}^{\bri}\,,\,\brR^{-1}{}_{\bri}{}^{\brj}\,\brY_{\brj}^{\nu}\right)\,,
-\ea
+\end{array}
 
 \]<span class="equation-number">(37)</span></div>
 <p>and, with  arbitrary local parameters, \(V_{\mu i},\brV_{\mu\bri}\), under the following transformations,</p>
 <div class="equation" id="ref-Milne2">\[
-\ba{cll}
-Y_{i}^{\mu}~~&\longmapsto&~~ Y_{i}^{\mu}+\cH^{\mu\nu}V_{\nu i}\,,\\
-\brY_{\bri}^{\mu}~~&\longmapsto&~~\brY_{\bri}^{\mu}+\cH^{\mu\nu}\brV_{\nu\bri}\,,\\
-\cK_{\mu\nu}~~&\longmapsto&~~ \cK_{\mu\nu}-2X^{i}_{(\mu}\cK_{\nu)\rho}\cH^{\rho\sigma}V_{\sigma i}-2\brX^{\bri}_{(\mu}\cK_{\nu)\rho}\cH^{\rho\sigma}\brV_{\sigma\bri}+(X_{\mu}^{i}V_{\rho i}+\brX_{\mu}^{\bri}\brV_{\rho\bri})\cH^{\rho\sigma}(X_{\nu}^{j}V_{\sigma j}+\brX_{\nu}^{\brj}\brV_{\sigma\brj})\,,\\
-B_{\mu\nu}~~&\longmapsto&~~ B_{\mu\nu}
+\begin{array}{cll}
+Y_{i}^{\mu}~~&amp;\longmapsto&amp;~~ Y_{i}^{\mu}+\cH^{\mu\nu}V_{\nu i}\,,\\
+\brY_{\bri}^{\mu}~~&amp;\longmapsto&amp;~~\brY_{\bri}^{\mu}+\cH^{\mu\nu}\brV_{\nu\bri}\,,\\
+\cK_{\mu\nu}~~&amp;\longmapsto&amp;~~ \cK_{\mu\nu}-2X^{i}_{(\mu}\cK_{\nu)\rho}\cH^{\rho\sigma}V_{\sigma i}-2\brX^{\bri}_{(\mu}\cK_{\nu)\rho}\cH^{\rho\sigma}\brV_{\sigma\bri}+(X_{\mu}^{i}V_{\rho i}+\brX_{\mu}^{\bri}\brV_{\rho\bri})\cH^{\rho\sigma}(X_{\nu}^{j}V_{\sigma j}+\brX_{\nu}^{\brj}\brV_{\sigma\brj})\,,\\
+B_{\mu\nu}~~&amp;\longmapsto&amp;~~ B_{\mu\nu}
 -2X^{i}_{[\mu}V_{\nu]i}+2\brX^{\bri}_{[\mu}\brV_{\nu]\bri}
 +2X^{i}_{[\mu}\brX^{\bri}_{\nu]}\left(Y_{i}^{\rho}\brV_{\rho\bri}
 +\brY_{\bri}^{\rho}V_{\rho i}+V_{\rho i}\cH^{\rho\sigma}\brV_{\sigma\bri}\right)\,.
-\ea
+\end{array}
 
 \]<span class="equation-number">(38)</span></div>
 <p>In fact, these two symmetries (<a class="equation-ref" href="non-riemannian-geometry.html#ref-GL2" title="Equation reference: GL2">37</a>), (<a class="equation-ref" href="non-riemannian-geometry.html#ref-Milne2" title="Equation reference: Milne2">38</a>) are  identifiable   as the twofold local Lorentz symmetries.</p>
 <p>On the one hand,  in the case \((n,\brn)=(0,0)\),     \(\cK_{\mu\nu}\) and  \(\cH^{\mu\nu}\)  coincide with the usual (invertible) Riemannian metric and its inverse. In this Riemannian limit, the \((0,0)\)      DFT metric  takes the familiar  form [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AGiveon%3A1988tt" target="_blank" rel="noopener noreferrer">Giveon:1988tt</a>],</p>
 <div class="equation" id="ref-00H">\[
-\cH_{AB}=\left(\ba{cc}
-\quad g^{\mu\nu}\quad&\quad -g^{\mu\lambda}B_{\lambda\tau}\quad\\
-\quad B_{\sigma\kappa}g^{\kappa\nu}\quad&\quad
+\cH_{AB}=\left(\begin{array}{cc}
+\quad g^{\mu\nu}\quad&amp;\quad -g^{\mu\lambda}B_{\lambda\tau}\quad\\
+\quad B_{\sigma\kappa}g^{\kappa\nu}\quad&amp;\quad
 g_{\sigma\tau}-B_{\sigma\kappa}g^{\kappa\lambda}B_{\lambda\tau}\quad
-\ea\right)\,.
+\end{array}\right)\,.
 
 \]<span class="equation-number">(39)</span></div>
 <p>The \(\ODD\)-symmetric proper length (<a class="equation-ref" href="doubled-yet-gauged.html#ref-PL" title="Equation reference: PL">19</a>), as well as the doubled particle and string actions (<a class="equation-ref" href="doubled-yet-gauged.html#ref-particleaction" title="Equation reference: particleaction">20</a>), (<a class="equation-ref" href="doubled-yet-gauged.html#ref-stringaction" title="Equation reference: stringaction">21</a>), all reduce to their conventional (undoubled) forms after integrating out the auxiliary variables \(\fa^{A}\).</p>
 <p>On the other  hand, cases with \((n,\brn) \neq (0,0)\) are inherently non-Riemannian,  as they lack an invertible Riemannian metric. Specifically, in the cases \((n,\brn) = (D,0)\) or \((0,D)\), \(\cK_{\mu\nu}\) and \(\cH^{\mu\nu}\) vanish, the relations  \(Y_{i}^{\mu}X^{i}_{\nu}=\delta^{\mu}{}_{\nu}\) or \(\brY_{\bri}^{\mu}\brX^{\bri}_{\nu}=\delta^{\mu}{}_{\nu}\) hold respectively, and the \(B\)-field becomes irrelevant.  In these  extremely non-Riemannian limits, the DFT metric coincides with the \(\ODD\)-invariant metric up to  sign,</p>
 <div class="equation" id="ref-D0H">\[
-\cH_{AB}=\pm\cJ_{AB}=\left(\ba{cc}
-~ 0\quad&\quad\pm 1~\\
-~ \pm 1\quad&\quad0~
-\ea\right)\,.
+\cH_{AB}=\pm\cJ_{AB}=\left(\begin{array}{cc}
+~ 0\quad&amp;\quad\pm 1~\\
+~ \pm 1\quad&amp;\quad0~
+\end{array}\right)\,.
 
 \]<span class="equation-number">(40)</span></div>
 <p>These cases represent two perfectly \(\ODD\)-symmetric vacua in bosonic DFT that are maximally non-Riemannian, characterized by the saturation, \({n+\brn=D}\). Remarkably, these vacua exhibit infinitely many isometries [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABlair%3A2020gng" target="_blank" rel="noopener noreferrer">Blair:2020gng</a>], as any local parameter \(\xi^{A}\) automatically satisfies the Killing equation, defined by the condition \({\hcL_{\xi}\cH_{AB}=0}\).</p>
 <p>In this scenario,  the ordinary Riemannian spacetime (<a class="equation-ref" href="non-riemannian-geometry.html#ref-00H" title="Equation reference: 00H">39</a>) emerges after spontaneous symmetry breaking of the fully \(\ODD\)-symmetric vacua (<a class="equation-ref" href="non-riemannian-geometry.html#ref-D0H" title="Equation reference: D0H">40</a>), while the Riemannian metric and the \(B\)-field are identified as  Nambu-Goldstone bosons [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABerman%3A2019izh" target="_blank" rel="noopener noreferrer">Berman:2019izh</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3APark%3A2020ixf" target="_blank" rel="noopener noreferrer">Park:2020ixf</a>].</p>
 <p>On a generic \((n, \brn)\) non-Riemannian background, a particle described by the doubled action (<a class="equation-ref" href="doubled-yet-gauged.html#ref-particleaction" title="Equation reference: particleaction">20</a>) freezes in \(n+\brn\) untilde directions,</p>
 <div class="equation" id="ref-FROZEN">\[
-\ba{ll}
-\dis{X^{i}_{\mu}\frac{\rd x^{\mu}}{\rd\tau}=0}\,,\qquad&\qquad
+\begin{array}{ll}
+\dis{X^{i}_{\mu}\frac{\rd x^{\mu}}{\rd\tau}=0}\,,\qquad&amp;\qquad
 \dis{\brX^{\bri}_{\mu}\frac{\rd x^{\mu}}{\rd\tau}=0}\,,
-\ea
+\end{array}
 
 \]<span class="equation-number">(41)</span></div>
 <p>while the string in (<a class="equation-ref" href="doubled-yet-gauged.html#ref-stringaction" title="Equation reference: stringaction">21</a>) becomes chiral and anti-chiral in the \(n\) and \(\brn\) untilde  directions, respectively:</p>
 <div class="equation">\[
-\ba{ll}
+\begin{array}{ll}
 X^{i}_{\mu}\left(\partial_{\alpha}x^{\mu}+\textstyle{\frac{1}{\sqrt{-h}}}\epsilon_{\alpha}{}^{\beta}\partial_{\beta}x^{\mu}\right)=0\,,
-\qquad&~~\quad
+\qquad&amp;~~\quad
 \brX^{\bri}_{\mu}\left(\partial_{\alpha}x^{\mu}-\textstyle{\frac{1}{\sqrt{-h}}}\epsilon_{\alpha}{}^{\beta}\partial_{\beta}x^{\mu}\right)=0\,.
-\ea
+\end{array}
 \]</div>
 <p>This behaviour arises as the components of the auxiliary gauge potential \(\fa^{A}\) act as Lagrange multipliers [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AMorand%3A2017fnv" target="_blank" rel="noopener noreferrer">Morand:2017fnv</a>].</p>
 <p>Nonetheless, the \((n,\brn)\)-classification of the generalised metric (<a class="equation-ref" href="non-riemannian-geometry.html#ref-cHFINAL" title="Equation reference: cHFINAL">32</a>) described above remains valid for bosonic DFT geometries. In the presence of fermions, particularly in supersymmetric DFTs [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011sq" target="_blank" rel="noopener noreferrer">Jeon:2011sq</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>], the twofold spin groups are <em>a priori</em> fixed, and the permissible values of \((n,\brn)\) are constrained by their dimensions and signatures. Specifically, the Euclidean spin group, \(\Spin(D)\times\Spin(D)\), does not permit any non-Riemannian geometries, whereas the Minkowskian case, \(\Spin(1,{D-1})\times\Spin({D-1},1)\), as assumed in Table <a class="table-ref" href="dft-minimum.html#ref-TABindices" title="Table reference: TABindices">1</a>, allows \((1,1)\) non-Riemannian geometry [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ALee%3A2013hma" target="_blank" rel="noopener noreferrer">Lee:2013hma</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AKo%3A2015rha" target="_blank" rel="noopener noreferrer">Ko:2015rha</a>], which corresponds to non-relativistic [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AGomis%3A2000bd" target="_blank" rel="noopener noreferrer">Gomis:2000bd</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ADanielsson%3A2000gi" target="_blank" rel="noopener noreferrer">Danielsson:2000gi</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AGomis%3A2005pg" target="_blank" rel="noopener noreferrer">Gomis:2005pg</a>] or Newton-Cartan string theories [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AChristensen%3A2013lma" target="_blank" rel="noopener noreferrer">Christensen:2013lma</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHartong%3A2015zia" target="_blank" rel="noopener noreferrer">Hartong:2015zia</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHarmark%3A2017rpg" target="_blank" rel="noopener noreferrer">Harmark:2017rpg</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHarmark%3A2018cdl" target="_blank" rel="noopener noreferrer">Harmark:2018cdl</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABergshoeff%3A2018yvt" target="_blank" rel="noopener noreferrer">Bergshoeff:2018yvt</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABergshoeff%3A2019pij" target="_blank" rel="noopener noreferrer">Bergshoeff:2019pij</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHarmark%3A2019upf" target="_blank" rel="noopener noreferrer">Harmark:2019upf</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABergshoeff%3A2021bmc" target="_blank" rel="noopener noreferrer">Bergshoeff:2021bmc</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AOling%3A2022fft" target="_blank" rel="noopener noreferrer">Oling:2022fft</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHartong%3A2022lsy" target="_blank" rel="noopener noreferrer">Hartong:2022lsy</a>]. Furthermore, certain known singularities in supergravity theories can be appropriately identified as regular \((1,1)\) non-Riemannian geometries [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AMorand%3A2021xeq" target="_blank" rel="noopener noreferrer">Morand:2021xeq</a>]; see section <a class="section-ref" href="solutions.html#spherically-symmetric-solution-generalisation-of-the-schwarzschild-geometry" title="Section reference: SphericalSOL">Spherically Symmetric Solution: Generalisation of  the Schwarzschild Geometry</a> for an example.</p>
 <p>While we refer to [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AMorand%3A2017fnv" target="_blank" rel="noopener noreferrer">Morand:2017fnv</a>] for the general \((n,\brn)\) cases, here we   merely spell out the \((0,0)\) Riemannian parametrisation of the  DFT vielbeins,</p>
 <div class="equation" id="ref-00V">\[
-\ba{ll}
-V_{Ap}=\frac{1}{\sqrt{2}}\left(\ba{c}e_{p}{}^{\mu}\\
-e_{\nu}{}^{q}\eta_{qp}+B_{\nu\sigma}e_{p}{}^{\sigma}\ea\right)\,,\quad&\quad
-\brV_{A\brp}=\frac{1}{\sqrt{2}}\left(\ba{c}\bre_{\brp}{}^{\mu}\\
-\bre_{\nu}{}^{\brq}\breta_{\brq\brp}+B_{\nu\sigma}\bre_{\brp}{}^{\sigma}\ea\right)\,.
-\ea
+\begin{array}{ll}
+V_{Ap}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}e_{p}{}^{\mu}\\
+e_{\nu}{}^{q}\eta_{qp}+B_{\nu\sigma}e_{p}{}^{\sigma}\end{array}\right)\,,\quad&amp;\quad
+\brV_{A\brp}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}\bre_{\brp}{}^{\mu}\\
+\bre_{\nu}{}^{\brq}\breta_{\brq\brp}+B_{\nu\sigma}\bre_{\brp}{}^{\sigma}\end{array}\right)\,.
+\end{array}
 
 \]<span class="equation-number">(43)</span></div>
 <p>Here \(e_{\mu}{}^{p}\) and \(\bre_{\mu}{}^{\brp}\) are a pair of (Riemannian) vielbeins which square to  the same  metric,</p>

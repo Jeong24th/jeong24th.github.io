@@ -121,16 +121,16 @@ e^{-2d}\Big[4\brV_{A}{}^{\brq}\delta V^{Ap}\big(S_{p\brq}-K_{p\brq}\big)-2\delta
 \]</div>
 <p>Here  \(\frac{\delta \cL_{\Matter}}{\delta\Psi}\) denotes the Euler-Lagrange equations for the matter field. Naturally, we are led to define</p>
 <div class="equation">\[
-\ba{ll}
-\dis{K_{p\brq}=\frac{1}{4}e^{2d}\left(V_{Ap}\frac{\delta \cL_{\Matter}}{\delta\brV_{A}{}^{\brq}}-\brV_{A\brq}\frac{\delta \cL_{\Matter}}{\delta V_{A}{}^{p}}\right)\,,}\qquad&\quad
+\begin{array}{ll}
+\dis{K_{p\brq}=\frac{1}{4}e^{2d}\left(V_{Ap}\frac{\delta \cL_{\Matter}}{\delta\brV_{A}{}^{\brq}}-\brV_{A\brq}\frac{\delta \cL_{\Matter}}{\delta V_{A}{}^{p}}\right)\,,}\qquad&amp;\quad
 \dis{\To=\frac{1}{2}e^{2d\,}\frac{\delta \cL_{\Matter}}{\delta d}\,,}
-\ea
+\end{array}
 \]</div>
 <p>which constitute the on-shell conserved, \(\ODD\)-symmetric energy-momentum tensor in DFT:</p>
 <div class="equation" id="ref-EMT">\[
-\ba{ll}
-T_{AB}=4V_{[A}{}^{p}\brV_{B]}{}^{\brq}K_{p\brq}-\half\cJ_{AB}\To\,,\qquad&\quad\na_{A}T^{AB}=0\,,
-\ea
+\begin{array}{ll}
+T_{AB}=4V_{[A}{}^{p}\brV_{B]}{}^{\brq}K_{p\brq}-\half\cJ_{AB}\To\,,\qquad&amp;\quad\na_{A}T^{AB}=0\,,
+\end{array}
 
 \]<span class="equation-number">(150)</span></div>
 <p>where the conservation condition requires the Euler-Lagrange equations for the matter field. Notably, when matter couples directly to the generalised metric rather than the vielbeins, we simply have</p>
@@ -145,21 +145,21 @@ G_{AB} = T_{AB}\,,
 <p>which was dubbed the Einstein Double Field Equation (EDFE) [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAngus%3A2018mep" target="_blank" rel="noopener noreferrer">Angus:2018mep</a>].</p>
 <p>On a \((0,0)\) Riemannian background,  the energy-momentum tensor can be parametrised as</p>
 <div class="equation">\[
-T_{AB}=\left(\ba{cc}
--K^{[\mu\nu]}& K^{(\mu\lambda)}g_{\lambda\sigma}
+T_{AB}=\left(\begin{array}{cc}
+-K^{[\mu\nu]}&amp; K^{(\mu\lambda)}g_{\lambda\sigma}
 +K^{[\mu\lambda]}B_{\lambda\sigma}-\half\delta^{\mu}{}_{\sigma}\To\\
-\!\!-g_{\rho\kappa}K^{(\kappa\nu)}-B_{\rho\kappa}K^{[\kappa\nu]}-\half\delta_{\rho}{}^{\nu}\To&\quad
+\!\!-g_{\rho\kappa}K^{(\kappa\nu)}-B_{\rho\kappa}K^{[\kappa\nu]}-\half\delta_{\rho}{}^{\nu}\To&amp;\quad
 K_{[\rho\sigma]}+B_{\rho\kappa}K^{[\kappa\lambda]}B_{\lambda\sigma}+B_{\rho}{}^{\kappa}K_{(\kappa\sigma)}+K_{(\rho\lambda)}B^{\lambda}{}_{\sigma}
-\ea\right)\,,
+\end{array}\right)\,,
 \]</div>
 <p>and the EDFE yields the following three sets of equations:</p>
 <div class="equation" id="ref-EDFE00">\[
-\ba{rll}
+\begin{array}{rll}
 R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}
-&\!=&\! K_{(\mu\nu)}\,,\\
-\half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)&\!=&\! K_{[\mu\nu]}\,,\\
-R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}&\!=&\!\To\,.
-\ea
+&amp;\!=&amp;\! K_{(\mu\nu)}\,,\\
+\half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)&amp;\!=&amp;\! K_{[\mu\nu]}\,,\\
+R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}&amp;\!=&amp;\!\To\,.
+\end{array}
 
 \]<span class="equation-number">(154)</span></div>
 <p>Each equation can be understood as the equation of motion  of the full action \(S_{\DFT-\Matter}\) for \(g_{\mu\nu}\), \(B_{\mu\nu}\), and \(d\),  respectively (rather than \(g,B,\phi\)).   In view of \(d=\phi-\frac{1}{2}\ln\sqrt{-g}\) (<a class="equation-ref" href="non-riemannian-geometry.html#ref-00d" title="Equation reference: 00d">45</a>), the traditional energy-momentum tensor in GR is  given by  \(K_{(\mu\nu)}\) and \(\To\) [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ALee%3A2023boi" target="_blank" rel="noopener noreferrer">Lee:2023boi</a>]:</p>
@@ -168,10 +168,10 @@ T_{\mu\nu}^{\scriptscriptstyle{\mathbf{GR}}}=e^{-2\phi}\left[K_{(\mu\nu)}-\frac{
 \]</div>
 <p>The on-shell conservation (<a class="equation-ref" href="edfe.html#ref-EMT" title="Equation reference: EMT">150</a>) reduces to</p>
 <div class="equation" id="ref-con00">\[
-\ba{ll}
-\trd^{\mu}K_{(\mu\nu)}-2\partial^{\mu}\phi\,K_{(\mu\nu)}+\half H_{\nu}{}^{\lambda\mu}K_{[\lambda\mu]}-\half\partial_{\nu}\To=0\,,\quad&\qquad
+\begin{array}{ll}
+\trd^{\mu}K_{(\mu\nu)}-2\partial^{\mu}\phi\,K_{(\mu\nu)}+\half H_{\nu}{}^{\lambda\mu}K_{[\lambda\mu]}-\half\partial_{\nu}\To=0\,,\quad&amp;\qquad
 \trd_{\mu}\!\left(e^{-2\phi}K^{[\mu\nu]}\right)=0\,,
-\ea
+\end{array}
 
 \]<span class="equation-number">(156)</span></div>
 <p>which are consistent with the geometric counterparts (<a class="equation-ref" href="curvatures.html#ref-dBI00" title="Equation reference: dBI00">126</a>).  In particular, the middle equation in (<a class="equation-ref" href="edfe.html#ref-EDFE00" title="Equation reference: EDFE00">154</a>) and the latter in (<a class="equation-ref" href="edfe.html#ref-con00" title="Equation reference: con00">156</a>) represent the stringy two-form generalisations of Maxwell’s equations (<a class="equation-ref" href="introduction.html#ref-Maxwell2" title="Equation reference: Maxwell2">2</a>) and the corresponding conservation laws: \(\trd_{\lambda}F^{\lambda\mu}=J^{\mu}\) and \(\trd_{\mu}J^{\mu}=0\).  Strings, unlike point particles, couple to the two-form \(B\)-field rather than the one-form Maxwell vector potential.</p>
