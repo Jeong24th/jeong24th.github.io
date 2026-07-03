@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solutions | Gravitational Core of Double Field Theory</title>
+  <meta name="description" content="Spherically symmetric and cosmological solutions in Double Field Theory, including black holes, wormholes, and cosmology possibly without a dark sector.">
+  <meta name="keywords" content="DFT solutions, post-Newtonian string gravity, wormholes, cosmology possibly without a dark sector">
+  <meta name="author" content="Jeong-Hyuck Park">
+  <link rel="canonical" href="https://jeong24th.github.io/lecture-notes/solutions.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Solutions | Gravitational Core of Double Field Theory">
+  <meta property="og:description" content="Spherically symmetric and cosmological solutions in Double Field Theory, including black holes, wormholes, and cosmology possibly without a dark sector.">
+  <meta property="og:url" content="https://jeong24th.github.io/lecture-notes/solutions.html">
+  <meta property="og:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solutions | Gravitational Core of Double Field Theory">
+  <meta name="twitter:description" content="Spherically symmetric and cosmological solutions in Double Field Theory, including black holes, wormholes, and cosmology possibly without a dark sector.">
+  <meta name="twitter:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Solutions | Gravitational Core of Double Field Theory", "name": "Solutions | Gravitational Core of Double Field Theory", "author": {"@type": "Person", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "publisher": {"@type": "Organization", "name": "Sogang University"}, "url": "https://jeong24th.github.io/lecture-notes/solutions.html", "isPartOf": {"@type": "WebSite", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "about": ["DFT solutions", "post-Newtonian string gravity", "wormholes", "cosmology possibly without a dark sector"]}</script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        tags: "ams",
+        macros: {
+          ODD: "\\mathbf{O}(D,D)",
+          odd: "\\mathbf{o}(D,D)",
+          soDD: "\\mathbf{so}(D,D)",
+          SO: "\\mathbf{SO}",
+          Spin: "\\mathbf{Spin}",
+          GL: "\\mathbf{GL}",
+          SL: "\\mathbf{SL}",
+          Pin: "\\mathbf{Pin}",
+          SpinD: "\\mathbf{Spin}(1,D{-}1)",
+          oSpinD: "\\mathbf{Spin}(D{-}1,1)",
+          half: "{\\tfrac{1}{2}}",
+          quarter: "{\\tfrac{1}{4}}",
+          ba: ["\\begin{array}{#1}", 1],
+          ea: "\\end{array}",
+          bpm: "\\begin{pmatrix}",
+          epm: "\\end{pmatrix}",
+          dis: "\\displaystyle",
+          na: "\\nabla",
+          trd: "\\bigtriangledown",
+          rd: "{\\rm d}",
+          cA: "{\\cal A}", cB: "{\\cal B}", cC: "{\\cal C}", cD: "{\\cal D}",
+          cE: "{\\cal E}", cF: "{\\cal F}", cG: "{\\cal G}", cH: "{\\cal H}",
+          cI: "{\\cal I}", cJ: "{\\cal J}", cK: "{\\cal K}", cL: "{\\cal L}",
+          cM: "{\\cal M}", cN: "{\\cal N}", cO: "{\\cal O}", cP: "{\\cal P}",
+          cQ: "{\\cal Q}", cR: "{\\cal R}", cS: "{\\cal S}", cT: "{\\cal T}", cV: "{\\cal V}",
+          brp: "\\bar{p}", brq: "\\bar{q}", bri: "\\bar{\\imath}", brj: "\\bar{\\jmath}",
+          brV: "\\bar{V}", brP: "\\bar{P}", brX: "\\bar{X}", brY: "\\bar{Y}",
+          brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
+          brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
+          brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
+          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          So: "S_{(0)}", To: "T_{(0)}",
+          DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
+          Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
+          fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
+          DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
+          tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
+          betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+        }
+      },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Lecture Notes</a>
+      <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="https://arxiv.org/search/?searchtype=author&query=Park%2C+Jeong-Hyuck&abstracts=show&size=200&order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow">Gravitational Core of Double Field Theory</p>
+      <h1>Solutions</h1>
+      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p>This chapter collects representative solutions and tests: spherical geometries, post-Newtonian limits, wormholes, and cosmological solutions of the EDFE.</p>
+      <div class="button-row" aria-label="Chapter actions">
+        <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
+        <a class="button-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </header>
+    <nav class="local-toc" aria-label="Table of contents"><h2>Contents</h2><ul><li><a href="#solutions">Solutions</a></li>
+<li><a href="#spherically-symmetric-solution-generalisation-of-the-schwarzschild-geometry-sphericalsol">Spherically Symmetric Solution: Generalisation of  the Schwarzschild Geometry</a></li>
+<li><a href="#cosmological-solution-of-open-universe-alternative-to-de-sitter-universe">Cosmological Solution of Open Universe: Alternative to de Sitter Universe</a></li></ul></nav>
+    <section class="content-section lecture-body" aria-label="Solutions main text">
+      <h2 id="solutions">Solutions</h2>
+<p>With the theoretical foundations established, we now turn to specific solutions within the DFT framework.</p>
+<p>Any known \({D=10}\) IIA or IIB supergravity solution consistently satisfies the equations of motion, including the   Einstein Double Field Equation (EDFE), of type II supersymmetric DFT [Jeon:2012hp]. However, here we focus on more elementary \({D=4}\) solutions.</p>
+<p>In General Relativity, the Schwarzschild geometry and de Sitter space are fundamental solutions. The Schwarzschild solution describes the spacetime around a black hole or the exterior geometry of a spherical object, while de Sitter space serves as a model for the large-scale structure of the Universe.  Below, we present their counterparts within the framework of Double Field Theory (DFT).</p>
+<h2 id="spherically-symmetric-solution-generalisation-of-the-schwarzschild-geometry-sphericalsol">Spherically Symmetric Solution: Generalisation of  the Schwarzschild Geometry</h2>
+<p class="aim"><strong>Aim.</strong> To solve the EDFE in four dimensions under spherical symmetry.</p>
+<p>The DFT counterpart to the Schwarzschild geometry in GR is a three-parameter family of vacuum solutions to the \({D=4}\) EDFE, <em>i.e.</em> \(G_{AB}=0\) or ([3beta]). These solutions can be traced back to the work of Burgess, Myers, and Quevedo in 1994 [Burgess:1994kq], who obtained them by performing \(\mathbf{SL}(2,\mathbb{R})\) S-duality rotations on a dilaton–metric solution. The solutions were later re-derived [Ko:2016dxa] as the most general, spherically symmetric, static, asymptotically flat, vacuum geometry of \({D=4}\) DFT. We present the solutions with three constants \(\{h,a,b\}\) in an isotropic coordinate system [Choi:2022srv], where the metric takes the form, with \(r=\sqrt{\vec{x}{\cdot\vec{x} }}\),</p>
+<div class="equation">\[
+\rd s^{2}= g_{tt}(r)\,\rd t^{2}+g_{rr}(r)\,\rd \vec{x}\cdot\rd \vec{x}\,.
+\label{vacuum}
+\]</div>
+<p>The two significant  components of the metric  are</p>
+<div class="equation">\[
+\ba{ll}
+
+g_{tt}(r)=-e^{2\phi(r)}\left(\frac{4r-\sqrt{a^{2}+b^{2}}}{4r+\sqrt{a^{2}+b^{2}}}\right)^{\frac{2a}{\sqrt{a^{2}+b^{2}}}}\,,~~&~~
+
+g_{rr}(r)=e^{2\phi(r)}\left(\frac{4r+\sqrt{a^{2}+b^{2}}}{4r-\sqrt{a^{2}+b^{2}}}\right)^{\frac{2a}{\sqrt{a^{2}+b^{2}}}}
+\left(1-\frac{a^{2}+b^{2}}{16r^{2}}\right)^{\!2}\,,
+\ea
+\]</div>
+<p>the string dilaton is given, with \(\gamma_{\pm}=\half\pm\half\sqrt{1-h^2/b^2}\),  by</p>
+<div class="equation">\[
+e^{2\phi}=\gamma_{+}\left(\frac{4r-\sqrt{a^{2}+b^{2}}}{4r+\sqrt{a^{2}+b^{2}}}\right)^{\frac{2b}{\sqrt{a^{2}+b^{2}}}}+\gamma_{-}\left(\frac{4r+\sqrt{a^{2}+b^{2}}}{4r-\sqrt{a^{2}+b^{2}}}\right)^{\frac{2b}{\sqrt{a^{2}+b^{2}}}}\,,
+\]</div>
+<p>and the \(B\)-field features  electric \(H\)-flux,</p>
+<div class="equation">\[
+\ba{l}
+H_{(3)}= h\sin\vartheta\,\rd t\wedge\rd\vartheta\wedge\rd\varphi=h\,\rd t\wedge\left(\dis{\frac{\epsilon_{ijk}x^{i\,}{\rd x^{j}\wedge\rd x^{k}}}{2r^3}}\right)\,.
+\ea
+\label{eH}
+\]</div>
+<p>Several observations can be made about these solutions.</p>
+<p class="item"><strong><em>i)</em></strong> If \(b=h=0\), with \(h/b\rightarrow 0\),  the solution reduces to the Schwarzschild geometry.</p>
+<p class="item"><strong><em>ii)</em></strong> If \(a=0\),   the solution reduces to a wormhole geometry [Jang:2024nhm],</p>
+<div class="equation">\[
+\ba{ll}
+\rd s^{2}=\dis{\frac{-\rd t^{2} +\rd y^{2}}{\cF(y)}}+\cR(y)^2\left(\rd\vartheta^{2}+\sin^{2\!}\vartheta\,\rd\varphi^{2}\right)\,,\quad&\qquad
+e^{2\phi(y)}=\dis{\frac{1}{\left|\cF(y)\right|}}\,,
+\ea
+\]</div>
+<p>where</p>
+<div class="equation">\[
+\cR(y)=\sqrt{y^{2}+\quarter h^{2}}\,,\qquad
+\cF(y)=\dis{\frac{(y-b_{-})(y-b_{+})}{y^2+\frac{1}{4}h^2}}\,,\qquad b_{+}=-b\gamma_{+}\,,\qquad b_{-}=b\gamma_{-}\,.
+\]</div>
+<p>While the wormhole throat is at \(y=0\),   the points of \(y=b_{\pm}\)  are  curvature-wise singular within Riemannian geometry: \(R\propto 1/(y-b_{\pm})\) as \(y\rightarrow b_{\pm}\).   However, as a vacuum solution to the EDFE, the geometry sets both the DFT scalar and  Ricci curvature trivial, \(\So=0\) and \(S_{p\brq}=0\).  In fact,  by choosing the  \(B\)-field of the electric \(H\)-flux ([eH])  appropriately  to include a term that is pure gauge,</p>
+<div class="equation">\[
+B_{(2)}=h\cos\vartheta\,\rd t\wedge\rd\varphi \,+\, \frac{\rd t\wedge\rd y}{\cF(y)}\,,
+\]</div>
+<p>the DFT metric ([00H]) and dilaton ([00d]) can both be made entirely non-singular, as can be seen from</p>
+<div class="equation">\[
+\!\!\ba{l}
+g^{-1}=\!\left(\!\ba{cccc}
+~-\cF~&~0~&~0~&~0~\\
+0&\cF&0&0\\
+0&0&\frac{1}{\cR^{2}}&0\\
+0&0&0&\frac{1}{\cR^{2}\sin^2\vartheta}
+\ea\!\right)\,,\quad
+Bg^{-1}=\big({-g^{-1}B}\big)^{T}=\!\left(\!\ba{clcc}
+~0~&1~~~~&0~&\frac{h\cos\vartheta}{\cR^{2}\sin^2\vartheta}\\
+1&0&0&0\\
+0&0&0&0\\
+h\cos\vartheta\cF&0&0&0\ea\!\right)\,,
+\ea
+\label{gB}
+\]</div>
+<p>and</p>
+<div class="equation">\[
+\ba{l}
+g-Bg^{-1}B=\left(\ba{cccc}
+\frac{h^2\cos^2\vartheta}{\cR^{2}\sin^2\vartheta}&0&0&0\\
+0&0&0&-h\cos\vartheta\\
+0&0&\cR^2&0\\
+0&-h\cos\vartheta&0&\quad\cR^2\sin^2\vartheta-h^2\cF\cos^2\vartheta
+\ea\right)\,,
+\quad\quad e^{-2d}=\cR^2\sin\vartheta\,.
+\ea
+\label{gBgBd}
+\]</div>
+<p>Only positive powers of \(\cF(y)\) appear in ([gB]) and ([gBgBd]) after cancellation of the  negative powers.  This {sufficiently}  implies that, as the \(B\)-field gauge transformation is a part of doubled-yet-gauged diffeomorphisms, the curvature singularity as characterised within Riemannian geometry is to be identified as a coordinate singularity within  DFT [Morand:2021xeq]. When  \(\cF(y)\) vanishes at \({y=b_{\pm}}\),  the upper-left block of the generalised metric, corresponding to \(g^{-1}\), becomes degenerate,  no invertible Riemannian metric is defined, and thus the geometry is non-Riemannian. From the perspective of DFT, the geometry is regular everywhere [Morand:2021xeq]: it is  non-Riemannian at \(y=b_{\pm}\) and  Riemannian elsewhere.     In fact,    it is  the same type of non-Riemannian  geometry, \((n,\brn)=(1,1)\), as    non-relativistic string theory [Gomis:2000bd], as can be seen from ([gB]) and ([gBgBd]) [Ko:2015rha, Morand:2017fnv].</p>
+<p class="item"><strong><em>iii)</em></strong> Matching with  the  parametrised Post-Newtonian (PPN) formalism [Will:1972zz, Will:2014kxa],</p>
+<div class="equation">\[
+\rd s^{2}=-\left(1-\frac{2MG}{r}+\frac{2\betappn (MG)^2}{r^{2}}+\cdots\right)\!\rd t^{2}+\left(1+\frac{2\gammappn MG}{r}+\cdots\right)\rd x^{i}\rd x^{j}\delta_{ij}\,,
+\label{PPN}
+\]</div>
+<p>we can identify the Newtonian mass and the  Eddington-Robertson-Schiff parameters [Choi:2022srv],</p>
+<div class="equation">\[
+\ba{lll}
+2MG=a+b\sqrt{1-h^{2}/b^{2}}\,,\quad&~
+\betappn=1+\left(\frac{h}{a+b\sqrt{1-h^{2}/b^{2}}}\right)^2\,,\quad&~
+\gammappn=1-\frac{2b\sqrt{1-h^{2}/b^{2}}}{a+b\sqrt{1-h^{2}/b^{2}}}\,.
+\ea
+\label{Mbg}
+\]</div>
+<p class="item"><strong><em>iv)</em></strong> The vacuum solution ([vacuum]) represents the external geometry of a compact spherical object, such as a star. The full EDFE ([EDFE00]) then gives an integral formula for the Newtonian mass [Choi:2022srv],</p>
+<div class="equation">\[
+MG
+=\frac{1}{4\pi}\int\rd^{3}x~e^{-2d}\left( -K_{t}{}^{t}-\frac{1}{2}H_{t\vartheta\varphi}H^{t\vartheta\varphi}\right)\,,
+\label{MGint}
+\]</div>
+<p>where the integration occurs within the star&#x27;s interior. Assuming the star&#x27;s geometry is regular, the integral of the squared electric \(H\)-flux term in ([MGint]) diverges unless \({h = 0}\). To ensure physical consistency, we impose a weak energy condition, \(-K_{t}{}^{t} \geq 0\), and assume a finite Newtonian mass, <em>i.e. </em>\(MG \ll \infty\). Under these conditions, we deduce that the electric \(H\)-flux must be trivial: \({h = 0}\). Consequently, from ([Mbg]), this leads to \({\betappn = 1}\), which aligns with the result in GR, or correspondingly, the  Schwarzschild geometry.  The constants \(a\) and \(b\) are then determined as follows:</p>
+<div class="equation">\[
+\ba{rll}
+a&=&\dis{\frac{1}{4\pi}\int\rd^3 x~e^{-2d}
+\left( K_{\mu}{}^{\mu}-2K_{t}{}^{t}- \To+ H_{r\vartheta\varphi}H^{r\vartheta\varphi}\right)\,,}\\
+b&=&\dis{\frac{1}{4\pi}\int\rd^3 x~e^{-2d}
+\left(-K_{\mu}{}^{\mu}+\To-H_{r\vartheta\varphi}H^{r\vartheta\varphi}\right)\,,}
+\ea
+\label{ab}
+\]</div>
+<p>with their square sum satisfying a nontrivial  relation:  given the star&#x27;s radius \(r_\star\),</p>
+<div class="equation">\[
+\frac{a^{2}+b^{2}}{16}=\int_{0}^{r_{\star}}\rd r\, r\int_{r}^{r_{\star}}
+\frac{\rd r^{\prime}}{r^{\prime}}
+\left(\frac{e^{-2d}}{\sin\vartheta}\right)\!
+\left(K_{r}{}^{r}+K_{\vartheta}{}^{\vartheta}-\To+\frac{1}{2} H_{r\vartheta\varphi}H^{r\vartheta\varphi}\right)\,.
+\]</div>
+<p>From ([Mbg]), \(\gammappn\) is thereby determined as:</p>
+<div class="equation">\[
+\gammappn=1+\frac{\dis{\int}\rd^{3}x~e^{-2d}\big(K_{\mu}{}^{\mu}-\To+H_{r\vartheta\varphi}H^{r\vartheta\varphi}\big)}{\dis{\int}\rd^{3}x~e^{-2d}\big(-K_{t}{}^{t}\big)}\,,
+\label{gammappn}
+\]</div>
+<p>where the numerator corresponds to the Chameleon mass of the string dilaton ([Chameleon]) and the denominator to the Newtonian mass of the star ([MGint]).</p>
+<p class="item"><strong><em>v)</em></strong> The current stringent observational bounds on gravity in the solar system  are given by \(\gammappn=1+(2.1\pm 2.3)\times 10^{-5}\),  as determined from the Shapiro time-delay measurements by the Cassini spacecraft [Will:2014kxa,  Bertotti:2003rm]. Consequently, DFT can successfully pass solar system tests, provided the dilatonic Chameleon mass is at least \(10^{-5}\) times smaller than the Sun&#x27;s Newtonian mass.</p>
+<aside class="note"><p><strong>Summary.</strong> The  three-parameter family of spherically symmetric solutions to the EDFE in \({D=4}\)  includes  Schwarzschild, wormhole, and dilatonic solutions. Post-Newtonian analysis shows consistency with solar-system tests provided the dilaton&#x27;s  Chameleon mass   is suppressed.</p></aside>
+<h2 id="cosmological-solution-of-open-universe-alternative-to-de-sitter-universe">Cosmological Solution of Open Universe: Alternative to de Sitter Universe</h2>
+<p class="aim"><strong>Aim.</strong> To obtain a cosmological solution of DFT consistent with real data.</p>
+<p>The de Sitter Universe, while serving as a natural cosmological solution in GR and providing a simple model for the Universe&#x27;s accelerating expansion,  encounters a fundamental limitation in DFT: the cosmological term \(\sqrt{-g}\Lambda\) lacks \(\ODD\) symmetry, as originally  pointed out by Gasperini and Veneziano in 1991 [Gasperini:1991ak]. Consequently, the de Sitter Universe is incompatible with the EDFE ([EDFE]) and the implied \(\ODD\)-symmetric extension of the Friedmann equations [Angus:2019bqs]. This incompatibility aligns with the de Sitter swampland conjectures [Danielsson:2018ztv,  Obied:2018sgi,  Agrawal:2018own,  Andriot:2018wzk].</p>
+<p>We introduce an alternative cosmological model: an open Universe characterised by negative spatial curvature (\(k &lt; 0\)) that serves as a vacuum solution to the EDFE,  providing a compelling alternative to the de Sitter Universe. This solution  traces  back to the work of Copeland, Lahiri, and Wands in 1994 [Copeland:1994vi], who derived homogeneous and isotropic solutions to the three beta-function equations on the string worldsheet ([3beta]). Building upon this foundation, the model was further refined in [Lee:2023boi], incorporating essential physical parameters: the Hubble constant \(H_{0}\), the spatial curvature scale \(l=1/\sqrt{-k}\), the magnetic \(H\)-flux \(\hh\), as well as additional redundant parameters \(a_{0}\) and \(\phi_{0}\), defined at the (present) conformal time \(\eta = \eta_{0}\).</p>
+<p>The vacuum geometry of the open Universe is characterized by the following triplet: the string dilaton,</p>
+<div class="equation">\[
+e^{2\phi(\eta)-2\phi_{0}}=\frac{1}{2}\!
+\left[1+\sigma\sqrt{1-\frac{(\hh l\sinh\zeta)^2}{12a_{0}^4}}\right]\!\left[
+\frac{\tanh\left(\frac{\eta-\eta_{0}}{l}+\frac{\zeta}{2}\right)}{\tanh\frac{\zeta}{2}}\right]^{\sqrt{3}}+\frac{1}{2}\!
+\left[1-\sigma\sqrt{1-\frac{(\hh l\sinh\zeta)^2}{12a_{0}^4}}\right]\!\left[
+\frac{\tanh\left(\frac{\eta-\eta_{0}}{l}+\frac{\zeta}{2}\right)}{\tanh\frac{\zeta}{2}}\right]^{\!-\sqrt{3}\,}\,,
+\label{analyticphi}
+\]</div>
+<p>the (homogeneous &amp; isotropic)   magnetic \(H\)-flux,</p>
+<div class="equation">\[
+H_{(3)}=\frac{\hh\, r^2 \sin\vartheta\,\rd r\wedge\rd\vartheta\wedge\rd\varphi}{\sqrt{1+r^2/l^2}}\,,
+\label{mHflux}
+\]</div>
+<p>and the Friedmann-Lema\^{i}tre-Robertson-Walker metric with \(k=-1/l^{2}&lt;0 \),</p>
+<div class="equation">\[
+\rd s^2=a^2(\eta)\left[-\rd\eta^2+\frac{\rd r^2}{1+ r^2/l^2}+r^2\rd\vartheta^2+r^2{\sin^2\!\vartheta\,}\rd\varphi^2\right]\,,
+\label{FRWconformal}
+\]</div>
+<p>of which the scale factor  is given by the following expression:</p>
+<div class="equation">\[
+a^{2}(\eta)=a_{0}^2\,e^{2\phi(\eta)-2\phi_{0}}\,\frac{\sinh\left({2(\eta-\eta_{0})}/{l}+\zeta\right)}{\sinh\zeta}\,.
+\label{SF}
+\]</div>
+<p>Here, \(\zeta\) is a constant and \(\sigma\) is a sign factor (\({\sigma^2=1}\)), both determined by the parameters \(\{H_{0}, l, \hh\}\). The Hubble parameter and two density parameters are  defined at arbitrary conformal time \(\eta\) as</p>
+<div class="equation">\[
+\ba{lll}
+\dis{
+H=\frac{1}{a^2}\frac{\rd a}{\rd\eta}\,,}\qquad&\qquad
+\dis{\Omega_{k}=\frac{1}{l^2a^2H^2}\,,}\qquad&\qquad
+\dis{\Omega_{\hh}=\frac{\hh^2}{12a^6H^2}\,.}
+\ea
+\label{HOO}
+\]</div>
+<p>At the specific conformal time \(\eta = \eta_0\), the analytic solution for the scale factor ([SF]) yields the Hubble constant, \(H_0 = H(\eta_0)\),  as:</p>
+<div class="equation">\[
+H_{0}=\frac{1}{2a_{0}l\sinh\zeta}\left[2\cosh\zeta+
+{\sigma\sqrt{12-a_{0}^{-4}\left(\hh l\sinh\zeta\right)^2}}
+\right]\,,
+\]</div>
+<p>which can be solved to express \(\zeta\) and \(\sigma\) in terms of the density parameters at \(\eta = \eta_0\). These expressions are</p>
+<div class="equation">\[
+\ba{ll}\dis{
+\sinh\zeta=
+\sqrt{\frac{2\Omega_{0,k}}{2+\Omega_{0,k}+3\Omega_{0,\hh}-\sqrt{3+6\Omega_{0,k}+6\Omega_{0,\hh}}}}}\,,\quad&\qquad
+\dis{\sigma=\frac{\,\sqrt{3}-\sqrt{1+2\Omega_{0,k}+2\Omega_{0,\hh}}\,}{\,\left|\sqrt{3}-\sqrt{1+2\Omega_{0,k}+2\Omega_{0,\hh}}\right|\,}}\,.
+\ea
+\label{szs}
+\]</div>
+<p>In other words, \({\sigma = -1} \) if \( \Omega_{0,k} + \Omega_{0,\hh} &gt; 1\); otherwise, \({\sigma = +1}\).</p>
+<p>Some comments are in order, as discussed in [Lee:2023boi].</p>
+<p class="item"><strong><em>i)</em></strong> The deceleration parameter can be expressed in terms of the density parameters as follows:</p>
+<div class="equation">\[
+q=-\frac{1}{H^2a}\Big(\frac{\rd~}{a\rd \eta}\Big)^{2}a
+=1-\left[\frac{2\left(\frac{\,\rd\phi}{a\rd \eta}\right)^2}{3H^2}+\Omega_{k}+5\Omega_{\hh}\,\right]=-\Big[1+2\Omega_{k}+6\Omega_{\hh}-\sqrt{3(1+2\Omega_{k}+2\Omega_{\hh})}\,\Big]\,,
+\label{decq}
+\]</div>
+<p>which can be readily shown to assume negative values, particularly when \({\Omega_k + \Omega_\hh &gt; 1}\). Such acceleration is only achievable in  string frame, where the string frame metric minimally couples to point particles ([particleaction]), thereby ensuring that the equivalence principle remains valid and simultaneously exhibiting a negative sign in the dilaton&#x27;s kinetic term ([DFT00]). The dilaton drives the acceleration in string frame, without any need for dark energy, but not in Einstein frame.</p>
+<p class="item"><strong><em>ii)</em></strong> As dictated by the \(\ODD\) symmetry principle, the string dilaton is expected to couple to gauge bosons, as demonstrated in ([PhiFpsi]), implying that the  fine-structure constant is  effectively proportional to the  exponential of the string  dilaton:</p>
+<div class="equation">\[
+\alpha_{\rm{eff.}}\!(\eta)=\alpha\, e^{2\phi(\eta)}\,.
+\label{alphaeff}
+\]</div>
+<p>However, observational constraints from the absorption spectra of quasars impose stringent limits on the temporal variation of the fine-structure constant [King:2012id, Wilczynska:2015una, Martins:2017qxd, Wilczynska:2020rxx], and consequently on the evolution of the string dilaton \(\phi\). The analytic formula ([analyticphi]) shows that the string dilaton converges at future infinity, \(\eta \rightarrow \infty\). Replacing \(l\) and \(\zeta\) with imaginary numbers, \(-il\) and \(i\zeta\), yields the exact geometry of a closed Universe (\(k &gt; 0\)) (see [Copeland:1994vi] for the explicit expression). However, this substitution transforms the converging hyperbolic tangent functions in ([analyticphi]) into diverging tangent functions, preventing the dilaton \(\phi\) from stabilising during cosmic evolution, which conflicts with the observational constraints from  quasars. Similarly, when \(k = 0\), the hyperbolic tangent functions reduce to linear behaviour in time, which is equally inconsistent with the observational requirements. These results underscore the necessity of an open Universe (\(k &lt; 0\)) to ensure that the dilaton \(\phi\) evolves slowly and remains convergent throughout the cosmic evolution.</p>
+<p class="item"><strong><em>iii)</em></strong> The vacuum geometry of the open Universe given in  ([analyticphi]) and ([SF]), in particular the case with trivial \(H\)-flux (\({\hh=0}\) in ([mHflux])), demonstrates remarkable agreement with late-time cosmological observations, including type Ia supernovae data [Scolnic:2021amr, Riess:2021jrx] and quasar absorption spectra [King:2012id, Wilczynska:2015una, Martins:2017qxd, Wilczynska:2020rxx], as depicted in Figure [FIGcosmo], reproduced from [Lee:2023boi]. Such observations probe the evolution of the Hubble parameter and the potentially varying fine-structure constant up to redshift \(z=a^{-1}-1\approx 7\). Through an analysis of  Bayesian inference, the Hubble constant and the curvature density parameter are  estimated  to be</p>
+<div class="equation">\[
+\ba{ll}
+H_0 \simeq 71.29    \pm   0.12\,\mathrm{km/s/Mpc}\,,\quad&\qquad
+\Omega_{0,k}\simeq {1+(6\pm 2)\times 10^{-7}}\,.
+\ea
+\]</div>
+<p>These imply a curvature scale of \( l=1/\sqrt{-k}\simeq 4.2 \mathrm{Gpc} \) and select  the negative sign factor,  \({\sigma=-1}\),  in  ([szs]).  Such results are consistent with the analytic limiting behaviours of the scale factor ([SF]):</p>
+<div class="equation">\[
+\ba{llll}
+\dis{
+\lim_{\eta\rightarrow\infty}a=\infty\,,}\quad&\qquad\dis{
+\lim_{\eta\rightarrow\infty}H=0\,,}\quad&\qquad
+\dis{\lim_{\eta\rightarrow\infty}\Omega_{k}=1\,,}\quad&\qquad
+\dis{\lim_{\eta\rightarrow\infty}\Omega_{\hh}=0\,.}
+\ea
+\label{HOO}
+\]</div>
+<p>In other words, there is no coincidence problem.</p>
+<p class="item"><strong><em>iv)</em></strong> Extending to higher redshifts, a bounce is expected to have occurred approximately 13.7 gigayears ago. Coincidently, this is comparable to the "age&#x27;&#x27; of the flat Universe in \(\Lambda\)CDM.</p>
+<figure class="note-figure"><img src="../assets/lecture-notes/FIG_mu_vacuum.png" alt="Type Ia Supernovae" loading="lazy"><figcaption>Type Ia Supernovae</figcaption></figure>
+<p class="caption">Type Ia Supernovae [Scolnic:2021amr, Riess:2021jrx]</p>
+<figure class="note-figure"><img src="../assets/lecture-notes/FIG_phi_vacuum.png" alt="Quasar absorption spectra" loading="lazy"><figcaption>Quasar absorption spectra</figcaption></figure>
+<p class="caption">Quasar Absorption Spectra [King:2012id, Wilczynska:2015una, Martins:2017qxd, Wilczynska:2020rxx]</p>
+<figure class="note-figure"><img src="../assets/lecture-notes/FIG_BI_VAC2p.png" alt="Bayesian inference with two parameters" loading="lazy"><figcaption>Bayesian inference with two parameters</figcaption></figure>
+<p class="caption">Bayesian Inference with Two Parameters</p>
+<figure class="note-figure"><img src="../assets/lecture-notes/FIG_a_vacuum.png" alt="Bouncing solution" loading="lazy"><figcaption>Bouncing solution</figcaption></figure>
+<p class="caption">Bouncing: \(13.7\) Gigayears ago</p>
+<p class="caption">Agreement of the vacuum geometry of DFT ([analyticphi]), ([SF]) with late-time cosmological data of type Ia supernovae (a) and quasars (b).  For the latter, the string dilaton \(\phi\)  already appears to be  in the convergent phase.    Bayesian inference (c) shows that, in sharp contrast to \(\Lambda\)CDM, at present time the curvature density overwhelmingly  dominates,  \(\Omega_{0,k}\simeq {1+(6\pm 2)\times 10^{-7}}\), implying an open Universe.  A bounce (d) is  extrapolated to occur   \(13.7\) gigayears ago.   Figures  reproduced from [Lee:2023boi].</p>
+<aside class="note"><p><strong>Summary.</strong> An open Universe with negative curvature replaces de Sitter space. The dilaton drives late-time acceleration in string frame without dark energy, the solution fits supernova and quasar observations, and it predicts a cosmological bounce about \(13.7\) Gyr ago.</p></aside>
+    </section>
+    <aside class="related"><h2>Related Sections</h2><ul><li><a href="edfe.html">Einstein Double Field Equation</a></li>
+<li><a href="outlook.html">Outlook</a></li></ul></aside>
+    <aside class="download-box" aria-label="Citation and source">
+      <p><strong>Citation.</strong> Jeong-Hyuck Park, <em>Gravitational Core of Double Field Theory: Lecture Notes</em>, EPJC 2025.</p>
+      <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv:2505.10163</a> | <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF version</a></p>
+    </aside>
+    <nav class="page-nav" aria-label="Page navigation">
+      <a href="edfe.html">Previous: Einstein Double Field Equation</a>
+      <a class="index-link" href="./">Back to Lecture Notes index</a>
+      <a class="next-link" href="outlook.html">Next: Outlook</a>
+    </nav>
+    <footer class="program-footer">Gravitational Core of Double Field Theory: Lecture Notes</footer>
+  </main>
+</body>
+</html>

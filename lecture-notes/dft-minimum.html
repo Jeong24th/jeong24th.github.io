@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Double Field Theory Minimum | Gravitational Core of Double Field Theory</title>
+  <meta name="description" content="Minimal notation and symmetry conventions for Double Field Theory, including O(D,D), twofold Lorentz symmetry, and DFT index conventions.">
+  <meta name="keywords" content="Double Field Theory, O(D,D) symmetry, generalized metric, DFT notation">
+  <meta name="author" content="Jeong-Hyuck Park">
+  <link rel="canonical" href="https://jeong24th.github.io/lecture-notes/dft-minimum.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Double Field Theory Minimum | Gravitational Core of Double Field Theory">
+  <meta property="og:description" content="Minimal notation and symmetry conventions for Double Field Theory, including O(D,D), twofold Lorentz symmetry, and DFT index conventions.">
+  <meta property="og:url" content="https://jeong24th.github.io/lecture-notes/dft-minimum.html">
+  <meta property="og:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Double Field Theory Minimum | Gravitational Core of Double Field Theory">
+  <meta name="twitter:description" content="Minimal notation and symmetry conventions for Double Field Theory, including O(D,D), twofold Lorentz symmetry, and DFT index conventions.">
+  <meta name="twitter:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Double Field Theory Minimum | Gravitational Core of Double Field Theory", "name": "Double Field Theory Minimum | Gravitational Core of Double Field Theory", "author": {"@type": "Person", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "publisher": {"@type": "Organization", "name": "Sogang University"}, "url": "https://jeong24th.github.io/lecture-notes/dft-minimum.html", "isPartOf": {"@type": "WebSite", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "about": ["Double Field Theory", "O(D,D) symmetry", "generalized metric", "DFT notation"]}</script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        tags: "ams",
+        macros: {
+          ODD: "\\mathbf{O}(D,D)",
+          odd: "\\mathbf{o}(D,D)",
+          soDD: "\\mathbf{so}(D,D)",
+          SO: "\\mathbf{SO}",
+          Spin: "\\mathbf{Spin}",
+          GL: "\\mathbf{GL}",
+          SL: "\\mathbf{SL}",
+          Pin: "\\mathbf{Pin}",
+          SpinD: "\\mathbf{Spin}(1,D{-}1)",
+          oSpinD: "\\mathbf{Spin}(D{-}1,1)",
+          half: "{\\tfrac{1}{2}}",
+          quarter: "{\\tfrac{1}{4}}",
+          ba: ["\\begin{array}{#1}", 1],
+          ea: "\\end{array}",
+          bpm: "\\begin{pmatrix}",
+          epm: "\\end{pmatrix}",
+          dis: "\\displaystyle",
+          na: "\\nabla",
+          trd: "\\bigtriangledown",
+          rd: "{\\rm d}",
+          cA: "{\\cal A}", cB: "{\\cal B}", cC: "{\\cal C}", cD: "{\\cal D}",
+          cE: "{\\cal E}", cF: "{\\cal F}", cG: "{\\cal G}", cH: "{\\cal H}",
+          cI: "{\\cal I}", cJ: "{\\cal J}", cK: "{\\cal K}", cL: "{\\cal L}",
+          cM: "{\\cal M}", cN: "{\\cal N}", cO: "{\\cal O}", cP: "{\\cal P}",
+          cQ: "{\\cal Q}", cR: "{\\cal R}", cS: "{\\cal S}", cT: "{\\cal T}", cV: "{\\cal V}",
+          brp: "\\bar{p}", brq: "\\bar{q}", bri: "\\bar{\\imath}", brj: "\\bar{\\jmath}",
+          brV: "\\bar{V}", brP: "\\bar{P}", brX: "\\bar{X}", brY: "\\bar{Y}",
+          brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
+          brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
+          brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
+          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          So: "S_{(0)}", To: "T_{(0)}",
+          DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
+          Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
+          fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
+          DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
+          tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
+          betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+        }
+      },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Lecture Notes</a>
+      <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="https://arxiv.org/search/?searchtype=author&query=Park%2C+Jeong-Hyuck&abstracts=show&size=200&order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow">Gravitational Core of Double Field Theory</p>
+      <h1>Double Field Theory Minimum</h1>
+      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p>This chapter sets up the minimal language of DFT: doubled indices, O(D,D) symmetry, twofold spin groups, and the conventions needed for the geometric construction.</p>
+      <div class="button-row" aria-label="Chapter actions">
+        <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
+        <a class="button-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </header>
+    <nav class="local-toc" aria-label="Table of contents"><h2>Contents</h2><ul><li><a href="#double-field-theory-minimum">Double Field Theory Minimum</a></li>
+<li><a href="#symmetry-notation">Symmetry &amp; Notation</a></li></ul></nav>
+    <section class="content-section lecture-body" aria-label="Double Field Theory Minimum main text">
+      <h2 id="double-field-theory-minimum">Double Field Theory Minimum</h2>
+<p>In this main section, we delve into the geometric foundations of Double Field Theory (DFT). After establishing the necessary notation, we introduce the concept of double-yet-gauged coordinates and the fundamental field variables, followed by the formulation of semi-covariant derivatives and curvatures. The notion of &#x27;semi-covariance&#x27; acts as an intermediate step in the formalism, leading to fully covariant derivatives and curvatures. The overarching goal is to present the action principle and derive the unified field equation, the EDFE ([iEDFE]), along with the  conservation law ([CONSERV]).</p>
+<h2 id="symmetry-notation">Symmetry & Notation</h2>
+<p class="aim"><strong>Aim.</strong> To establish index conventions and identify the  symmetry group \(\ODD\) as well as  the twofold Lorentz symmetries.</p>
+<p>DFT can be viewed as a top-down extension of GR, guided by the \(\ODD\) symmetry principle, necessitating the introduction of notation for its fundamental symmetry groups: \(\ODD\) and \(\Spin(1, D-1) \times \Spin(D-1, 1)\). As summarised in Table [TABindices], capital letters are used for \(\ODD\) vector indices, while small letters are reserved for the twofold local Lorentz symmetries. To distinguish between the indices of the two distinct spin groups, barred and unbarred notations are employed: unbarred indices correspond to \(\Spin(1, D-1)\), while barred indices correspond to \(\Spin(D-1, 1)\). These conventions prepare the ground for consistently formulating doubled geometry.<br></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Symmetry</th><th>Index</th><th>Metric for raising/lowering indices</th></tr></thead>
+<tbody>
+<tr><td>\(\ODD\)</td><td>\(A,B,\cdots,M,N,\cdots\)</td><td>\(\cJ_{AB}=\begin{pmatrix}0&1\\1&0\end{pmatrix}\)</td></tr>
+<tr><td>\(\SpinD\)</td><td>\(p,q,\cdots\)</td><td>\(\eta_{pq}=\mathrm{diag}(-++\cdots+)\)</td></tr>
+<tr><td>\(\oSpinD\)</td><td>\(\brp,\brq,\cdots\)</td><td>\(\breta_{\brp\brq}=\mathrm{diag}(+--\cdots-)\)</td></tr>
+</tbody></table>
+<p class="caption">Vectorial indices and metrics for \(\ODD\), \(\Spin(1,D-1)\), and \(\Spin(D-1,1)\).</p></div>
+    </section>
+    <aside class="related"><h2>Related Sections</h2><ul><li><a href="doubled-yet-gauged.html">Doubled-yet-Gauged Spacetime</a></li>
+<li><a href="non-riemannian-geometry.html">Non-Riemannian Geometry</a></li></ul></aside>
+    <aside class="download-box" aria-label="Citation and source">
+      <p><strong>Citation.</strong> Jeong-Hyuck Park, <em>Gravitational Core of Double Field Theory: Lecture Notes</em>, EPJC 2025.</p>
+      <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv:2505.10163</a> | <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF version</a></p>
+    </aside>
+    <nav class="page-nav" aria-label="Page navigation">
+      <a href="introduction.html">Previous: Introduction</a>
+      <a class="index-link" href="./">Back to Lecture Notes index</a>
+      <a class="next-link" href="doubled-yet-gauged.html">Next: Doubled-yet-Gauged Spacetime</a>
+    </nav>
+    <footer class="program-footer">Gravitational Core of Double Field Theory: Lecture Notes</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction | Gravitational Core of Double Field Theory</title>
+  <meta name="description" content="Introduction to the gravitational core of Double Field Theory, motivating EDFE through the analogy between Lorentz symmetry and O(D,D) symmetry.">
+  <meta name="keywords" content="Double Field Theory, closed string gravity, Einstein Double Field Equation, O(D,D) symmetry">
+  <meta name="author" content="Jeong-Hyuck Park">
+  <link rel="canonical" href="https://jeong24th.github.io/lecture-notes/introduction.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Introduction | Gravitational Core of Double Field Theory">
+  <meta property="og:description" content="Introduction to the gravitational core of Double Field Theory, motivating EDFE through the analogy between Lorentz symmetry and O(D,D) symmetry.">
+  <meta property="og:url" content="https://jeong24th.github.io/lecture-notes/introduction.html">
+  <meta property="og:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Introduction | Gravitational Core of Double Field Theory">
+  <meta name="twitter:description" content="Introduction to the gravitational core of Double Field Theory, motivating EDFE through the analogy between Lorentz symmetry and O(D,D) symmetry.">
+  <meta name="twitter:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Introduction | Gravitational Core of Double Field Theory", "name": "Introduction | Gravitational Core of Double Field Theory", "author": {"@type": "Person", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "publisher": {"@type": "Organization", "name": "Sogang University"}, "url": "https://jeong24th.github.io/lecture-notes/introduction.html", "isPartOf": {"@type": "WebSite", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "about": ["Double Field Theory", "closed string gravity", "Einstein Double Field Equation", "O(D,D) symmetry"]}</script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        tags: "ams",
+        macros: {
+          ODD: "\\mathbf{O}(D,D)",
+          odd: "\\mathbf{o}(D,D)",
+          soDD: "\\mathbf{so}(D,D)",
+          SO: "\\mathbf{SO}",
+          Spin: "\\mathbf{Spin}",
+          GL: "\\mathbf{GL}",
+          SL: "\\mathbf{SL}",
+          Pin: "\\mathbf{Pin}",
+          SpinD: "\\mathbf{Spin}(1,D{-}1)",
+          oSpinD: "\\mathbf{Spin}(D{-}1,1)",
+          half: "{\\tfrac{1}{2}}",
+          quarter: "{\\tfrac{1}{4}}",
+          ba: ["\\begin{array}{#1}", 1],
+          ea: "\\end{array}",
+          bpm: "\\begin{pmatrix}",
+          epm: "\\end{pmatrix}",
+          dis: "\\displaystyle",
+          na: "\\nabla",
+          trd: "\\bigtriangledown",
+          rd: "{\\rm d}",
+          cA: "{\\cal A}", cB: "{\\cal B}", cC: "{\\cal C}", cD: "{\\cal D}",
+          cE: "{\\cal E}", cF: "{\\cal F}", cG: "{\\cal G}", cH: "{\\cal H}",
+          cI: "{\\cal I}", cJ: "{\\cal J}", cK: "{\\cal K}", cL: "{\\cal L}",
+          cM: "{\\cal M}", cN: "{\\cal N}", cO: "{\\cal O}", cP: "{\\cal P}",
+          cQ: "{\\cal Q}", cR: "{\\cal R}", cS: "{\\cal S}", cT: "{\\cal T}", cV: "{\\cal V}",
+          brp: "\\bar{p}", brq: "\\bar{q}", bri: "\\bar{\\imath}", brj: "\\bar{\\jmath}",
+          brV: "\\bar{V}", brP: "\\bar{P}", brX: "\\bar{X}", brY: "\\bar{Y}",
+          brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
+          brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
+          brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
+          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          So: "S_{(0)}", To: "T_{(0)}",
+          DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
+          Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
+          fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
+          DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
+          tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
+          betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+        }
+      },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Lecture Notes</a>
+      <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="https://arxiv.org/search/?searchtype=author&query=Park%2C+Jeong-Hyuck&abstracts=show&size=200&order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow">Gravitational Core of Double Field Theory</p>
+      <h1>Introduction</h1>
+      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p>This chapter motivates Double Field Theory by showing how O(D,D) symmetry reorganizes the closed-string massless sector, in analogy with the role of Lorentz symmetry in electrodynamics.</p>
+      <div class="button-row" aria-label="Chapter actions">
+        <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
+        <a class="button-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </header>
+    <nav class="local-toc" aria-label="Table of contents"><h2>Contents</h2><ul><li><a href="#introduction">Introduction</a></li></ul></nav>
+    <section class="content-section lecture-body" aria-label="Introduction main text">
+      <h2 id="introduction">Introduction</h2>
+<p>In electrodynamics, the electric field is conventionally represented by the capital letter \(\mathbf{E}\) for obvious reasons. However, the magnetic field is represented by either \(\mathbf{B}\) or \(\mathbf{H}\) rather than \(\mathbf{M}\). This convention arises because Maxwell did not use vector notations when formulating his equations in 1861. Instead, Maxwell used the letters \(\{E, F, G\}\) to denote components of the electric field and neighboring letters, such as   \(\{B, C, D\}\) or \(\{H, I, J\}\), for  the magnetic field. It was Heaviside—or perhaps the rotational \(\SO(3)\) symmetry—that reformulated Maxwell&#x27;s equations into their modern vectorial form:</p>
+<div class="equation">\[
+\ba{llll}
+\dis{\na\cdot\mathbf{E}=\rho\,,}\quad&\quad\dis{\na\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}\,,}\quad&\quad\dis{
+\na\cdot\mathbf{B}=0\,,}\quad&\quad\dis{ \na\times\mathbf{B}=\mathbf{J}+\frac{\partial\mathbf{E}}{\partial t}\,.}
+\ea
+\label{Maxwell1}
+\]</div>
+<p>Minkowski, or the \(\SO(1,3)\) Lorentz symmetry, then introduced further simplifications in 1908, unifying space and time into a four-dimensional spacetime framework and recasting Maxwell&#x27;s equations in a more compact and elegant form:</p>
+<div class="equation">\[
+\ba{ll}
+\partial_{\lambda}F^{\lambda\mu}=J^{\mu}\,,\qquad&\qquad
+\partial_{\lambda}F_{\mu\nu}+\partial_{\mu}F_{\nu\lambda}+\partial_{\nu}F_{\lambda\mu}=0\,.
+\ea
+\label{Maxwell2}
+\]</div>
+<p>In string theory, a similar unification has been accomplished through the \(\ODD\) symmetry principle. The vanishing of the three beta-functions on a closed string worldsheet,</p>
+<div class="equation">\[
+\ba{r}
+R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}
+=0\,,\\
+\half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)=0\,,\\
+R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}=0\,,
+\ea
+\label{3beta}
+\]</div>
+<p>is  unified into a single formula characterized by the vanishing of the \(\ODD\)-symmetric augmentation of the Einstein curvature tensor [Park:2015bza],</p>
+<div class="equation">\[
+{G}_{AB}=0\,,
+\label{G0}
+\]</div>
+<p>which corresponds to the vacuum case of the more general unified field equation in Double Field Theory (DFT), dubbed the <em>Einstein Double Field Equation</em> (EDFE) [Angus:2018mep]:</p>
+<div class="equation">\[
+G_{AB}=T_{AB}\,.
+\label{iEDFE}
+\]</div>
+<p>Hereafter, the capital letters \(A, B, \cdots\) denote \(\ODD\) vector indices, which span the doubled spacetime dimensions, \(D+D\). As reviewed below, the DFT Einstein curvature, \(G_{AB}\), on the left-hand side of the equation,  can be - but not necessarily - constructed from the trio \(\{g_{\mu\nu},B_{\mu\nu},\phi\}\). This trio represents the traditional closed string massless sector, known as the Neveu–Schwarz Neveu–Schwarz (NSNS) sector, and constitutes the stringy gravitational degrees of freedom. On the right-hand side, the DFT energy-momentum tensor, \(T_{AB}\), accounts for other sectors (or "matter&#x27;&#x27;), including the Ramond-Ramond (RR) sector and NSR fermions. Like General Relativity,   these quantities are governed by conservation laws derived from the action principle:</p>
+<div class="equation">\[
+\ba{ll}
+\nabla_{A}G^{A}{}_{B}=0~~~:~~~\mbox{off-shell}\,,\qquad&\qquad
+\nabla_{A}T^{A}{}_{B}=0~~~:~~~\mbox{on-shell}\,.
+\ea
+\label{CONSERV}
+\]</div>
+<p>This conservation principle highlights the fundamental symmetries and consistency of the theory, mirroring  General Relativity (GR). With a greater number of components in the energy-momentum tensor, the gravitational physics in DFT becomes inherently richer compared to GR.</p>
+<aside class="note"><p><strong>Summary.</strong> In analogy with Lorentz symmetry unifying Maxwell’s equations, \(\ODD\) symmetry unifies the closed string beta-function equations. The EDFE ([iEDFE]) is a generalised and testable extension of Einstein’s field equation, providing a richer framework for gravity.</p></aside>
+    </section>
+    <aside class="related"><h2>Related Sections</h2><ul><li><a href="dft-minimum.html">Double Field Theory Minimum</a></li>
+<li><a href="edfe.html">Einstein Double Field Equation</a></li></ul></aside>
+    <aside class="download-box" aria-label="Citation and source">
+      <p><strong>Citation.</strong> Jeong-Hyuck Park, <em>Gravitational Core of Double Field Theory: Lecture Notes</em>, EPJC 2025.</p>
+      <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv:2505.10163</a> | <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF version</a></p>
+    </aside>
+    <nav class="page-nav" aria-label="Page navigation">
+      <span></span>
+      <a class="index-link" href="./">Back to Lecture Notes index</a>
+      <a class="next-link" href="dft-minimum.html">Next: Double Field Theory Minimum</a>
+    </nav>
+    <footer class="program-footer">Gravitational Core of Double Field Theory: Lecture Notes</footer>
+  </main>
+</body>
+</html>

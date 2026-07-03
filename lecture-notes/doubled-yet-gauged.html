@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doubled-yet-Gauged Spacetime | Gravitational Core of Double Field Theory</title>
+  <meta name="description" content="Doubled-yet-gauged coordinates, generalized diffeomorphisms, the section condition, and coordinate gauge symmetry in Double Field Theory.">
+  <meta name="keywords" content="doubled-yet-gauged spacetime, section condition, generalized diffeomorphisms, Double Field Theory">
+  <meta name="author" content="Jeong-Hyuck Park">
+  <link rel="canonical" href="https://jeong24th.github.io/lecture-notes/doubled-yet-gauged.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Doubled-yet-Gauged Spacetime | Gravitational Core of Double Field Theory">
+  <meta property="og:description" content="Doubled-yet-gauged coordinates, generalized diffeomorphisms, the section condition, and coordinate gauge symmetry in Double Field Theory.">
+  <meta property="og:url" content="https://jeong24th.github.io/lecture-notes/doubled-yet-gauged.html">
+  <meta property="og:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doubled-yet-Gauged Spacetime | Gravitational Core of Double Field Theory">
+  <meta name="twitter:description" content="Doubled-yet-gauged coordinates, generalized diffeomorphisms, the section condition, and coordinate gauge symmetry in Double Field Theory.">
+  <meta name="twitter:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Doubled-yet-Gauged Spacetime | Gravitational Core of Double Field Theory", "name": "Doubled-yet-Gauged Spacetime | Gravitational Core of Double Field Theory", "author": {"@type": "Person", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "publisher": {"@type": "Organization", "name": "Sogang University"}, "url": "https://jeong24th.github.io/lecture-notes/doubled-yet-gauged.html", "isPartOf": {"@type": "WebSite", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "about": ["doubled-yet-gauged spacetime", "section condition", "generalized diffeomorphisms", "Double Field Theory"]}</script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        tags: "ams",
+        macros: {
+          ODD: "\\mathbf{O}(D,D)",
+          odd: "\\mathbf{o}(D,D)",
+          soDD: "\\mathbf{so}(D,D)",
+          SO: "\\mathbf{SO}",
+          Spin: "\\mathbf{Spin}",
+          GL: "\\mathbf{GL}",
+          SL: "\\mathbf{SL}",
+          Pin: "\\mathbf{Pin}",
+          SpinD: "\\mathbf{Spin}(1,D{-}1)",
+          oSpinD: "\\mathbf{Spin}(D{-}1,1)",
+          half: "{\\tfrac{1}{2}}",
+          quarter: "{\\tfrac{1}{4}}",
+          ba: ["\\begin{array}{#1}", 1],
+          ea: "\\end{array}",
+          bpm: "\\begin{pmatrix}",
+          epm: "\\end{pmatrix}",
+          dis: "\\displaystyle",
+          na: "\\nabla",
+          trd: "\\bigtriangledown",
+          rd: "{\\rm d}",
+          cA: "{\\cal A}", cB: "{\\cal B}", cC: "{\\cal C}", cD: "{\\cal D}",
+          cE: "{\\cal E}", cF: "{\\cal F}", cG: "{\\cal G}", cH: "{\\cal H}",
+          cI: "{\\cal I}", cJ: "{\\cal J}", cK: "{\\cal K}", cL: "{\\cal L}",
+          cM: "{\\cal M}", cN: "{\\cal N}", cO: "{\\cal O}", cP: "{\\cal P}",
+          cQ: "{\\cal Q}", cR: "{\\cal R}", cS: "{\\cal S}", cT: "{\\cal T}", cV: "{\\cal V}",
+          brp: "\\bar{p}", brq: "\\bar{q}", bri: "\\bar{\\imath}", brj: "\\bar{\\jmath}",
+          brV: "\\bar{V}", brP: "\\bar{P}", brX: "\\bar{X}", brY: "\\bar{Y}",
+          brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
+          brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
+          brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
+          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          So: "S_{(0)}", To: "T_{(0)}",
+          DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
+          Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
+          fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
+          DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
+          tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
+          betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+        }
+      },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Lecture Notes</a>
+      <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="https://arxiv.org/search/?searchtype=author&query=Park%2C+Jeong-Hyuck&abstracts=show&size=200&order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow">Gravitational Core of Double Field Theory</p>
+      <h1>Doubled-yet-Gauged Spacetime</h1>
+      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p>This chapter introduces the kinematical heart of DFT: coordinates are doubled, while a gauge principle and section condition prevent the doubled coordinates from becoming unphysical degrees of freedom.</p>
+      <div class="button-row" aria-label="Chapter actions">
+        <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
+        <a class="button-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </header>
+    <nav class="local-toc" aria-label="Table of contents"><h2>Contents</h2><ul><li><a href="#doubled-yet-gauged-coordinates-diffeomorphisms">Doubled-yet-Gauged Coordinates &amp; Diffeomorphisms</a></li>
+<li class="toc-sub"><a href="#explicit-gauging-of-the-doubled-coordinates">Explicit Gauging of the Doubled  Coordinates</a></li></ul></nav>
+    <section class="content-section lecture-body" aria-label="Doubled-yet-Gauged Spacetime main text">
+      <h2 id="doubled-yet-gauged-coordinates-diffeomorphisms">Doubled-yet-Gauged Coordinates & Diffeomorphisms</h2>
+<p class="aim"><strong>Aim.</strong> To introduce doubled coordinates, the section condition, and relevant diffeomorphisms.</p>
+<p>The \(\ODD\)-invariant metric \(\cJ_{AB}\)  presented  in Table [TABindices]  plays a crucial role in splitting the doubled coordinates into two parts, \(x^{A} = (\tx_{\mu}, x^{\nu})\), where \(\mu, \nu = 0, 1, 2, \cdots, D{-1}\) denote \(D\)-dimensional spacetime indices. A fundamental  requirement in DFT is that all functions in the theory, collectively denoted as \(\{\Phi, \hat{\Phi}, \tilde{\Phi}, \cdots\}\) - including physical fields and local gauge parameters - must satisfy the  <em>section condition</em> [Berman:2010is]. This condition  restricts their dependence on the doubled coordinates via the constraint:</p>
+<div class="equation">\[
+\partial_{A}\partial^{A}=\partial_{\mu}\tpartial^{\mu}+\tpartial^{\mu}\partial_{\mu}=0\,,
+\label{SC}
+\]</div>
+<p>which ensures that any pairwise contraction of  (doubled) partial derivatives  vanishes:</p>
+<div class="equation">\[
+\ba{lll}
+ \partial_{A}\partial^{A}\Phi=0\,,\qquad&\quad
+ \partial_{A}\Phi\partial^{A}\hat{\Phi}=0\,,\qquad&\quad
+ \partial_{A}\partial^{A}(\Phi\hat{\Phi})=0\,.
+ \ea
+\]</div>
+<p>In practice, the section condition is often solved by setting \(\tpartial^{\mu} \equiv 0\), thereby  eliminating dependence on the dual coordinates \(\tx^{\mu}\). The general solution, or "section&#x27;&#x27;, is obtained by applying a global \(\ODD\) rotation to this specific choice. The \(\ODD\) symmetry   is spontaneously broken by selecting the \(D\)-dimensional section, such as  \(\tpartial^{\mu} \equiv 0\). However, in cases where a configuration admits an isometric direction,  <em>e.g. </em>\(\partial_{1}\equiv0\), the \(\mathbf{O}(1,1)\) rotation of the \((\tx_{1},x^{1})\) plane   generates new configurations, a procedure known as Buscher&#x27;s rule [Buscher:1987qj, Buscher:1987sk].</p>
+<p>The section condition is equivalent to a certain translational invariance generated by <em>derivative-index-valued</em> shift parameters \(\Delta^{A}\) [Park:2013mpa,  Lee:2013hma]:</p>
+<div class="equation">\[
+\ba{llll}
+\Phi(x)=\Phi(x+\Delta)\,&\quad\mbox{where}\quad&
+\Delta^{A}=\hat{\Phi}\partial^{A}\tilde{\Phi}\,,\quad&\quad\Delta^{A}\partial_{A}=0\,.
+\ea
+\label{trinv}
+\]</div>
+<p>The geometric meaning of the section condition, as suggested in [Park:2013mpa], is that the doubled coordinates are <em>gauged</em> by the derivative-index-valued vectors:</p>
+<div class="equation">\[
+\ba{ll}
+x^{A}~\sim~x^{A}+\Delta^{A}\,,\qquad&\qquad\Delta^{A}\partial_{A}=0\,.
+\ea
+\label{xgauge}
+\]</div>
+<p>In this framework, each gauge orbit corresponds to a single spacetime point. The concept of &quot;derivative-index-valued&quot; vectors is made possible by the \(\ODD\)-invariant metric \(\cJ_{AB}\), which raises the vector index of the partial derivative: \(\partial^{A}=\cJ^{AB}\partial_{B}\).</p>
+<p>In DFT, diffeomorphisms are governed by a generalised Lie derivative, denoted as \(\hcL_{\xi}\) [Siegel:1993th, Hull:2009zb]:</p>
+<div class="equation">\[
+\hcL_{\xi}T_{A_{1}\cdots A_{n}}:=\xi^{B}\partial_{B}T_{A_{1}\cdots A_{n}}+\omega\partial_{B}\xi^{B}T_{A_{1}\cdots A_{n}}+\sum_{i=1}^{n}(\partial_{A_{i}}\xi_{B}-\partial_{B}\xi_{A_{i}})T_{A_{1}\cdots A_{i-1}}{}^{B}{}_{A_{i+1}\cdots  A_{n}}\,,
+\label{hcL}
+\]</div>
+<p>where \(\omega\) is the weight of the tensor or tensor density, and each tensor index \(A_{i}\) is rotated by an  infinitesimal \(\mathbf{so}(D,D)\) element, \(\partial_{A_{i}}\xi_{B}-\partial_{B}\xi_{A_{i}}\).    For consistency,  generalised Lie derivatives are closed under commutation, provided the section condition holds:</p>
+<div class="equation">\[
+\left[\hcL_{\zeta},\hcL_{\xi}\right]=\hcL_{\left[\zeta,\xi\right]_{\rm{C}}}\,,
+\label{closeda}
+\]</div>
+<p>where the commutator is given by the C-bracket:</p>
+<div class="equation">\[
+\left[\zeta,\xi\right]^{A}_{\rm{C}}=\half\!\left(\hcL_{\zeta}\xi^{A}-\hcL_{\xi}\zeta^{A}\right)= \zeta^{B}\partial_{B}\xi^{A}-\xi^{B}\partial_{B}\zeta^{A}+\half \xi^{B}\partial^{A}\zeta_{B}-\half \zeta^{B}\partial^{A}\xi_{B}\,.
+\label{Cbracket}
+\]</div>
+<p>It is noteworthy that the \(\ODD\)-metric is invariant under generalised diffeomorphisms, \({\hcL_{\xi}\cJ_{AB}=0}\), and the generalised Lie derivative itself is covariant [Angus:2018mep]:</p>
+<div class="equation">\[
+\delta_{\xi}(\hcL_{\zeta}T_{A_{1}\cdots A_{n}})=
+\hcL_{\zeta}(\delta_{\xi}T_{A_{1}\cdots A_{n}})+\hcL_{\delta_{\xi}\zeta}T_{A_{1}\cdots A_{n}}=\hcL_{\xi}(\hcL_{\zeta}T_{A_{1}\cdots A_{n}})\,.
+\label{covhcL}
+\]</div>
+<h3 id="explicit-gauging-of-the-doubled-coordinates">Explicit Gauging of the Doubled  Coordinates</h3>
+<p>The section condition encapsulates the concept of <em>doubled-yet-gauged coordinates</em> [Park:2013mpa] in DFT, where coordinates serve only as labels for the dynamical fields. This contrasts with the particle worldline or string worldsheet actions, where the target spacetime coordinates themselves become dynamical fields and must be explicitly gauged [Lee:2013hma,  Park:2016sbw,  Ko:2016dxa, Basile:2019pic].</p>
+<p>The usual coordinate basis of differential one-forms, \(\rd x^{A}\), is not \(\ODD\)-symmetric under infinitesimal passive coordinate transformations, (Footnote: Active transformations are set  by the generalised Lie derivative ([hcL]).) \(x^{A} \rightarrow x^{A} + \xi^{A}\), as shown below:</p>
+<div class="equation">\[
+\delta(\rd x^{A})=\rd\xi^{A}=\rd x^{B}\partial_{B}\xi^{A}\neq\rd x^{B}(\partial_{B}\xi^{A}-\partial^{A}\xi_{B})\,.
+\]</div>
+<p>To restore \(\ODD\) symmetry, a derivative-index-valued gauge potential is introduced to explicitly gauge the doubled coordinates. This defines a new gauged differential:</p>
+<div class="equation">\[
+\ba{ll}
+\rD x^{A}:=\rd x^{A}-\fa^{A}\,,\qquad&\quad \fa^{A}\partial_{A}=0\,.
+\ea
+\label{rDx}
+\]</div>
+<p>The  passive transformations for the coordinates \(x^{A}\) and the gauge potential \(\fa^{A}\) are given by:</p>
+<div class="equation">\[
+\ba{lll}
+\delta x^{A}=\xi^{A}\,,\quad&\quad\delta \fa^{A}=\rD x^{B}\partial^{A}\xi_{B}\,,\quad&\quad\delta\fa^{A}\partial_{A}=0\,.
+\ea
+\]</div>
+<p>This leads to an \(\ODD\)-symmetric transformation for the gauged differential:</p>
+<div class="equation">\[
+\delta (\rD x^{A})=\rD x^{B}(\partial_{B}\xi^{A}-\partial^{A}\xi_{B})\,.
+\]</div>
+<p>To measure the distance between gauge orbits, a proper length can be defined through a path integral [Morand:2017fnv]:</p>
+<div class="equation">\[
+L=-\ln\left[\int\mathfrak{D}\fa~\exp\left(-\int\sqrt{\rD x^{A}\rD x^{B}\cH_{AB}}~\right)\right]\,,
+\label{PL}
+\]</div>
+<p>where \(\rD x^{A}\) is the gauged coordinate differential defined in [rDx], \(\fa\) is the auxiliary gauge potential to be integrated out, and \(\cH_{AB}\) is the  DFT-metric, or the generalised metric, which will be detailed later.</p>
+<p>This definition of proper length naturally leads to a doubled  worldline action for a particle [Ko:2016dxa]:</p>
+<div class="equation">\[
+\dis{
+S=\frac{1}{\,\ls}
+\int\rd\tau~\frac{1}{2} e^{-1\,}\rD_{\tau}x^{A}\rD_{\tau}x^{B}\cH_{AB}(x)-\frac{1}{2} (m\,\ls)^{2}e\,,}
+\label{particleaction}
+\]</div>
+<p>which further generalises to a completely covariant, doubled  worldsheet action for a string [Hull:2006va, Lee:2013hma],</p>
+<div class="equation">\[
+S=\frac{1}{4\pi\alphap}\displaystyle{\int}\rmd^{2}\sigma~-\half\sqrt{-h}h^{\alpha\beta}\rD_{\alpha}x^{M}\rD_{\beta}x^{N}\cH_{MN}
+-\epsilon^{\alpha\beta}\rD_{\alpha}x^{M}\fa_{\beta M}\,.
+\label{stringaction}
+\]</div>
+<p>This framework can be extended to a \(\kappa\)-symmetric Green–Schwarz superstring, as discussed in [Park:2016sbw].</p>
+<aside class="note"><p><strong>Summary.</strong> The doubled-yet-gauged construction preserves \(\ODD\) symmetry while constraining  dynamics to consistent \(D\)-dimensional sections. The  gauging  procedure leads to \(\ODD\)-symmetric particle and string actions, extendable to supersymmetric cases.</p></aside>
+    </section>
+    <aside class="related"><h2>Related Sections</h2><ul><li><a href="dft-minimum.html">Double Field Theory Minimum</a></li>
+<li><a href="non-riemannian-geometry.html">Non-Riemannian Geometry</a></li></ul></aside>
+    <aside class="download-box" aria-label="Citation and source">
+      <p><strong>Citation.</strong> Jeong-Hyuck Park, <em>Gravitational Core of Double Field Theory: Lecture Notes</em>, EPJC 2025.</p>
+      <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv:2505.10163</a> | <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF version</a></p>
+    </aside>
+    <nav class="page-nav" aria-label="Page navigation">
+      <a href="dft-minimum.html">Previous: Double Field Theory Minimum</a>
+      <a class="index-link" href="./">Back to Lecture Notes index</a>
+      <a class="next-link" href="non-riemannian-geometry.html">Next: Non-Riemannian Geometry</a>
+    </nav>
+    <footer class="program-footer">Gravitational Core of Double Field Theory: Lecture Notes</footer>
+  </main>
+</body>
+</html>

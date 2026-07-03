@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gravitational Core of Double Field Theory | Lecture Notes</title>
+  <meta name="description" content="HTML lecture notes on the gravitational core of Double Field Theory, including doubled-yet-gauged spacetime, generalized metrics, non-Riemannian geometry, curvatures, gravitational waves, and the Einstein Double Field Equation.">
+  <meta name="keywords" content="Double Field Theory, Einstein Double Field Equation, closed string gravity, non-Riemannian geometry, O(D,D) symmetry">
+  <meta name="author" content="Jeong-Hyuck Park">
+  <link rel="canonical" href="https://jeong24th.github.io/lecture-notes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Gravitational Core of Double Field Theory | Lecture Notes">
+  <meta property="og:description" content="HTML lecture notes on the gravitational core of Double Field Theory, including doubled-yet-gauged spacetime, generalized metrics, non-Riemannian geometry, curvatures, gravitational waves, and the Einstein Double Field Equation.">
+  <meta property="og:url" content="https://jeong24th.github.io/lecture-notes/">
+  <meta property="og:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gravitational Core of Double Field Theory | Lecture Notes">
+  <meta name="twitter:description" content="HTML lecture notes on the gravitational core of Double Field Theory, including doubled-yet-gauged spacetime, generalized metrics, non-Riemannian geometry, curvatures, gravitational waves, and the Einstein Double Field Equation.">
+  <meta name="twitter:image" content="https://jeong24th.github.io/assets/jeong-hyuck-park.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "headline": "Gravitational Core of Double Field Theory | Lecture Notes", "name": "Gravitational Core of Double Field Theory | Lecture Notes", "author": {"@type": "Person", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "publisher": {"@type": "Organization", "name": "Sogang University"}, "url": "https://jeong24th.github.io/lecture-notes/", "isPartOf": {"@type": "WebSite", "name": "Jeong-Hyuck Park", "url": "https://jeong24th.github.io"}, "about": ["Double Field Theory", "Einstein Double Field Equation", "closed string gravity", "non-Riemannian geometry", "O(D,D) symmetry"]}</script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        tags: "ams",
+        macros: {
+          ODD: "\\mathbf{O}(D,D)",
+          odd: "\\mathbf{o}(D,D)",
+          soDD: "\\mathbf{so}(D,D)",
+          SO: "\\mathbf{SO}",
+          Spin: "\\mathbf{Spin}",
+          GL: "\\mathbf{GL}",
+          SL: "\\mathbf{SL}",
+          Pin: "\\mathbf{Pin}",
+          SpinD: "\\mathbf{Spin}(1,D{-}1)",
+          oSpinD: "\\mathbf{Spin}(D{-}1,1)",
+          half: "{\\tfrac{1}{2}}",
+          quarter: "{\\tfrac{1}{4}}",
+          ba: ["\\begin{array}{#1}", 1],
+          ea: "\\end{array}",
+          bpm: "\\begin{pmatrix}",
+          epm: "\\end{pmatrix}",
+          dis: "\\displaystyle",
+          na: "\\nabla",
+          trd: "\\bigtriangledown",
+          rd: "{\\rm d}",
+          cA: "{\\cal A}", cB: "{\\cal B}", cC: "{\\cal C}", cD: "{\\cal D}",
+          cE: "{\\cal E}", cF: "{\\cal F}", cG: "{\\cal G}", cH: "{\\cal H}",
+          cI: "{\\cal I}", cJ: "{\\cal J}", cK: "{\\cal K}", cL: "{\\cal L}",
+          cM: "{\\cal M}", cN: "{\\cal N}", cO: "{\\cal O}", cP: "{\\cal P}",
+          cQ: "{\\cal Q}", cR: "{\\cal R}", cS: "{\\cal S}", cT: "{\\cal T}", cV: "{\\cal V}",
+          brp: "\\bar{p}", brq: "\\bar{q}", bri: "\\bar{\\imath}", brj: "\\bar{\\jmath}",
+          brV: "\\bar{V}", brP: "\\bar{P}", brX: "\\bar{X}", brY: "\\bar{Y}",
+          brPhi: "\\bar{\\Phi}", bralpha: "\\bar{\\alpha}", brbeta: "\\bar{\\beta}",
+          brgamma: "\\bar{\\gamma}", brdelta: "\\bar{\\delta}", brn: "\\bar{n}",
+          brr: "\\bar{r}", brs: "\\bar{s}", bre: "\\bar{e}",
+          breta: "\\bar{\\eta}", brcP: "\\bar{\\cal P}",
+          So: "S_{(0)}", To: "T_{(0)}",
+          DFT: "{\\scriptscriptstyle{\\rm{\\bf DFT}}}",
+          Matter: "{\\rm{\\bf{\\scriptscriptstyle M}atter}}",
+          fa: "\\mathfrak{a}", fR: "\\mathfrak{R}", fT: "\\mathfrak{T}", hh: "\\mathfrak{h}",
+          DO: "\\mathbf{\\nabla}", hBox: "\\widehat{\\Box}", bBox: "\\boldsymbol{\\Box}",
+          Deltab: "\\mathbf{\\Delta}", tpartial: "\\tilde{\\partial}",
+          tx: "\\tilde{x}", ty: "\\tilde{y}", tX: "\\tilde{X}", tY: "\\tilde{Y}",
+          betappn: "\\beta_{\\rm PPN}", gammappn: "\\gamma_{\\rm PPN}", GN: "G_{\\rm N}",
+          Det: "{\\rm Det\\,}", diag: "{\\rm diag}", Box: "\\Box"
+        }
+      },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Lecture Notes</a>
+      <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="https://arxiv.org/search/?searchtype=author&query=Park%2C+Jeong-Hyuck&abstracts=show&size=200&order=-announced_date_first" target="_blank" rel="noopener noreferrer">Publications</a>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow">Jeong-Hyuck Park Lecture Notes</p>
+      <h1>Gravitational Core of Double Field Theory</h1>
+      <p class="subtitle">Lecture Notes<br>Jeong-Hyuck Park</p>
+      <p class="question">Double Field Theory as the gravitational framework naturally implied by closed string theory.</p>
+      <p>These lecture notes introduce Double Field Theory as the gravitational framework naturally implied by closed string theory. They are structured in analogy with a General Relativity course, covering doubled-yet-gauged spacetime, generalized metrics, non-Riemannian geometry, covariant derivatives, curvatures, gravitational waves, and the Einstein Double Field Equation.</p>
+      <div class="button-row" aria-label="Lecture notes actions">
+        <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
+        <a class="button-link" href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv / Publication Page</a>
+        <a class="button-link" href="../">Homepage</a>
+      </div>
+    </header>
+    <section class="content-section" aria-labelledby="chapters">
+      <h2 id="chapters">Chapters</h2>
+      <div class="program-grid">
+        <a class="program-card" href="introduction.html">
+          <h3>Introduction</h3>
+          <p>This chapter motivates Double Field Theory by showing how O(D,D) symmetry reorganizes the closed-string massless sector, in analogy with the role of Lorentz symmetry in electrodynamics.</p>
+        </a><a class="program-card" href="dft-minimum.html">
+          <h3>Double Field Theory Minimum</h3>
+          <p>This chapter sets up the minimal language of DFT: doubled indices, O(D,D) symmetry, twofold spin groups, and the conventions needed for the geometric construction.</p>
+        </a><a class="program-card" href="doubled-yet-gauged.html">
+          <h3>Doubled-yet-Gauged Spacetime</h3>
+          <p>This chapter introduces the kinematical heart of DFT: coordinates are doubled, while a gauge principle and section condition prevent the doubled coordinates from becoming unphysical degrees of freedom.</p>
+        </a><a class="program-card" href="non-riemannian-geometry.html">
+          <h3>Non-Riemannian Geometry</h3>
+          <p>This chapter explains why the fundamental field variables of DFT need not always be parametrized by an invertible spacetime metric and two-form.</p>
+        </a><a class="program-card" href="covariant-derivatives.html">
+          <h3>Covariant Derivatives</h3>
+          <p>This chapter develops the connection data of DFT and explains how semi-covariant objects combine into fully covariant derivatives.</p>
+        </a><a class="program-card" href="curvatures.html">
+          <h3>Curvatures and Gravitational Waves</h3>
+          <p>This chapter moves from connections to curvature, the doubled Einstein-Hilbert action, and the propagation structures that lead to gravitational wave equations.</p>
+        </a><a class="program-card" href="edfe.html">
+          <h3>Einstein Double Field Equation</h3>
+          <p>This chapter formulates the Einstein Double Field Equation as a unified field equation for DFT matter couplings and the closed-string gravitational sector.</p>
+        </a><a class="program-card" href="solutions.html">
+          <h3>Solutions</h3>
+          <p>This chapter collects representative solutions and tests: spherical geometries, post-Newtonian limits, wormholes, and cosmological solutions of the EDFE.</p>
+        </a><a class="program-card" href="outlook.html">
+          <h3>Outlook</h3>
+          <p>This concluding chapter summarizes the role of DFT as a geometric framework for closed string gravity and points toward open directions.</p>
+        </a>
+      </div>
+    </section>
+    <section class="content-section editorial-note" aria-labelledby="editorial-note">
+      <h2 id="editorial-note">Editorial Note</h2>
+      <p>The HTML presentation of these lecture notes was prepared with the assistance of AI tools under the direction of the author. The scientific ideas, research vision, interpretations, and conclusions are solely those of the author.</p>
+    </section>
+    <aside class="download-box" aria-label="Citation and source">
+      <p><strong>Citation.</strong> Jeong-Hyuck Park, <em>Gravitational Core of Double Field Theory: Lecture Notes</em>, EPJC 2025.</p>
+      <p><a href="https://arxiv.org/abs/2505.10163" target="_blank" rel="noopener noreferrer">arXiv:2505.10163</a> | <a href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF version</a></p>
+    </aside>
+    <nav class="page-nav" aria-label="Page navigation">
+      <span></span>
+      <a class="index-link" href="./">Back to Lecture Notes index</a>
+      <a class="next-link" href="introduction.html">Next: Introduction</a>
+    </nav>
+    <footer class="program-footer">Gravitational Core of Double Field Theory: Lecture Notes</footer>
+  </main>
+</body>
+</html>
