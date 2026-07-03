@@ -95,7 +95,7 @@
     <header class="hero">
       <p class="eyebrow">Gravitational Core of Double Field Theory</p>
       <h1>Introduction</h1>
-      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p class="subtitle">Lecture Notes<br>Jeong-Hyuck Park</p>
       <p>This chapter motivates Double Field Theory by showing how O(D,D) symmetry reorganizes the closed-string massless sector, in analogy with the role of Lorentz symmetry in electrodynamics.</p>
       <div class="button-row" aria-label="Chapter actions">
         <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
@@ -105,46 +105,52 @@
     <nav class="local-toc" aria-label="Table of contents"><h2>Contents</h2><ul><li><a href="#introduction">Introduction</a></li></ul></nav>
     <section class="content-section lecture-body" aria-label="Introduction main text">
       <h2 id="introduction">Introduction</h2>
-<p>In electrodynamics, the electric field is conventionally represented by the capital letter \(\mathbf{E}\) for obvious reasons. However, the magnetic field is represented by either \(\mathbf{B}\) or \(\mathbf{H}\) rather than \(\mathbf{M}\). This convention arises because Maxwell did not use vector notations when formulating his equations in 1861. Instead, Maxwell used the letters \(\{E, F, G\}\) to denote components of the electric field and neighboring letters, such as   \(\{B, C, D\}\) or \(\{H, I, J\}\), for  the magnetic field. It was Heaviside—or perhaps the rotational \(\SO(3)\) symmetry—that reformulated Maxwell&#x27;s equations into their modern vectorial form:</p>
-<div class="equation">\[
+<p>In electrodynamics, the electric field is conventionally represented by the capital letter \(\mathbf{E}\) for obvious reasons. However, the magnetic field is represented by either \(\mathbf{B}\) or \(\mathbf{H}\) rather than \(\mathbf{M}\). This convention arises because Maxwell did not use vector notations when formulating his equations in 1861. Instead, Maxwell used the letters \(\{E, F, G\}\) to denote components of the electric field and neighboring letters, such as   \(\{B, C, D\}\) or \(\{H, I, J\}\), for  the magnetic field. It was Heaviside-or perhaps the rotational \(\SO(3)\) symmetry-that reformulated Maxwell&#x27;s equations into their modern vectorial form:</p>
+<div class="equation" id="ref-Maxwell1">\[
 \ba{llll}
 \dis{\na\cdot\mathbf{E}=\rho\,,}\quad&\quad\dis{\na\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}\,,}\quad&\quad\dis{
 \na\cdot\mathbf{B}=0\,,}\quad&\quad\dis{ \na\times\mathbf{B}=\mathbf{J}+\frac{\partial\mathbf{E}}{\partial t}\,.}
 \ea
-\]</div>
+
+\]<span class="equation-number">(1)</span></div>
 <p>Minkowski, or the \(\SO(1,3)\) Lorentz symmetry, then introduced further simplifications in 1908, unifying space and time into a four-dimensional spacetime framework and recasting Maxwell&#x27;s equations in a more compact and elegant form:</p>
-<div class="equation">\[
+<div class="equation" id="ref-Maxwell2">\[
 \ba{ll}
 \partial_{\lambda}F^{\lambda\mu}=J^{\mu}\,,\qquad&\qquad
 \partial_{\lambda}F_{\mu\nu}+\partial_{\mu}F_{\nu\lambda}+\partial_{\nu}F_{\lambda\mu}=0\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(2)</span></div>
 <p>In string theory, a similar unification has been accomplished through the \(\ODD\) symmetry principle. The vanishing of the three beta-functions on a closed string worldsheet,</p>
-<div class="equation">\[
+<div class="equation" id="ref-3beta">\[
 \ba{r}
 R_{\mu\nu}+2\trd_{\mu}(\partial_{\nu}\phi)-\quarter H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}
 =0\,,\\
 \half e^{2\phi}\trd^{\rho}\!\left(e^{-2\phi}H_{\rho\mu\nu}\right)=0\,,\\
 R+4\Box\phi-4\partial_{\mu}\phi\partial^{\mu}\phi-\textstyle{\frac{1}{12}}H_{\lambda\mu\nu}H^{\lambda\mu\nu}=0\,,
 \ea
-\]</div>
-<p>is  unified into a single formula characterized by the vanishing of the \(\ODD\)-symmetric augmentation of the Einstein curvature tensor [Park:2015bza],</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(3)</span></div>
+<p>is  unified into a single formula characterized by the vanishing of the \(\ODD\)-symmetric augmentation of the Einstein curvature tensor [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3APark%3A2015bza" target="_blank" rel="noopener noreferrer">Park:2015bza</a>],</p>
+<div class="equation" id="ref-G0">\[
 {G}_{AB}=0\,,
-\]</div>
-<p>which corresponds to the vacuum case of the more general unified field equation in Double Field Theory (DFT), dubbed the <em>Einstein Double Field Equation</em> (EDFE) [Angus:2018mep]:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(4)</span></div>
+<p>which corresponds to the vacuum case of the more general unified field equation in Double Field Theory (DFT), dubbed the <em>Einstein Double Field Equation</em> (EDFE) [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAngus%3A2018mep" target="_blank" rel="noopener noreferrer">Angus:2018mep</a>]:</p>
+<div class="equation" id="ref-iEDFE">\[
 G_{AB}=T_{AB}\,.
-\]</div>
-<p>Hereafter, the capital letters \(A, B, \cdots\) denote \(\ODD\) vector indices, which span the doubled spacetime dimensions, \(D+D\). As reviewed below, the DFT Einstein curvature, \(G_{AB}\), on the left-hand side of the equation,  can be - but not necessarily - constructed from the trio \(\{g_{\mu\nu},B_{\mu\nu},\phi\}\). This trio represents the traditional closed string massless sector, known as the Neveu–Schwarz Neveu–Schwarz (NSNS) sector, and constitutes the stringy gravitational degrees of freedom. On the right-hand side, the DFT energy-momentum tensor, \(T_{AB}\), accounts for other sectors (or "matter&#x27;&#x27;), including the Ramond-Ramond (RR) sector and NSR fermions. Like General Relativity,   these quantities are governed by conservation laws derived from the action principle:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(5)</span></div>
+<p>Hereafter, the capital letters \(A, B, \cdots\) denote \(\ODD\) vector indices, which span the doubled spacetime dimensions, \(D+D\). As reviewed below, the DFT Einstein curvature, \(G_{AB}\), on the left-hand side of the equation,  can be - but not necessarily - constructed from the trio \(\{g_{\mu\nu},B_{\mu\nu},\phi\}\). This trio represents the traditional closed string massless sector, known as the Neveu-Schwarz Neveu-Schwarz (NSNS) sector, and constitutes the stringy gravitational degrees of freedom. On the right-hand side, the DFT energy-momentum tensor, \(T_{AB}\), accounts for other sectors (or "matter&#x27;&#x27;), including the Ramond-Ramond (RR) sector and NSR fermions. Like General Relativity,   these quantities are governed by conservation laws derived from the action principle:</p>
+<div class="equation" id="ref-CONSERV">\[
 \ba{ll}
 \nabla_{A}G^{A}{}_{B}=0~~~:~~~\mbox{off-shell}\,,\qquad&\qquad
 \nabla_{A}T^{A}{}_{B}=0~~~:~~~\mbox{on-shell}\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(6)</span></div>
 <p>This conservation principle highlights the fundamental symmetries and consistency of the theory, mirroring  General Relativity (GR). With a greater number of components in the energy-momentum tensor, the gravitational physics in DFT becomes inherently richer compared to GR.</p>
-<aside class="note"><p><strong>Summary.</strong> In analogy with Lorentz symmetry unifying Maxwell’s equations, \(\ODD\) symmetry unifies the closed string beta-function equations. The EDFE ([iEDFE]) is a generalised and testable extension of Einstein’s field equation, providing a richer framework for gravity.</p></aside>
+<aside class="note"><p><strong>Summary.</strong> In analogy with Lorentz symmetry unifying Maxwell’s equations, \(\ODD\) symmetry unifies the closed string beta-function equations. The EDFE (<a class="equation-ref" href="introduction.html#ref-iEDFE" title="Equation reference: iEDFE">5</a>) is a generalised and testable extension of Einstein’s field equation, providing a richer framework for gravity.</p></aside>
     </section>
     <aside class="related"><h2>Related Sections</h2><ul><li><a href="dft-minimum.html">Double Field Theory Minimum</a></li>
 <li><a href="edfe.html">Einstein Double Field Equation</a></li></ul></aside>

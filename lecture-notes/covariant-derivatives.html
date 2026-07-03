@@ -95,7 +95,7 @@
     <header class="hero">
       <p class="eyebrow">Gravitational Core of Double Field Theory</p>
       <h1>Covariant Derivatives</h1>
-      <p class="subtitle">Lecture Notes · Jeong-Hyuck Park</p>
+      <p class="subtitle">Lecture Notes<br>Jeong-Hyuck Park</p>
       <p>This chapter develops the connection data of DFT and explains how semi-covariant objects combine into fully covariant derivatives.</p>
       <div class="button-row" aria-label="Chapter actions">
         <a class="button-link" href="../assets/DFT_Core_Lecture_Notes.pdf" target="_blank" rel="noopener noreferrer">PDF Version</a>
@@ -112,50 +112,57 @@
       <h2 id="christoffel-symbols-spin-connections">Christoffel Symbols & Spin Connections</h2>
 <p class="aim"><strong>Aim.</strong> To build a master derivative that unifies diffeomorphisms and local Lorentz symmetries.</p>
 <p>The master derivative, denoted as \(\cD_{A}\), is introduced to unify and covariantly describe all the  local symmetries: the doubled-yet-gauged diffeomorphisms and the twofold local Lorentz symmetries, \(\Spin(1,D{-1}) \times \Spin(D{-1},1)\).  More explicitly, the master derivative is postulated as:</p>
-<div class="equation">\[
+<div class="equation" id="ref-MastercD">\[
 \cD_{A}=\partial_{A}+\Gamma_{A}+\Phi_{A}+\brPhi_{A}\,.
-\]</div>
-<p>Here, \(\Gamma_{A}\) refers to the Christoffel connection for the doubled-yet-gauged diffeomorphisms,  introduced in [Jeon:2011cn] and based  on  earlier work [Jeon:2010rw]. (Footnote: One key lesson from [Jeon:2010rw] is that the generalised metric alone is insufficient for fully constructing covariant derivatives and curvatures; the inclusion of the dilaton \(d\) is essential.) (Footnote: An alternative formulation was proposed in [Siegel:1993th] and developed in [Hohm:2010xe], where curved \(\ODD\) indices are mapped to flat Lorentz indices via the vielbeins ([VVdef1]). Although this appears to bypass the Christoffel connection, the spin connection necessarily reintroduces its content, as in ([PhibrPhi]), so that the framework ultimately preserves parallels with conventional differential geometry.) The connection is defined as:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(46)</span></div>
+<p>Here, \(\Gamma_{A}\) refers to the Christoffel connection for the doubled-yet-gauged diffeomorphisms,  introduced in [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011cn" target="_blank" rel="noopener noreferrer">Jeon:2011cn</a>] and based  on  earlier work [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2010rw" target="_blank" rel="noopener noreferrer">Jeon:2010rw</a>]. (Footnote: One key lesson from [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2010rw" target="_blank" rel="noopener noreferrer">Jeon:2010rw</a>] is that the generalised metric alone is insufficient for fully constructing covariant derivatives and curvatures; the inclusion of the dilaton \(d\) is essential.) (Footnote: An alternative formulation was proposed in [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ASiegel%3A1993th" target="_blank" rel="noopener noreferrer">Siegel:1993th</a>] and developed in [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHohm%3A2010xe" target="_blank" rel="noopener noreferrer">Hohm:2010xe</a>], where curved \(\ODD\) indices are mapped to flat Lorentz indices via the vielbeins (<a class="equation-ref" href="non-riemannian-geometry.html#ref-VVdef1" title="Equation reference: VVdef1">27</a>). Although this appears to bypass the Christoffel connection, the spin connection necessarily reintroduces its content, as in (<a class="equation-ref" href="covariant-derivatives.html#ref-PhibrPhi" title="Equation reference: PhibrPhi">48</a>), so that the framework ultimately preserves parallels with conventional differential geometry.) The connection is defined as:</p>
+<div class="equation" id="ref-Gamma">\[
 \ba{ll}
 \Gamma_{CAB}=&2\left(P\partial_{C}P\brP\right)_{[AB]}
 +2\left({{\brP}_{[A}{}^{D}{\brP}_{B]}{}^{E}}-{P_{[A}{}^{D}P_{B]}{}^{E}}\right)\partial_{D}P_{EC}\\
 {}&-4\left(\textstyle{\frac{1}{P_{M}{}^{M}-1}}P_{C[A}P_{B]}{}^{D}+\textstyle{\frac{1}{\brP_{M}{}^{M}-1}}\brP_{C[A}\brP_{B]}{}^{D}\right)\!\left(\partial_{D}d+(P\partial^{E}P\brP)_{[ED]}\right)\,.
 \ea
-\]</div>
-<p>Additionally, \(\Phi_{A}\) and \(\brPhi_{A}\) are the spin connections corresponding to the twofold local Lorentz symmetries [Jeon:2011vx],  given as:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(47)</span></div>
+<p>Additionally, \(\Phi_{A}\) and \(\brPhi_{A}\) are the spin connections corresponding to the twofold local Lorentz symmetries [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011vx" target="_blank" rel="noopener noreferrer">Jeon:2011vx</a>],  given as:</p>
+<div class="equation" id="ref-PhibrPhi">\[
 \ba{ll}
 \Phi_{Apq}=\Phi_{A[pq]}=V^{B}{}_{p}\na_{A}V_{Bq}\,,\quad&\quad
 \brPhi_{A\brp\brq}=\brPhi_{A[\brp\brq]}=\brV^{B}{}_{\brp}\na_{A}\brV_{B\brq}\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(48)</span></div>
 <p>In our notation, \(\na_{A}\) is   the  diffeomorphism-covariant derivative that involves the Christoffel symbols only,</p>
-<div class="equation">\[
+<div class="equation" id="ref-napG">\[
 \na_{A}:=\partial_{A}+\Gamma_{A}\,,
-\]</div>
+
+\]<span class="equation-number">(49)</span></div>
 <p>and,  ignoring  any  local Lorentz  indices,  acts   on a tensor density with weight \(\omega\) as:</p>
-<div class="equation">\[
+<div class="equation" id="ref-asemicov">\[
 \na_{C}T_{A_{1}A_{2}\cdots A_{n}}
 :=\partial_{C}T_{A_{1}A_{2}\cdots A_{n}}-\omega_{{\scriptscriptstyle{T\,}}}\Gamma^{B}{}_{BC}T_{A_{1}A_{2}\cdots A_{n}}+
 \sum_{i=1}^{n}\,\Gamma_{CA_{i}}{}^{B}T_{A_{1}\cdots A_{i-1}BA_{i+1}\cdots A_{n}}\,.
-\]</div>
-<p>In particular, in ([PhibrPhi]),</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(50)</span></div>
+<p>In particular, in (<a class="equation-ref" href="covariant-derivatives.html#ref-PhibrPhi" title="Equation reference: PhibrPhi">48</a>),</p>
+<div class="equation" id="ref-naVV">\[
 \ba{ll}
 \na_{A}V_{Bq}=\partial_{A}V_{Bq}+\Gamma_{AB}{}^{C}V_{Cq}\,,\quad&\quad
 \na_{A}\brV_{B\brq}=\partial_{A}\brV_{B\brq}+\Gamma_{AB}{}^{C}\brV_{C\brq}\,.
 \ea
-\]</div>
-<p>The Christoffel connection ([Gamma]) is uniquely fixed by requiring the following three properties:</p>
+
+\]<span class="equation-number">(51)</span></div>
+<p>The Christoffel connection (<a class="equation-ref" href="covariant-derivatives.html#ref-Gamma" title="Equation reference: Gamma">47</a>) is uniquely fixed by requiring the following three properties:</p>
 <p class="item"><strong><em>i)</em></strong> Full  compatibility with all  fundamental fields,</p>
-<div class="equation">\[
+<div class="equation" id="ref-Gcomp">\[
 \ba{ll}
 \cD_{A}P_{BC}=\na_{A}P_{BC}=0\,,\quad&\quad\cD_{A}\brP_{BC}=\na_{A}\brP_{BC}=0\,,\\
-\multicolumn{2}{r}{
-\cD_{A}d\,=\na_{A}d\,=-\half e^{2d}\na_{A}(e^{-2d})=\partial_{A}d+\half\Gamma^{B}{}_{BA}=0\,,}
+
+\cD_{A}d\,=\na_{A}d\,=-\half e^{2d}\na_{A}(e^{-2d})=\partial_{A}d+\half\Gamma^{B}{}_{BA}=0\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(52)</span></div>
 <p>which implies</p>
 <div class="equation">\[
 \ba{ll}
@@ -163,30 +170,35 @@
 \ea
 \]</div>
 <p>such that \(\Gamma_{A}\) is, as expected,  \(\mathbf{so}(D,D)\)-valued:</p>
-<div class="equation">\[
+<div class="equation" id="ref-Gskew">\[
 \Gamma_{ABC}=-\Gamma_{ACB}\,.
-\]</div>
-<p class="item"><strong><em>ii)</em></strong> Torsionless cyclic property, (Footnote: In full-order supersymmetric DFTs [Jeon:2011sq, Jeon:2012hp], the torsions are quadratic in fermionic fields and naturally implement the 1.5 formalism characteristic of supergravity theories.)</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(54)</span></div>
+<p class="item"><strong><em>ii)</em></strong> Torsionless cyclic property, (Footnote: In full-order supersymmetric DFTs [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011sq" target="_blank" rel="noopener noreferrer">Jeon:2011sq</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>], the torsions are quadratic in fermionic fields and naturally implement the 1.5 formalism characteristic of supergravity theories.)</p>
+<div class="equation" id="ref-GABC">\[
 \Gamma_{ABC}+\Gamma_{BCA}+\Gamma_{CAB}=0\,,
-\]</div>
-<p>which makes  \(\na_{A}\)    compatible  with  the generalised Lie derivative ([hcL]) and the C-bracket ([Cbracket])  so that ordinary derivatives in these expressions can be freely replaced by  \(\na_{A}\):</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(55)</span></div>
+<p>which makes  \(\na_{A}\)    compatible  with  the generalised Lie derivative (<a class="equation-ref" href="doubled-yet-gauged.html#ref-hcL" title="Equation reference: hcL">11</a>) and the C-bracket (<a class="equation-ref" href="doubled-yet-gauged.html#ref-Cbracket" title="Equation reference: Cbracket">13</a>)  so that ordinary derivatives in these expressions can be freely replaced by  \(\na_{A}\):</p>
+<div class="equation" id="ref-hcLna">\[
 \hcL_{\xi}T_{A_{1}\cdots A_{n}}=\xi^{B}\na_{B}T_{A_{1}\cdots A_{n}}+\omega\na_{B}\xi^{B}T_{A_{1}\cdots A_{n}}+\sum_{i=1}^{n}~(\na_{A_{i}}\xi_{B}-\na_{B}\xi_{A_{i}})T_{A_{1}\cdots A_{i-1}}{}^{B}{}_{A_{i+1}\cdots  A_{n}}\,.
-\]</div>
+
+\]<span class="equation-number">(56)</span></div>
 <p class="item"><strong><em>iii)</em></strong> Projection constraints,</p>
-<div class="equation">\[
+<div class="equation" id="ref-kernel">\[
 \ba{ll}
 \cP_{ABC}{}^{DEF}\Gamma_{DEF}=0\,,\quad&\quad\bar{\cP}_{ABC}{}^{DEF}\Gamma_{DEF}=0\,.
+
 \ea
-\]</div>
+\]<span class="equation-number">(57)</span></div>
 <p>These constraints involve   six-index  projectors,</p>
-<div class="equation">\[
+<div class="equation" id="ref-P6">\[
 \ba{l}
 \cP_{ABC}{}^{DEF}:=P_{A}{}^{D}P_{[B}{}^{[E}P_{C]}{}^{F]}+\textstyle{\frac{2}{P_{M}{}^{M}-1}}P_{A[B}P_{C]}{}^{[E}P^{F]D}\,,\\
 \bar{\cP}_{ABC}{}^{DEF}:=\brP_{A}{}^{D}\brP_{[B}{}^{[E}\brP_{C]}{}^{F]}+\textstyle{\frac{2}{\brP_{M}{}^{M}-1}}\brP_{A[B}\brP_{C]}{}^{[E}\brP^{F]D}\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(58)</span></div>
 <p>which satisfy  the following projection properties,</p>
 <div class="equation">\[
 \ba{ll}
@@ -194,36 +206,44 @@
 \brcP_{ABC}{}^{DEF}\brcP_{DEF}{}^{GHI}=\brcP_{ABC}{}^{GHI}\,,
 \ea
 \]</div>
-<p>various symmetric  relations [Cho:2015lha],</p>
-<div class="equation">\[
+<p>various symmetric  relations [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACho%3A2015lha" target="_blank" rel="noopener noreferrer">Cho:2015lha</a>],</p>
+<div class="equation" id="ref-symP6">\[
 \ba{lll}
 \cP_{ABCDEF}=\cP_{DEFABC}\,,\quad&\quad\cP_{ABCDEF}=\cP_{A[BC]D[EF]}\,,
 \quad&\quad \cP_{[AB]CDEF}=\cP_{CAB[EF]D}\,,\\
 \brcP_{ABCDEF}=\brcP_{DEFABC}\,,\quad&\quad\brcP_{ABCDEF}=\brcP_{A[BC]D[EF]}\,,
 \quad&\quad \brcP_{[AB]CDEF}=\brcP_{CAB[EF]D}\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(60)</span></div>
 <p>and traceless conditions,</p>
-<div class="equation">\[
+<div class="equation" id="ref-symP6s">\[
 \ba{ll}
 \quad P^{AB}\cP_{ABCDEF}=0\,,\qquad&\quad
 \quad \brP^{AB}\brcP_{ABCDEF}=0\,.
 \ea
-\]</div>
-<p>Unlike the  GR Christoffel symbols, there exist  no normal coordinates where the DFT Christoffel symbols would vanish pointwise. The Equivalence Principle holds   for  point particles but not for  extended objects such as strings [Choi:2015bga].  Parallel  to the variation of the  Christoffel symbols in GR: \[\delta\gamma^{\lambda}_{\mu\nu}=\frac{1}{2}(\trd_{\mu}\delta g^{\lambda}{}_{\nu}+\trd_{\nu}\delta g_{\mu}{}^{\lambda}-\trd^{\lambda}\delta g_{\mu\nu}) , \] the DFT Christoffel symbols vary infinitesimally by the  DFT metric and dilaton: with \(\delta P_{AB}=\frac{1}{2}\delta\cH_{AB}\),</p>
+
+\]<span class="equation-number">(61)</span></div>
+<p>Unlike the  GR Christoffel symbols, there exist  no normal coordinates where the DFT Christoffel symbols would vanish pointwise. The Equivalence Principle holds   for  point particles but not for  extended objects such as strings [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AChoi%3A2015bga" target="_blank" rel="noopener noreferrer">Choi:2015bga</a>].  Parallel  to the variation of the  Christoffel symbols in GR:</p>
 <div class="equation">\[
+\delta\gamma^{\lambda}_{\mu\nu}=\frac{1}{2}(\trd_{\mu}\delta g^{\lambda}{}_{\nu}+\trd_{\nu}\delta g_{\mu}{}^{\lambda}-\trd^{\lambda}\delta g_{\mu\nu})\,,
+\]</div>
+<p>the DFT Christoffel symbols vary infinitesimally by the  DFT metric and dilaton: with \(\delta P_{AB}=\frac{1}{2}\delta\cH_{AB}\),</p>
+<div class="equation" id="ref-deltaG">\[
 \ba{rll}
 {\delta\Gamma}_{CAB}&=&2P_{[A}^{~D}\brP_{B]}^{~E}\DO_{C}\delta P_{DE}+2(\brP_{[A}^{~D}\brP_{B]}^{~E}-P_{[A}^{~D}P_{B]}^{~E})\DO_{D}\delta P_{EC}\\
 {}&{}&-\textstyle{\frac{4}{D-1}}(\brP_{C[A}\brP_{B]}^{~D}+P_{C[A}P_{B]}^{~D})(\partial_{D}\delta d+P_{E[G}\DO^{G}\delta P^{E}_{~D]})-\Gamma_{FDE\,}\delta(\cP+\brcP)_{CAB}{}^{FDE}\,.
 \ea
-\]</div>
-<p>Once the DFT Christoffel symbols are fixed, the spin connections ([PhibrPhi]) follow  naturally  from the compatibility of the master derivative with the DFT vielbeins: from ([naVV]),</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(62)</span></div>
+<p>Once the DFT Christoffel symbols are fixed, the spin connections (<a class="equation-ref" href="covariant-derivatives.html#ref-PhibrPhi" title="Equation reference: PhibrPhi">48</a>) follow  naturally  from the compatibility of the master derivative with the DFT vielbeins: from (<a class="equation-ref" href="covariant-derivatives.html#ref-naVV" title="Equation reference: naVV">51</a>),</p>
+<div class="equation" id="ref-cDVV">\[
 \ba{ll}
 \cD_{A}V_{Bp}=\na_{A}V_{Bp}+\Phi_{Ap}{}^{q}V_{Bq}=0\,,\qquad&\quad
 \cD_{A}\brV_{B\brp}=\na_{A}\brV_{B\brp}+\brPhi_{A\brp}{}^{\brq}\brV_{B\brq}=0\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(63)</span></div>
 <p>The master derivative is also compatible with the metrics and gamma matrices of the twofold spin groups,</p>
 <div class="equation">\[
 \ba{llll}
@@ -233,31 +253,34 @@
 \ea
 \]</div>
 <p>and thus, analogous to GR,</p>
-<div class="equation">\[
+<div class="equation" id="ref-Phisv">\[
 \ba{llll}
 \Phi_{Apq}=-\Phi_{Aqp}\,,\quad&\quad
 \brPhi_{A\brp\brq}=-\brPhi_{A\brq\brp}\,,\quad&\quad
 \Phi_{A}{}^{\alpha}{}_{\beta}=\quarter\Phi_{Apq}(\gamma^{pq})^{\alpha}{}_{\beta}\,,\quad&\quad
 \brPhi_{A}{}^{\bralpha}{}_{\brbeta}=\quarter\brPhi_{A\brp\brq}(\brgamma^{\brp\brq})^{\bralpha}{}_{\brbeta}\,.
 \ea
-\]</div>
-<p>It is worthwhile to note a formula that relates the three connections [Cho:2015lha]:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(65)</span></div>
+<p>It is worthwhile to note a formula that relates the three connections [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACho%3A2015lha" target="_blank" rel="noopener noreferrer">Cho:2015lha</a>]:</p>
+<div class="equation" id="ref-GPhibrPhi">\[
 \Gamma_{CAB}=
 V_{A}{}^{p}\partial_{C}V_{Bp}+\brV_{A}{}^{\brp}\partial_{C}\brV_{B\brp}+
 V_{A}{}^{p}V_{B}{}^{q}\Phi_{Cpq}+
 \brV_{A}{}^{\brp}\brV_{B}{}^{\brq}\brPhi_{C\brp\brq}\,,
-\]</div>
-<p>ensuring that Cartan&#x27;s structure equations in GR hold analogously in DFT [Cho:2015lha].</p>
+
+\]<span class="equation-number">(66)</span></div>
+<p>ensuring that Cartan&#x27;s structure equations in GR hold analogously in DFT [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACho%3A2015lha" target="_blank" rel="noopener noreferrer">Cho:2015lha</a>].</p>
 <p>Due to the section condition,    the Christoffel symbols satisfy</p>
-<div class="equation">\[
+<div class="equation" id="ref-Gps">\[
 P_{A}{}^{C}\brP_{B}{}^{D}\Gamma^{E}{}_{CD}\partial_{E}=0\,.
-\]</div>
+
+\]<span class="equation-number">(67)</span></div>
 <aside class="note"><p><strong>Summary.</strong> The  Christoffel and spin connections in DFT are uniquely determined by compatibility and extra (torsionless)  conditions, extending GR into the doubled framework.</p></aside>
 <h2 id="from-semi-covariance-to-full-covariance">From Semi-Covariance to Full Covariance</h2>
 <p class="aim"><strong>Aim.</strong> To refine the semi-covariant derivative into a fully covariant derivative through projections.</p>
-<p>Explicitly, the master  derivative ([MastercD]) acts as</p>
-<div class="equation">\[
+<p>Explicitly, the master  derivative (<a class="equation-ref" href="covariant-derivatives.html#ref-MastercD" title="Equation reference: MastercD">46</a>) acts as</p>
+<div class="equation" id="ref-MastercDexplicit">\[
 \ba{l}
 \cD_{A}T_{Bp}{}^{\alpha}{}_{\brp}{}^{\bralpha}=
 \na_{A}T_{Bp}{}^{\alpha}{}_{\brp}{}^{\bralpha}+
@@ -271,61 +294,69 @@ T_{Bp}{}^{\alpha}{}_{\brq}{}^{\bralpha}+\brPhi_{A}{}^{\bralpha}{}_{\brbeta}T_{Bp
 T_{Bq}{}^{\alpha}{}_{\brp}{}^{\bralpha}{+\Phi_{A}{}^{\alpha}{}_{\beta}}T_{Bp}{}^{\beta}{}_{\brp}{}^{\bralpha}{+\brPhi_{A\brp}{}^{\brq}}
 T_{Bp}{}^{\alpha}{}_{\brq}{}^{\bralpha}{+\brPhi_{A}{}^{\bralpha}{}_{\brbeta}}T_{Bp}{}^{\alpha}{}_{\brp}{}^{\brbeta}\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(68)</span></div>
 <p>The master derivative is fully covariant with respect to the twofold local Lorentz symmetries but is, <em>a priori</em>, only <em>semi-covariant</em> under the doubled-yet-gauged diffeomorphisms. To achieve complete covariance under these diffeomorphisms, an additional step of projection  is required, which we explain.</p>
 <h3 id="tensorial-covariant-derivatives">Tensorial Covariant Derivatives</h3>
 <p class="aim"><strong>Aim.</strong> To obtain a fully covariant derivative for tensors.</p>
 <p>Under diffeomorphisms, the DFT Christoffel symbols transform as</p>
-<div class="equation">\[
+<div class="equation" id="ref-GPbrP">\[
 \delta_{\xi}\Gamma_{CAB}=\hcL_{\xi}\Gamma_{CAB}
 -2\partial_{C}\partial_{[A}\xi_{B]}+2(\cP+\brcP)_{CAB}{}^{DEF}\partial_{D}\partial_{[E}\xi_{F]}\,,
-\]</div>
+
+\]<span class="equation-number">(69)</span></div>
 <p>such that \(\na_{A}\), and consequently \(\cD_{A}\), are not inherently covariant under the diffeomorphisms:</p>
-<div class="equation">\[
+<div class="equation" id="ref-diffeoanormalous">\[
 \delta_{\xi}\big(\na_{C}T_{A_{1}\cdots A_{n}}\big)=\hcL_{\xi}\big(\na_{C}T_{A_{1}\cdots A_{n}}\big)+
 \dis{\sum_{i=1}^{n}2(\cP{+\brcP})_{CA_{i}}{}^{BDEF}
 \partial_{D}\partial_{E}\xi_{F}\,T_{A_{1}\cdots A_{i-1} BA_{i+1}\cdots A_{n}}\,.}
-\]</div>
-<p>However, the anomalous terms consistently appear through the six-index projectors ([P6]), making them straightforward to project out. For instance, in ([diffeoanormalous]), projecting the derivative index and the tensor indices in opposite ways allows the construction of fully covariant derivatives [Jeon:2011cn]:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(70)</span></div>
+<p>However, the anomalous terms consistently appear through the six-index projectors (<a class="equation-ref" href="covariant-derivatives.html#ref-P6" title="Equation reference: P6">58</a>), making them straightforward to project out. For instance, in (<a class="equation-ref" href="covariant-derivatives.html#ref-diffeoanormalous" title="Equation reference: diffeoanormalous">70</a>), projecting the derivative index and the tensor indices in opposite ways allows the construction of fully covariant derivatives [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011cn" target="_blank" rel="noopener noreferrer">Jeon:2011cn</a>]:</p>
+<div class="equation" id="ref-covD">\[
 \ba{ll}
 P_{C}{}^{D}{\brP}_{A_{1}}{}^{B_{1}}\cdots{\brP}_{A_{n}}{}^{B_{n}}
 \DO_{D}T_{B_{1}\cdots B_{n}}\,,\quad&\qquad
 {\brP}_{C}{}^{D}P_{A_{1}}{}^{B_{1}}\cdots P_{A_{n}}{}^{B_{n}}
 \DO_{D}T_{B_{1}\cdots B_{n}}\,.
 \ea
-\]</div>
-<p>Similarly, using  ([symP6]) and  ([symP6s]),  we obtain fully covariant <em>divergences</em>,</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(71)</span></div>
+<p>Similarly, using  (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6" title="Equation reference: symP6">60</a>) and  (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6s" title="Equation reference: symP6s">61</a>),  we obtain fully covariant <em>divergences</em>,</p>
+<div class="equation" id="ref-covdiv">\[
 \ba{ll}
 P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}\DO_{A}T_{BD_{1}\cdots D_{n}}\,,\quad&\qquad
 \brP^{AB}{P}_{C_{1}}{}^{D_{1}}\cdots{P}_{C_{n}}{}^{D_{n}}\DO_{A}T_{BD_{1}\cdots D_{n}}\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(72)</span></div>
 <p>For instance, the  divergence of  a weightless vector, \(J^{A}\), reads</p>
-<div class="equation">\[
+<div class="equation" id="ref-divJ">\[
 \na_{A}\!\left(e^{-2d}J^{A}\right)=\partial_{A}\!\left(e^{-2d}J^{A}\right)=e^{-2d}\na_{A}J^{A}=e^{-2d}\left(P^{AB}+\brP^{AB}\right)\na_{A}J_{B}\,.
-\]</div>
-<p>Nevertheless, when acting on the two-index projectors,  \(P_{AB}\) and \(\brP_{AB}\), the anomalous terms in ([diffeoanormalous]) are automatically eliminated due to the properties of the six-index projectors, ([symP6]) and ([symP6s]). This guarantees the full covariance of the compatibility condition, \(\na_{C}P_{AB}=0=\na_{C}\brP_{AB}\), as postulated in ([Gcomp]).</p>
-<p>In accordance with ([deltacH]), the partial derivative of the generalised metric satisfies a projection property,</p>
+
+\]<span class="equation-number">(73)</span></div>
+<p>Nevertheless, when acting on the two-index projectors,  \(P_{AB}\) and \(\brP_{AB}\), the anomalous terms in (<a class="equation-ref" href="covariant-derivatives.html#ref-diffeoanormalous" title="Equation reference: diffeoanormalous">70</a>) are automatically eliminated due to the properties of the six-index projectors, (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6" title="Equation reference: symP6">60</a>) and (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6s" title="Equation reference: symP6s">61</a>). This guarantees the full covariance of the compatibility condition, \(\na_{C}P_{AB}=0=\na_{C}\brP_{AB}\), as postulated in (<a class="equation-ref" href="covariant-derivatives.html#ref-Gcomp" title="Equation reference: Gcomp">52</a>).</p>
+<p>In accordance with (<a class="equation-ref" href="non-riemannian-geometry.html#ref-deltacH" title="Equation reference: deltacH">30</a>), the partial derivative of the generalised metric satisfies a projection property,</p>
 <div class="equation">\[
 \partial_C\cH_{AB}=(P\partial_C\cH\brP)_{AB}+(\brP \partial_C\cH P)_{AB}\,,
 \]</div>
-<p>where the two free indices are projected in opposite manners. This property essentially precludes the possibility of canceling the anomalous terms in ([GPbrP]) by adding any derivatives of the generalised metric or dilaton to \(\Gamma_{CAB}\) in ([Gamma]). While introducing additional complementary fields could, in principle, eliminate the anomalous terms, such fields remain &quot;undetermined&quot; or are not naturally identifiable within string theory.</p>
-<p>Notably, the additional projection step ([covD]) highlights the more refined and rigid structure of DFT compared to GR. For instance, while DFT provides two available &quot;metrics,&quot; namely \(\cJ_{AB}\) and \(\cH_{AB}\), the pairwise contraction of \(\ODD\) indices is significantly restricted. Specifically, when constructing a scalar from the squared derivative \( \na_{A}T_{B_{1}B_{2}\cdots B_{n}}\) for a kinetic term, from ([covD]) there are only two viable ways to &quot;square&quot; it, rather than the \(2^{n+1}\) possibilities that might otherwise exist.</p>
-<p>As a further illustration, consider a doubled Yang-Mills potential \(\bfA_{A}\). The fully covariant skew-symmetric field strength is expressed as [Jeon:2011kp, Choi:2015bga]</p>
-<div class="equation">\[
+<p>where the two free indices are projected in opposite manners. This property essentially precludes the possibility of canceling the anomalous terms in (<a class="equation-ref" href="covariant-derivatives.html#ref-GPbrP" title="Equation reference: GPbrP">69</a>) by adding any derivatives of the generalised metric or dilaton to \(\Gamma_{CAB}\) in (<a class="equation-ref" href="covariant-derivatives.html#ref-Gamma" title="Equation reference: Gamma">47</a>). While introducing additional complementary fields could, in principle, eliminate the anomalous terms, such fields remain &quot;undetermined&quot; or are not naturally identifiable within string theory.</p>
+<p>Notably, the additional projection step (<a class="equation-ref" href="covariant-derivatives.html#ref-covD" title="Equation reference: covD">71</a>) highlights the more refined and rigid structure of DFT compared to GR. For instance, while DFT provides two available &quot;metrics,&quot; namely \(\cJ_{AB}\) and \(\cH_{AB}\), the pairwise contraction of \(\ODD\) indices is significantly restricted. Specifically, when constructing a scalar from the squared derivative \( \na_{A}T_{B_{1}B_{2}\cdots B_{n}}\) for a kinetic term, from (<a class="equation-ref" href="covariant-derivatives.html#ref-covD" title="Equation reference: covD">71</a>) there are only two viable ways to &quot;square&quot; it, rather than the \(2^{n+1}\) possibilities that might otherwise exist.</p>
+<p>As a further illustration, consider a doubled Yang-Mills potential \(\bfA_{A}\). The fully covariant skew-symmetric field strength is expressed as [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011kp" target="_blank" rel="noopener noreferrer">Jeon:2011kp</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AChoi%3A2015bga" target="_blank" rel="noopener noreferrer">Choi:2015bga</a>]</p>
+<div class="equation" id="ref-YMF0">\[
 P_{A}{}^{C}\brP_{B}{}^{D}\bfF_{CD}=
 P_{A}{}^{C}\brP_{B}{}^{D}\big(\na_{C}\bfA_{D}-\na_{D}\bfA_{C}-i\left[\bfA_{C},\bfA_{D}\right]\big)\,,
-\]</div>
+
+\]<span class="equation-number">(75)</span></div>
 <p>and there is  only one way to construct the doubled Yang-Mills   action:</p>
-<div class="equation">\[
+<div class="equation" id="ref-YMaction">\[
 \dis{\int_{\Sigma_D}e^{-2d}P^{AC}\brP^{BD}\Tr(\bfF_{AB}\bfF_{CD})\,,}
-\]</div>
+
+\]<span class="equation-number">(76)</span></div>
 <p>where  \(\Sigma_{D}\) is a \(D\)-dimensional section over which the integral is taken with the measure, \(e^{-2d}\).</p>
-<p>The doubled Yang-Mills potential  decomposes into a  displacement vector  and an ordinary one-form: \(\bfA_{A} = (\varphi^{\mu}, A_{\nu})\). This structure enables the doubled Yang-Mills action to provide a unified description of gluons/photons and (non-Abelian) phonons [Angus:2021jvm]. However, it is always possible to eliminate the displacement phonon vector by imposing an \(\ODD\)-symmetric constraint, \(\bfA^{A} \partial_{A} = 0\), analogous to the section condition ([SC]) [Choi:2015bga].</p>
-<p>We proceed to  construct fully   covariant second-order differential operators, for which  we need to identify the relevant  anomalous terms.  Making use of  ([diffeoanormalous]) repeatedly with care,   we get</p>
-<div class="equation">\[
+<p>The doubled Yang-Mills potential  decomposes into a  displacement vector  and an ordinary one-form: \(\bfA_{A} = (\varphi^{\mu}, A_{\nu})\). This structure enables the doubled Yang-Mills action to provide a unified description of gluons/photons and (non-Abelian) phonons [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAngus%3A2021jvm" target="_blank" rel="noopener noreferrer">Angus:2021jvm</a>]. However, it is always possible to eliminate the displacement phonon vector by imposing an \(\ODD\)-symmetric constraint, \(\bfA^{A} \partial_{A} = 0\), analogous to the section condition (<a class="equation-ref" href="doubled-yet-gauged.html#ref-SC" title="Equation reference: SC">7</a>) [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AChoi%3A2015bga" target="_blank" rel="noopener noreferrer">Choi:2015bga</a>].</p>
+<p>We proceed to  construct fully   covariant second-order differential operators, for which  we need to identify the relevant  anomalous terms.  Making use of  (<a class="equation-ref" href="covariant-derivatives.html#ref-diffeoanormalous" title="Equation reference: diffeoanormalous">70</a>) repeatedly with care,   we get</p>
+<div class="equation" id="ref-diffeoanormalous2">\[
 \ba{rll}
 \big(\delta_{\xi}-\hcL_{\xi}\big)\big(\na_{B}\na_{C}T_{A_{1}\cdots A_{n}}\big)&=&2 (\cP{+\brcP})_{BC}{}^{DEFG}
 \partial_{E}\partial_{F}\xi_{G}\,\na_{D}T_{A_{1}\cdots A_{n}}\\
@@ -341,22 +372,24 @@ P_{A}{}^{C}\brP_{B}{}^{D}\big(\na_{C}\bfA_{D}-\na_{D}\bfA_{C}-i\left[\bfA_{C},\b
 \partial_{E}\partial_{F}\xi_{G}\,\na_{C}T_{A_{1}\cdots A_{i-1} DA_{i+1}\cdots A_{n}}\ea
 \right]\,.
 \ea
-\]</div>
-<p>Again from the symmetric and traceless relations of the six-index projectors ([symP6]),  ([symP6s]),  it is straightforward to obtain   fully covariant <em>d&#x27;Alembertians</em>:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(77)</span></div>
+<p>Again from the symmetric and traceless relations of the six-index projectors (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6" title="Equation reference: symP6">60</a>),  (<a class="equation-ref" href="covariant-derivatives.html#ref-symP6s" title="Equation reference: symP6s">61</a>),  it is straightforward to obtain   fully covariant <em>d&#x27;Alembertians</em>:</p>
+<div class="equation" id="ref-coco1">\[
 \ba{ll}
 P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \DO_{A}\DO_{B}T_{D_{1}\cdots D_{n}}\,,\quad&\qquad
 {\brP}^{AB}P_{C_{1}}{}^{D_{1}}\cdots P_{C_{n}}{}^{D_{n}}
 \DO_{A}\DO_{B}T_{D_{1}\cdots D_{n}}\,.
 \ea
-\]</div>
-<p>Later, through  equations ([DELTA]), ([brDELTA]), ([covseccon]), and ([bBox]), we will encounter a pair of general forms of the d&#x27;Alembertian,  which yield    a box operator.  These operators are crafted to act on arbitrary multi-index tensor densities while <em>a priori</em> incorporating four-index (Riemann) curvature.</p>
+
+\]<span class="equation-number">(78)</span></div>
+<p>Later, through  equations (<a class="equation-ref" href="curvatures.html#ref-DELTA" title="Equation reference: DELTA">134</a>), (<a class="equation-ref" href="curvatures.html#ref-brDELTA" title="Equation reference: brDELTA">135</a>), (<a class="equation-ref" href="curvatures.html#ref-covseccon" title="Equation reference: covseccon">136</a>), and (<a class="equation-ref" href="curvatures.html#ref-bBox" title="Equation reference: bBox">137</a>), we will encounter a pair of general forms of the d&#x27;Alembertian,  which yield    a box operator.  These operators are crafted to act on arbitrary multi-index tensor densities while <em>a priori</em> incorporating four-index (Riemann) curvature.</p>
 <aside class="note"><p><strong>Summary.</strong> Projections remove anomalous terms and enforce strict covariance, showing that DFT is structurally more rigid than GR.</p></aside>
 <h3 id="spinorial-covariant-derivatives">Spinorial Covariant Derivatives</h3>
 <p class="aim"><strong>Aim.</strong> To extend covariance to spinors and the  RR sector by constructing <em>Dirac operators</em>.</p>
-<p>It is possible to freely replace \(\na_A\) in the fully covariant derivatives ([covD]), ([covdiv]), and ([coco1]) with the master derivative \(\cD_A\), while simultaneously contracting their projected, otherwise unconstrained \(\ODD\) vector indices using the DFT vielbeins, \(V_{Ap}\) and \(\brV_{A\brq}\). Due to the compatibility of the DFT vielbeins with the master derivative ([cDVV]), this replacement reduces the fully covariant derivatives to more streamlined forms:</p>
-<div class="equation">\[
+<p>It is possible to freely replace \(\na_A\) in the fully covariant derivatives (<a class="equation-ref" href="covariant-derivatives.html#ref-covD" title="Equation reference: covD">71</a>), (<a class="equation-ref" href="covariant-derivatives.html#ref-covdiv" title="Equation reference: covdiv">72</a>), and (<a class="equation-ref" href="covariant-derivatives.html#ref-coco1" title="Equation reference: coco1">78</a>) with the master derivative \(\cD_A\), while simultaneously contracting their projected, otherwise unconstrained \(\ODD\) vector indices using the DFT vielbeins, \(V_{Ap}\) and \(\brV_{A\brq}\). Due to the compatibility of the DFT vielbeins with the master derivative (<a class="equation-ref" href="covariant-derivatives.html#ref-cDVV" title="Equation reference: cDVV">63</a>), this replacement reduces the fully covariant derivatives to more streamlined forms:</p>
+<div class="equation" id="ref-coco2">\[
 \ba{llllll}
 \cD_{p}T_{\brq_{1}\cdots \brq_{n}}\,,\quad&
 \cD_{\brp}T_{q_{1}\cdots q_{n}}\,,\quad&
@@ -365,30 +398,33 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \cD_{p}\cD^{p}T_{\brq_{1}\cdots \brq_{n}}\,,\quad&
 \cD_{\brp}\cD^{\brp}T_{q_{1}\cdots q_{n}}\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(79)</span></div>
 <p>where \(\cD_{p}=V^{A}{}_{p}\cD_{A}\) and  \(\cD_{\brp}=\brV^{A}{}_{\brp}\cD_{A }\).</p>
-<p>The fully covariant doubled   Yang-Mills field strength ([YMF0])  also reads</p>
-<div class="equation">\[
+<p>The fully covariant doubled   Yang-Mills field strength (<a class="equation-ref" href="covariant-derivatives.html#ref-YMF0" title="Equation reference: YMF0">75</a>)  also reads</p>
+<div class="equation" id="ref-YMF">\[
 \bfF_{p\brq}:=V^{A}{}_{p}\brV^{B}{}_{\brq}\big(\na_{A}\bfA_{B}-\na_{B}\bfA_{A}-i\left[\bfA_{A},\bfA_{B}\right]\big)=\cD_{p}\bfA_{\brq}-\cD_{\brq}\bfA_{p}-i\left[\bfA_{p},\bfA_{\brq}\right]\,.
-\]</div>
-<p>The full covariance of ([coco2]) and ([YMF]) can also be directly confirmed by observing  that, from</p>
+
+\]<span class="equation-number">(80)</span></div>
+<p>The full covariance of (<a class="equation-ref" href="covariant-derivatives.html#ref-coco2" title="Equation reference: coco2">79</a>) and (<a class="equation-ref" href="covariant-derivatives.html#ref-YMF" title="Equation reference: YMF">80</a>) can also be directly confirmed by observing  that, from</p>
 <div class="equation">\[
 \ba{ll}
 \delta_{\xi}\Phi_{Apq}=\hcL_{\xi}\Phi_{Apq}+2\cP_{Apq}{}^{DEF}\partial_{D}\partial_{[E}\xi_{F]}\,,\quad&\qquad
 \delta_{\xi}\brPhi_{A\brp\brq}=\hcL_{\xi}\brPhi_{A\brp\brq}+2\brcP_{A\brp\brq}{}^{DEF}\partial_{D}\partial_{[E}\xi_{F]}\,,
 \ea
 \]</div>
-<p>the following projected components of the spin connections are fully covariant under doubled-yet-gauged  diffeomorphisms: (Footnote: The quantities in ([covPhi]) are essentially the "generalised fluxes&#x27;&#x27;  considered in [Aldazabal:2011nj, Grana:2012rr, Geissbuhler:2013uka] as the building blocks of DFT.)</p>
-<div class="equation">\[
+<p>the following projected components of the spin connections are fully covariant under doubled-yet-gauged  diffeomorphisms: (Footnote: The quantities in (<a class="equation-ref" href="covariant-derivatives.html#ref-covPhi" title="Equation reference: covPhi">82</a>) are essentially the "generalised fluxes&#x27;&#x27;  considered in [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAldazabal%3A2011nj" target="_blank" rel="noopener noreferrer">Aldazabal:2011nj</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AGrana%3A2012rr" target="_blank" rel="noopener noreferrer">Grana:2012rr</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AGeissbuhler%3A2013uka" target="_blank" rel="noopener noreferrer">Geissbuhler:2013uka</a>] as the building blocks of DFT.)</p>
+<div class="equation" id="ref-covPhi">\[
 \ba{llllll}
 \Phi_{\brr pq}\,,\quad&\quad\brPhi_{r\brp\brq}\,,\quad&\quad\Phi_{[pqr]}\,,\quad&~
 \brPhi_{[\brp\brq\brr]}\,,\quad&\quad\Phi^{p}{}_{pq}\,,\quad&\quad
 \brPhi^{\brp}{}_{\brp\brq}\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(82)</span></div>
 <p>where  we have set \(\Phi_{\brr pq}=\brV^{A}{}_{\brr}\Phi_{A pq} \) and  \( \Phi_{rpq}=V^{A}{}_{r}\Phi_{A pq}\), <em>etc.</em></p>
-<p>Consequently, when acting on \(\SpinD\) spinors, such as \(\rho^{\alpha}\) or \(\psi_{\brp}^{\alpha}\), or on \(\oSpinD\) spinors, such as \(\rho^{\prime\bralpha}\) or \(\psi^{\prime\bralpha}_{p}\), the   fully  covariant <em>Dirac operators</em> are [Jeon:2011vx, Jeon:2011sq]</p>
-<div class="equation">\[
+<p>Consequently, when acting on \(\SpinD\) spinors, such as \(\rho^{\alpha}\) or \(\psi_{\brp}^{\alpha}\), or on \(\oSpinD\) spinors, such as \(\rho^{\prime\bralpha}\) or \(\psi^{\prime\bralpha}_{p}\), the   fully  covariant <em>Dirac operators</em> are [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011vx" target="_blank" rel="noopener noreferrer">Jeon:2011vx</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011sq" target="_blank" rel="noopener noreferrer">Jeon:2011sq</a>]</p>
+<div class="equation" id="ref-covDirac">\[
 \ba{llllllll}
 \gamma^{p}\cD_{p}\rho\,,\quad&~
 \gamma^{p}\cD_{p}\psi_{\brp}\,,\quad&~
@@ -399,24 +435,27 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \cD_{p}\rhop\,,\quad&\quad
 \cD_{p}\psip{}^{p}\,.
 \ea
-\]</div>
-<p>Further, in the maximally supersymmetric type II DFT [Jeon:2012hp], as well as in the pure spinor formalism [Berkovits:2001ue], the Ramond-Ramond (RR) sector is characterized by a \(\SpinD \times \oSpinD\) bi-fundamental spinorial potential: \(\cC^{\alpha}{}_{\bralpha}\)  (<em>c.f. </em>[Rocen:2010bk, Hohm:2011zr, Hatsuda:2014aza, Cederwall:2016ukd, Butter:2022gbc, Butter:2022sfh]). Subsequently, a pair of fully covariant and  nilpotent derivatives, \(\cD_{+}\) and \(\cD_{-}\), are introduced [Jeon:2012kd]:</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(83)</span></div>
+<p>Further, in the maximally supersymmetric type II DFT [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>], as well as in the pure spinor formalism [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ABerkovits%3A2001ue" target="_blank" rel="noopener noreferrer">Berkovits:2001ue</a>], the Ramond-Ramond (RR) sector is characterized by a \(\SpinD \times \oSpinD\) bi-fundamental spinorial potential: \(\cC^{\alpha}{}_{\bralpha}\)  (<em>c.f. </em>[<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ARocen%3A2010bk" target="_blank" rel="noopener noreferrer">Rocen:2010bk</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHohm%3A2011zr" target="_blank" rel="noopener noreferrer">Hohm:2011zr</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AHatsuda%3A2014aza" target="_blank" rel="noopener noreferrer">Hatsuda:2014aza</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACederwall%3A2016ukd" target="_blank" rel="noopener noreferrer">Cederwall:2016ukd</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AButter%3A2022gbc" target="_blank" rel="noopener noreferrer">Butter:2022gbc</a>, <a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AButter%3A2022sfh" target="_blank" rel="noopener noreferrer">Butter:2022sfh</a>]). Subsequently, a pair of fully covariant and  nilpotent derivatives, \(\cD_{+}\) and \(\cD_{-}\), are introduced [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012kd" target="_blank" rel="noopener noreferrer">Jeon:2012kd</a>]:</p>
+<div class="equation" id="ref-Dpm">\[
 \ba{ll}
 \cD_{\pm}\cC:=\gamma^{p}\cD_{p}\cC\pm\gamma^{(D+1)}\cD_{\brp}\cC\brgamma^{\brp}\,,\quad&\qquad \cD_{\pm}^{2}\cC=0\,,
 \ea
-\]</div>
-<p>where, with ([Phisv]),  \(\cD_{A}\cC=\partial_{A}\cC+\Phi_{A}\cC-\cC\brPhi_{A}\).  In particular, the RR field strength, \(\cF^{\alpha}{}_{\bralpha}\), is given by  one of these  operators and remains invariant under RR gauge transformations,</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(84)</span></div>
+<p>where, with (<a class="equation-ref" href="covariant-derivatives.html#ref-Phisv" title="Equation reference: Phisv">65</a>),  \(\cD_{A}\cC=\partial_{A}\cC+\Phi_{A}\cC-\cC\brPhi_{A}\).  In particular, the RR field strength, \(\cF^{\alpha}{}_{\bralpha}\), is given by  one of these  operators and remains invariant under RR gauge transformations,</p>
+<div class="equation" id="ref-RRfs">\[
 \ba{ll}
 \cF:=\cD_{+}\cC\,,\qquad&\qquad \delta \cC=\cD_{+}\lambda\quad\longrightarrow\quad
 \delta\cF=0\,.
 \ea
-\]</div>
+
+\]<span class="equation-number">(85)</span></div>
 <h3 id="generalised-kosmann-derivative-aka-the-further-generalised-lie-derivative">Generalised Kosmann Derivative,  aka the Further-Generalised Lie Derivative</h3>
 <p class="aim"><strong>Aim.</strong> To adapt the Lie derivative so that it respects local Lorentz symmetry.</p>
-<p>The generalised Lie derivative is compatible with the semi-covariant derivative,  \(\hcL_{\xi}(\partial_{A}) = \hcL_{\xi}(\na_{A})\), as demonstrated in ([hcLna]), and is in fact fully covariant under the doubled-yet-gauged diffeomorphisms ([covhcL]). However, when acting on spinorial tensors, it fails to preserve the local Lorentz symmetries. To achieve full covariance under both diffeomorphisms and local Lorentz rotations, the generalised Lie derivative must be further extended to incorporate spin connections. This approach was originally introduced in the context of GR by Kosmann in 1971 [Kosmann]. (Footnote: See [Kim:2024ewt] for a recent application of the Kosmann derivative.) The DFT counterpart to the Kosmann derivative, also referred to as the further-generalised Lie derivative, is defined in [Angus:2018mep] as</p>
-<div class="equation">\[
+<p>The generalised Lie derivative is compatible with the semi-covariant derivative,  \(\hcL_{\xi}(\partial_{A}) = \hcL_{\xi}(\na_{A})\), as demonstrated in (<a class="equation-ref" href="covariant-derivatives.html#ref-hcLna" title="Equation reference: hcLna">56</a>), and is in fact fully covariant under the doubled-yet-gauged diffeomorphisms (<a class="equation-ref" href="doubled-yet-gauged.html#ref-covhcL" title="Equation reference: covhcL">14</a>). However, when acting on spinorial tensors, it fails to preserve the local Lorentz symmetries. To achieve full covariance under both diffeomorphisms and local Lorentz rotations, the generalised Lie derivative must be further extended to incorporate spin connections. This approach was originally introduced in the context of GR by Kosmann in 1971 [<a class="cite-ref" href="https://inspirehep.net/literature?q=Kosmann" target="_blank" rel="noopener noreferrer">Kosmann</a>]. (Footnote: See [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AKim%3A2024ewt" target="_blank" rel="noopener noreferrer">Kim:2024ewt</a>] for a recent application of the Kosmann derivative.) The DFT counterpart to the Kosmann derivative, also referred to as the further-generalised Lie derivative, is defined in [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAngus%3A2018mep" target="_blank" rel="noopener noreferrer">Angus:2018mep</a>] as</p>
+<div class="equation" id="ref-Kosmann">\[
 \ba{lll}
 \fcL_{\xi}T_{Ap\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brbeta}&:=&\xi^{B}\cD_{B}T_{Ap\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brbeta}+\omega\cD_{B}\xi^{B}T_{Ap\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brbeta}+2\cD_{[A}\xi_{B]}T^{B}{}_{p\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brbeta}\\
 {}&{}&+2\cD_{[p}\xi_{q]}T_{A}{}^{q}{}_{\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brbeta}+
@@ -425,20 +464,22 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \half\cD_{[\brr}\xi_{\brs]}(\brgamma^{\brr\brs})^{\bralpha}{}_{\brdelta}T_{Ap\brp}{}^{\alpha}{}_{\beta}{}^{\brdelta}{}_{\brbeta}-
 \half\cD_{[\brr}\xi_{\brs]}(\brgamma^{\brr\brs})^{\brdelta}{}_{\brbeta}T_{Ap\brp}{}^{\alpha}{}_{\beta}{}^{\bralpha}{}_{\brdelta}\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(86)</span></div>
 <p>which consists of the generalised Lie derivative combined with infinitesimal local Lorentz rotations characterized by</p>
-<div class="equation">\[
+<div class="equation" id="ref-additional">\[
 \ba{ll}
 \xi^{A}\Phi_{Apq}+2\cD_{[p}\xi_{q]}={2\partial_{[p}\xi_{q]}+\Phi_{\brr pq}\xi^{\brr}+3\Phi_{[pqr]}\xi^{r}}\,,~~&~~
 \xi^{A}\brPhi_{A\brp\brq}+2\cD_{[\brp}\xi_{\brq]}={2\partial_{[\brp}\xi_{\brq]}+\brPhi_{r\brp\brq}\xi^{r}
 +3\brPhi_{[\brp\brq\brr]}\xi^{\brr}}\,.
 \ea
-\]</div>
-<p>As listed in ([covPhi]),  all of these are fully covariant under the doubled-yet-gauged diffeomorphisms.</p>
+
+\]<span class="equation-number">(87)</span></div>
+<p>As listed in (<a class="equation-ref" href="covariant-derivatives.html#ref-covPhi" title="Equation reference: covPhi">82</a>),  all of these are fully covariant under the doubled-yet-gauged diffeomorphisms.</p>
 <h3 id="riemannian-parametrisation-of-the-covariant-derivatives">Riemannian Parametrisation of the Covariant Derivatives</h3>
 <p class="aim"><strong>Aim.</strong> To show how covariant derivatives reduce under the \((0,0)\) Riemannian parametrisation.</p>
-<p>Under the \((0,0)\) Riemannian parametrisation, ([00V]) and ([00d]),    the  projected  components of the spin connections ([covPhi]) reduce explicitly to</p>
-<div class="equation">\[
+<p>Under the \((0,0)\) Riemannian parametrisation, (<a class="equation-ref" href="non-riemannian-geometry.html#ref-00V" title="Equation reference: 00V">43</a>) and (<a class="equation-ref" href="non-riemannian-geometry.html#ref-00d" title="Equation reference: 00d">45</a>),    the  projected  components of the spin connections (<a class="equation-ref" href="covariant-derivatives.html#ref-covPhi" title="Equation reference: covPhi">82</a>) reduce explicitly to</p>
+<div class="equation" id="ref-covPhi2">\[
 \ba{ll}
 \Phi_{\brp pq}=\frac{1}{\sqrt{2}}\bre_{\brp}{}^{\mu}\left(\omega_{\mu pq}+\half H_{\mu pq}\right)\,,\quad&\quad
 \brPhi_{p\brp\brq}=\frac{1}{\sqrt{2}}e_{p}{}^{\mu}\left(\bromega_{\mu\brp\brq}+\half H_{\mu \brp\brq}\right)\,,\\
@@ -448,7 +489,8 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \Phi^{p}{}_{pq}=\frac{1}{\sqrt{2}}\left(e^{p\mu}\omega_{\mu pq}-2e_{q}{}^{\mu}\partial_{\mu}\phi\right)\,,\quad&\quad
 \brPhi^{\brp}{}_{\brp\brq}=\frac{1}{\sqrt{2}}\left(\bre^{\brp\mu}\bromega_{\mu\brp\brq}-2\bre_{\brq}{}^{\mu}\partial_{\mu}\phi\right)\,,
 \ea
-\]</div>
+
+\]<span class="equation-number">(88)</span></div>
 <p>where we have a pair of  undoubled spin connections,</p>
 <div class="equation">\[
 \ba{ll}
@@ -456,7 +498,7 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \ea
 \]</div>
 <p>which along with the Christoffel connection \(\gamma^{\lambda}_{\mu\nu}\) imply an   undoubled master derivative:</p>
-<div class="equation">\[
+<div class="equation" id="ref-trdmaster">\[
 \ba{llllll}
 \trd_{\mu}:=\partial_{\mu}+\gamma_{\mu}+\omega_{\mu}+\bromega_{\mu}\,,&~
 \trd_{\mu} e_{\nu}{}^{p}=0\,,&~
@@ -465,33 +507,36 @@ P^{AB}{\brP}_{C_{1}}{}^{D_{1}}\cdots{\brP}_{C_{n}}{}^{D_{n}}
 \trd_{\mu}\breta_{\brp\brq}=0\,,&~
 \trd_{\lambda} g_{\mu\nu}=0\,.
 \ea
-\]</div>
-<p>For example, from [Jeon:2011vx]  we obtain for a \(\SpinD\) tensor,</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(90)</span></div>
+<p>For example, from [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2011vx" target="_blank" rel="noopener noreferrer">Jeon:2011vx</a>]  we obtain for a \(\SpinD\) tensor,</p>
+<div class="equation" id="ref-cDT">\[
 \cD_{\brp}T_{q_1q_2\cdots q_{n}}=
 \frac{1}{\sqrt{2}}\bre_{\brp}{}^{\mu}\left[\partial_{\mu}T_{q_1q_2\cdots q_{n}}+\sum_{i=1}^{n}~(\omega_{\mu q_{i}}{}^{r}+\half H_{\mu q_{i}}{}^{r})
 \,T_{q_{1}\cdots q_{i-1}rq_{i+1}\cdots q_{n}}\right]\,,
-\]</div>
-<p>and for a weightless spinor, we produce  known expressions from generalised geometry [Coimbra:2011nw],</p>
-<div class="equation">\[
+
+\]<span class="equation-number">(91)</span></div>
+<p>and for a weightless spinor, we produce  known expressions from generalised geometry [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACoimbra%3A2011nw" target="_blank" rel="noopener noreferrer">Coimbra:2011nw</a>],</p>
+<div class="equation" id="ref-cDrho">\[
 \ba{ll}
 \cD_{\brp}\rho=\frac{1}{\sqrt{2}}\!\left(\partial_{\brp} \rho{\, + \frac{1}{4}} \omega_{\brp q r} \gamma^{q r} \rho {\,+ \frac{1}{8}}H_{\brp q r} \gamma^{q r} \rho \right),
 ~&
 \gamma^{p}\cD_{p}\rho=\frac{1}{\sqrt{2}} \gamma^{\mu}\!\left( \partial_{\mu} \rho{\, + \frac{1}{4}} \omega_{\mu  qr} \gamma^{qr} \rho {\,+ \frac{1}{24}} H_{\mu qr} \gamma^{qr} \rho - \partial_{\mu} \phi \rho \right).
+
 \ea
-\]</div>
-<p>Furthermore, choosing the gauge \(e_{\mu}{}^{p} \equiv \bre_{\mu}{}^{\brp}\) reduces the twofold spin groups to a diagonal subgroup, which can be identified with the single spin group of GR. This gauge condition forces the spinors and the RR fields to transform under \(\ODD\) rotations [Jeon:2012hp], and it allows the single RR potential field to be expanded using gamma matrices:</p>
+\]<span class="equation-number">(92)</span></div>
+<p>Furthermore, choosing the gauge \(e_{\mu}{}^{p} \equiv \bre_{\mu}{}^{\brp}\) reduces the twofold spin groups to a diagonal subgroup, which can be identified with the single spin group of GR. This gauge condition forces the spinors and the RR fields to transform under \(\ODD\) rotations [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012hp" target="_blank" rel="noopener noreferrer">Jeon:2012hp</a>], and it allows the single RR potential field to be expanded using gamma matrices:</p>
 <div class="equation">\[
 \cC^{\alpha}{}_{\beta}=\sum_{p}~\frac{1}{p!}C_{\mu_{1}\mu_2\cdots\mu_{p}}(\gamma^{\mu_1\mu_2\cdots\mu_p})^{\alpha}{}_{\beta}\,,
 \]</div>
-<p>such that the conventional (even or odd) RR form fields appear, and the pair of nilpotent differential  operators ([Dpm]) reduce to a twisted exterior derivative and its Hodge dual [Jeon:2012kd]:</p>
+<p>such that the conventional (even or odd) RR form fields appear, and the pair of nilpotent differential  operators (<a class="equation-ref" href="covariant-derivatives.html#ref-Dpm" title="Equation reference: Dpm">84</a>) reduce to a twisted exterior derivative and its Hodge dual [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AJeon%3A2012kd" target="_blank" rel="noopener noreferrer">Jeon:2012kd</a>]:</p>
 <div class="equation">\[
 \ba{ll}
 \cD_{+}\quad\!\longrightarrow\!\quad\rd+(H-\rd\phi)\,\wedge~\,,\qquad&\qquad
 \cD_{-}\quad\!\longrightarrow\!\quad\star\,\big[\,\rd+(H-\rd\phi)\,\wedge~\big]\star~\,.
 \ea
 \]</div>
-<p>For the non-Riemannian parametrisations of the fully covariant derivatives ([covD]) and  doubled Yang-Mills theory ([YMaction]), we refer to [Cho:2019ofr] (section 4.3 therein) and [Angus:2021jvm], respectively.</p>
+<p>For the non-Riemannian parametrisations of the fully covariant derivatives (<a class="equation-ref" href="covariant-derivatives.html#ref-covD" title="Equation reference: covD">71</a>) and  doubled Yang-Mills theory (<a class="equation-ref" href="covariant-derivatives.html#ref-YMaction" title="Equation reference: YMaction">76</a>), we refer to [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3ACho%3A2019ofr" target="_blank" rel="noopener noreferrer">Cho:2019ofr</a>] (section 4.3 therein) and [<a class="cite-ref" href="https://inspirehep.net/literature?q=texkey%3AAngus%3A2021jvm" target="_blank" rel="noopener noreferrer">Angus:2021jvm</a>], respectively.</p>
     </section>
     <aside class="related"><h2>Related Sections</h2><ul><li><a href="non-riemannian-geometry.html">Non-Riemannian Geometry</a></li>
 <li><a href="curvatures.html">Curvatures and Gravitational Waves</a></li></ul></aside>
